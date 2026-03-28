@@ -1062,8 +1062,100 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
         );
       })();
 
-      // ── Step 6: Feats ──
-      case 6: return (
+      // ── Step 6: Weapons ──
+      case 6: return (() => {
+        const cls = CLASSES.find(c => c.id === state.classe);
+        if (!cls) return <div style={{ color: '#888' }}>Sélectionne une classe d'abord</div>;
+
+        // Guerrier: Can choose 1 two-hand OR 2 one-hand OR 1 + shield
+        if (cls.id === 'guerrier') {
+          return (
+            <div>
+              <SectionTitle>Choix d'armes</SectionTitle>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                {/* Option A: Two-hand weapon */}
+                <div style={{ padding: '14px', border: state.weaponChoiceMode === 'one-two-hand' ? '2px solid #c0392b' : '1px solid #ddd', borderRadius: '6px', cursor: 'pointer', background: state.weaponChoiceMode === 'one-two-hand' ? '#fff5f5' : '#fff' }} onClick={() => setState(p => ({ ...p, weaponChoiceMode: 'one-two-hand', selectedSecondWeapon: '' }))}>
+                  <div style={{ fontWeight: 700, marginBottom: '8px', fontSize: '13px', color: state.weaponChoiceMode === 'one-two-hand' ? '#c0392b' : '#1a1a1a' }}>
+                    ⚔️ Une arme à deux mains
+                  </div>
+                  <div style={{ fontSize: '11px', color: '#666', marginBottom: '10px' }}>
+                    Puissance maximale avec une épée à deux mains, une grande hache ou un maillet.
+                  </div>
+                  {state.weaponChoiceMode === 'one-two-hand' && (
+                    <select value={state.selectedWeapon} onChange={e => setState(p => ({ ...p, selectedWeapon: e.target.value }))} style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #bbb', fontSize: '12px' }}>
+                      <option value="">— Choisir une arme —</option>
+                      {WEAPONS.filter(w => w.hand === 'two' && w.category.includes('mêlée')).map(w => (
+                        <option key={w.id} value={w.id}>{w.name} — {w.dmg}</option>
+                      ))}
+                    </select>
+                  )}
+                </div>
+
+                {/* Option B: Dual-wield */}
+                <div style={{ padding: '14px', border: state.weaponChoiceMode === 'dual-wield' ? '2px solid #c0392b' : '1px solid #ddd', borderRadius: '6px', cursor: 'pointer', background: state.weaponChoiceMode === 'dual-wield' ? '#fff5f5' : '#fff' }} onClick={() => setState(p => ({ ...p, weaponChoiceMode: 'dual-wield' }))}>
+                  <div style={{ fontWeight: 700, marginBottom: '8px', fontSize: '13px', color: state.weaponChoiceMode === 'dual-wield' ? '#c0392b' : '#1a1a1a' }}>
+                    ⚔️⚔️ Deux armes à une main
+                  </div>
+                  <div style={{ fontSize: '11px', color: '#666', marginBottom: '10px' }}>
+                    Double attaque rapide avec deux épées courtes, deux haches ou une hache et une épée.
+                  </div>
+                  {state.weaponChoiceMode === 'dual-wield' && (
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                      <div>
+                        <label style={{ fontSize: '10px', fontWeight: 600, marginBottom: '4px', display: 'block' }}>Arme principale</label>
+                        <select value={state.selectedWeapon} onChange={e => setState(p => ({ ...p, selectedWeapon: e.target.value }))} style={{ width: '100%', padding: '6px', borderRadius: '4px', border: '1px solid #bbb', fontSize: '11px' }}>
+                          <option value="">— Choisir —</option>
+                          {WEAPONS.filter(w => w.hand === 'one' && w.category.includes('mêlée')).map(w => (
+                            <option key={w.id} value={w.id}>{w.name}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div>
+                        <label style={{ fontSize: '10px', fontWeight: 600, marginBottom: '4px', display: 'block' }}>Arme secondaire</label>
+                        <select value={state.selectedSecondWeapon || ''} onChange={e => setState(p => ({ ...p, selectedSecondWeapon: e.target.value }))} style={{ width: '100%', padding: '6px', borderRadius: '4px', border: '1px solid #bbb', fontSize: '11px' }}>
+                          <option value="">— Choisir —</option>
+                          {WEAPONS.filter(w => w.hand === 'one' && w.category.includes('mêlée')).map(w => (
+                            <option key={w.id} value={w.id}>{w.name}</option>
+                          ))}
+                        </select>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Option C: Weapon + Shield */}
+                <div style={{ padding: '14px', border: state.weaponChoiceMode === 'single' ? '2px solid #c0392b' : '1px solid #ddd', borderRadius: '6px', cursor: 'pointer', background: state.weaponChoiceMode === 'single' ? '#fff5f5' : '#fff' }} onClick={() => setState(p => ({ ...p, weaponChoiceMode: 'single', selectedSecondWeapon: '' }))}>
+                  <div style={{ fontWeight: 700, marginBottom: '8px', fontSize: '13px', color: state.weaponChoiceMode === 'single' ? '#c0392b' : '#1a1a1a' }}>
+                    🛡️ Une arme + Bouclier
+                  </div>
+                  <div style={{ fontSize: '11px', color: '#666', marginBottom: '10px' }}>
+                    Équilibre parfait: défense renforcée (AC+2) avec une arme pour les dégâts.
+                  </div>
+                  {state.weaponChoiceMode === 'single' && (
+                    <select value={state.selectedWeapon} onChange={e => setState(p => ({ ...p, selectedWeapon: e.target.value }))} style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #bbb', fontSize: '12px' }}>
+                      <option value="">— Choisir une arme —</option>
+                      {WEAPONS.filter(w => (w.hand === 'one' || w.hand === 'two') && w.category.includes('mêlée')).map(w => (
+                        <option key={w.id} value={w.id}>{w.name} — {w.dmg}</option>
+                      ))}
+                    </select>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        }
+
+        // Default for other classes: simple weapon selection
+        return (
+          <div>
+            <SectionTitle>Choix d'arme</SectionTitle>
+            <div style={{ color: '#888', fontSize: '13px' }}>Ta classe a un équipement d'arme par défaut.</div>
+          </div>
+        );
+      })();
+
+      // ── Step 7: Feats ──
+      case 7: return (
         <div>
           <SectionTitle>Feats</SectionTitle>
           {featCount === 0 ? (
@@ -1110,8 +1202,8 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
         </div>
       );
 
-      // ── Step 7: Spells & Miracles ──
-      case 7: return (
+      // ── Step 8: Spells & Miracles ──
+      case 8: return (
         <div>
           <SectionTitle>Sorts, Miracles & Pouvoirs</SectionTitle>
           {!hasSpells && !hasMiracles && !hasVampPowers ? (
@@ -1380,8 +1472,8 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
         </div>
       );
 
-      // ── Step 8: Class Upgrades ──
-      case 8: return (
+      // ── Step 9: Class Upgrades ──
+      case 9: return (
         <div>
           <SectionTitle>Améliorations de classe</SectionTitle>
           {(() => {
@@ -1419,8 +1511,8 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
         </div>
       );
 
-      // ── Step 9: Summary ──
-      case 9: return (
+      // ── Step 10: Summary ──
+      case 10: return (
         <div>
           <SectionTitle>Résumé du personnage</SectionTitle>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
