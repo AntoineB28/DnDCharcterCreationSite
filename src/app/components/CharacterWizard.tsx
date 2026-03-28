@@ -818,21 +818,32 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
         const weaponFilter: WFilter = (() => {
           switch (cls?.id) {
             case 'guerrier':     return 'all';
-            case 'mage':         return 'simple';
-            case 'pretre':       return 'simple';
-            case 'druide':       return 'simple';
-            case 'necromancien': return 'simple';
-            case 'shaman':       return 'simple';
-            case 'vigilant':     return 'simple';
+            case 'valkyrie':     return 'all';
+            case 'bastion':      return 'melee';
+            case 'ravageur':     return 'melee';
+            case 'maraudeur':    return 'melee';
+            case 'inquisiteur':  return 'melee';
+            case 'fourbesang':   return 'melee';
+            case 'venox':        return 'melee';
             case 'rogue':        return 'dexterity';
             case 'vampire':      return 'dexterity';
             case 'scorpion':     return 'dexterity';
-            case 'fourbesang':   return 'melee';
-            case 'ravageur':     return 'melee';
-            case 'bastion':      return 'melee';
-            case 'fleau':        return 'none'; // fixed épée longue
-            case 'inquisiteur':  return 'melee';
-            default:             return 'none';
+            case 'rapacier':     return 'dexterity';
+            case 'chasseur':     return 'dexterity';
+            case 'mage':         return 'simple';
+            case 'pretre':       return 'simple';
+            case 'druide':       return 'simple';
+            case 'barde':        return 'simple';
+            case 'sorcier':      return 'simple';
+            case 'moine':        return 'simple';
+            case 'necromancien': return 'simple';
+            case 'astromancien': return 'simple';
+            case 'mystique':     return 'simple';
+            case 'artificier':   return 'simple';
+            case 'shaman':       return 'simple';
+            case 'vigilant':     return 'simple';
+            case 'sepulcral':    return 'simple';
+            case 'fleau':        return 'none'; // fixed épée longue\n            default:             return 'none';
           }
         })();
 
