@@ -1271,7 +1271,10 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                                       background: sel ? '#f5f0ff' : locked ? '#f5f5f5' : '#fff', cursor: locked ? 'not-allowed' : 'pointer', fontSize: '12px',
                                       opacity: locked ? 0.5 : 1, transition: 'border-color 0.1s',
                                     }}>
-                                      <div style={{ fontWeight: 700, color: sel ? '#7c3aed' : '#1a1a1a' }}>{s.name}</div>
+                                      <div style={{ fontWeight: 700, color: sel ? '#7c3aed' : '#1a1a1a' }}>
+                                        {s.name}
+                                        {s.ultimate && <span style={{ marginLeft: '4px', color: '#f59e0b', fontSize: '14px' }}>★</span>}
+                                      </div>
                                       <div style={{ color: '#666', fontSize: '10px', marginTop: '1px' }}>{s.action}{s.neverMisses ? ' · Ne rate jamais' : ''}</div>
                                       <div style={{ color: '#444', fontSize: '11px', lineHeight: '1.5', marginTop: '5px', padding: '5px 8px', background: sel ? '#ede9fe' : '#f9f9f9', borderRadius: '4px', borderLeft: '2px solid #7c3aed' }}>
                                         {s.description}

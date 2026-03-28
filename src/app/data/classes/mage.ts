@@ -1,23 +1,21 @@
 import type { ClassData } from '../gameData';
 
 /**
- * MAGE - Mage class based on Cahier-du-joueur
- * Level-by-level spell progression with specializations and ultimate spells
+ * MAGE - Mage class based on Cahier-du-joueur (lines 296-450)
+ * Strictly following rulebook - no invented features
  */
 export const mage: ClassData = {
   id: 'mage',
   name: 'Mage',
   difficulty: '★★',
-  description: 'Les mages sont des érudits qui étudient le voile, la barrière mystique entre la réalité et Kadath, une dimension magique du cosmos.',
-  competences: 'Sorts, armure légère, armes simples',
+  description: 'Les mages sont des érudits qui étudient le voile, la barrière mystique entre la réalité et Kadath. Leur compréhension de la fabrique du voile permet aux mages de jeter des sorts en utilisant la mana.',
+  competences: 'Sorts, armure légère, armes simples (épée courte, massue, bâton, couteau, hachette, pique)',
   resource: 'mana',
   startingResource: 4,
   startingArmor: { name: 'Robes de mage', ac: 0, type: 'robes' },
   startingEquipment: [
-    'Tempête de mana (niv.2) : Action bonus. Une fois par combat. Récupère 1d6 mana.',
-    'Robes de mage (AC protégé)',
-    'Une arme simple au choix',
     'Trois sorts niveau 1 au choix',
+    'Une arme simple au choix',
   ],
   pvPerLevel: [0, 4, 4, 4, 5, 5, 5, 8, 8, 8, 10, 10, 10, 12, 8, 12, 12, 15, 15, 18, 20],
   resourcePerLevel: [4, 8, 10, 12, 14, 14, 14, 14, 14, 16, 18, 18, 18, 20, 20, 20, 22, 22, 22, 24],
@@ -25,29 +23,23 @@ export const mage: ClassData = {
   specializationDetails: [
     {
       name: 'Acolyte',
-      summary: "Érudit studieux. Maximise ta connaissance magique et ton pool de mana.",
+      summary: "Passé ta jeunesse dans un collège à étudier le voile. Connaissances approfondies.",
       effects: [
         'Niveau 3 : +3 sorts N1 + +2 sorts N2 + Mana +2 + Intelligence +2',
-        'Expertise avec arcana',
-        'Niveau 14 : +3 sorts N2 + +2 sorts N3 + +1 sort N4 + Mana +2 + Intelligence +1',
       ],
     },
     {
       name: 'Mage guerrier',
-      summary: "Alliance magie et combat rapproché. Redoutable au corps-à-corps.",
+      summary: "Alliance magie et combat rapproché.",
       effects: [
-        'Niveau 3 : PV +10 + Compétence toutes armes rapprochées et armures + Force/Dextérité +2',
-        'Robustesse magique',
-        'Niveau 14 : PV +10 + Force/Dextérité +2 + Action surge',
+        'Niveau 3 : PV +10 + Compétence toutes armes/armures + Force/Dextérité +2',
       ],
     },
     {
       name: 'Manavore',
-      summary: "Sorts dévastateurs mais gourmands. Sacrifie efficacité pour puissance brute.",
+      summary: "Soif de magie insatiable. Sorts plus puissants mais coûtent plus cher.",
       effects: [
-        'Niveau 3 : Mana +6 + +1 sort N2 + Tous les sorts coûtent 1 mana de plus mais font 1d10 dégâts magiques supplémentaires',
-        'Avidité magique',
-        'Niveau 14 : Mana +6 + +1 sort N4',
+        'Niveau 3 : Mana +6 + +1 sort N2 + Tous les sorts coûtent 1 mana de plus mais +1d10 dégâts magiques',
       ],
     },
   ],
@@ -57,62 +49,52 @@ export const mage: ClassData = {
       name: 'Spécialisation',
       description: 'Choisis comment tu maîtrises la magie.',
       options: [
-        'Acolyte|Tu as passé ta jeunesse dans un collège à étudier le voile. Tes connaissances te permettent d\'approfondir ta connexion avec la magie qui t\'entoure. Gains: +3 sorts N1 + +2 sorts N2 + Mana +2 + Intelligence +2',
-        'Mage guerrier|Tu aimes t\'entourer de magie alors que tu extermines tes ennemis grâce à ta prouesse martiale. Tu es un mage, certes, mais te sous-estimer dans un combat rapproché pourrait être fatal. Gains: PV +10 + Compétence toutes armes/armures + Force/Dextérité +2',
-        'Manavore|À l\'intérieur de toi, il y a un creux que seule la magie du voile peut combler. Tu es en permanence assaillit par le désir de faire jaillir de tes mains une énergie destructrice. Gains: Mana +6 + +1 sort N2 + Tous les sorts coûtent 1 mana de plus mais +1d10 dégâts magiques',
+        'Acolyte|Tu as passé ta jeunesse dans un collège à étudier le voile. Tes connaissances te permettent d\'approfondir ta connexion avec la magie. Gains: +3 sorts N1 + +2 sorts N2 + Mana +2 + Intelligence +2',
+        'Mage guerrier|Tu aimes t\'entourer de magie alors que tu extermines tes ennemis grâce à ta prouesse martiale. Te sous-estimer au combat rapproché serait fatal. Gains: PV +10 + Compétence toutes armes/armures + Force/Dextérité +2',
+        'Manavore|À l\'intérieur de toi, un creux que seule la magie du voile peut combler. Tu es assailli par le désir de faire jaillir une énergie destructrice. Gains: Mana +6 + +1 sort N2 + Sortes coûtent 1 mana de plus mais +1d10 dégâts magiques',
       ],
       maxChoices: 1,
       displayAsCards: true,
     },
     {
       level: 6,
-      name: 'Sort ultime (niveau 3)',
-      description: 'Choisis un sort ultime de niveau 3. Utilisable 1x par combat en action bonus sans coût mana.',
-      options: [
-        'Boule de feu ultime|Un sort de destruction massive',
-        'Décharge électrique ultime|Électricité pure',
-        'Pique de glace ultime|Pics glaciaux deadly',
-      ],
+      name: 'Sort ultime niveau 3',
+      description: 'Sélectionne un sort ultime ★ de niveau 3 dans l\'étape Sorts & Miracles. Utilisable 1x par combat en action bonus sans coût mana.',
+      options: ['Sélectionne dans Sorts & Miracles'],
       maxChoices: 1,
     },
     {
       level: 8,
       name: 'Élémentalisme',
-      description: 'Choisis un type de dégâts. Tes sorts de ce type ignoreront les résistances et tu auras expertise avec eux.',
+      description: 'Choisis un type de dégâts. Tes sorts de ce type ignorent les résistances et tu as expertise avec eux.',
       options: [
-        'Feu|Sorts de feu ignorent résistance + expertise',
-        'Glace|Sorts de glace ignorent résistance + expertise',
-        'Électricité|Sorts d\'électricité ignorent résistance + expertise',
-        'Acide|Sorts d\'acide ignorent résistance + expertise',
+        'Feu|Tes sorts de feu ignorent résistance + expertise',
+        'Froid|Tes sorts de froid ignorent résistance + expertise',
+        'Foudre|Tes sorts de foudre ignorent résistance + expertise',
+        'Acide|Tes sorts d\'acide ignorent résistance + expertise',
+        'Nécromancie|Tes sorts nécrotiques ignorent résistance + expertise',
+        'Psychique|Tes sorts psychiques ignorent résistance + expertise',
       ],
       maxChoices: 1,
     },
     {
       level: 9,
-      name: 'Sort ultime (niveau 4)',
-      description: 'Choisis un nouveau sort ultime de niveau 4. Ton ancien devient sort connu. 1x par combat action bonus sans coût.',
-      options: [
-        'Inferno ultime|Tempête de flammes',
-        'Chaîne d\'électricité ultime|Électricité en chaîne',
-        'Tempête de glace ultime|Blizzard dévastateur',
-      ],
+      name: 'Sort ultime niveau 4',
+      description: 'Sélectionne un sort ultime ★ de niveau 4 dans l\'étape Sorts & Miracles. Ton ancien sort ultime N3 devient connu. 1x par combat action bonus.',
+      options: ['Sélectionne dans Sorts & Miracles'],
       maxChoices: 1,
     },
     {
       level: 12,
-      name: 'Sort ultime (niveau 5)',
-      description: 'Choisis un nouveau sort ultime de niveau 5. Ton ancien devient sort connu. 1x par combat action bonus sans coût.',
-      options: [
-        'Inferno suprême|Cataclysme de feu pur',
-        'Tempête électrique suprême|Électricité cataclysmique',
-        'Blizzard suprême|Froid absolu destructeur',
-      ],
+      name: 'Sort ultime niveau 5',
+      description: 'Sélectionne un sort ultime ★ de niveau 5 dans l\'étape Sorts & Miracles. Ton ancien sort ultime N4 devient connu. 1x par combat action bonus.',
+      options: ['Sélectionne dans Sorts & Miracles'],
       maxChoices: 1,
     },
     {
       level: 14,
       name: 'Amélioration de spécialisation',
-      description: 'Ta spécialisation évolue et se renforce.',
+      description: 'Ta spécialisation évolue.',
       options: [
         'Acolyte amélioré|Gains: +3 sorts N2 + +2 sorts N3 + +1 sort N4 + Mana +2 + Intelligence +1',
         'Mage guerrier amélioré|Gains: PV +10 + Force/Dextérité +2 + Action surge',
@@ -122,13 +104,9 @@ export const mage: ClassData = {
     },
     {
       level: 18,
-      name: 'Sort ultime (niveau 6)',
-      description: 'Choisis un nouveau sort ultime de niveau 6. Ton ancien devient sort connu. 1x par combat action bonus sans coût.',
-      options: [
-        'Cataclysme de feu ultime|Destruction finale par le feu',
-        'Tornade électrique ultime|Tempête de force brute',
-        'Froid éternel ultime|Gel perpétuel du monde',
-      ],
+      name: 'Sort ultime niveau 6',
+      description: 'Sélectionne un sort ultime ★ de niveau 6 dans l\'étape Sorts & Miracles. Ton ancien sort ultime N5 devient connu. 1x par combat action bonus.',
+      options: ['Sélectionne dans Sorts & Miracles'],
       maxChoices: 1,
     },
   ],

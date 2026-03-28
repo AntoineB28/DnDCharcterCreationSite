@@ -11,6 +11,7 @@ export interface Spell {
   subcategory: string; // level or "Base" / "Avancé"
   action: string;
   neverMisses?: boolean;
+  ultimate?: boolean; // Mark as ultimate spell (usable 1x/combat bonus action)
   description: string;
   cost?: string;
 }
