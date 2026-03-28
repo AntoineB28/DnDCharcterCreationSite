@@ -82,27 +82,34 @@ export function FeatSheetExport({ selection }: FeatSheetExportProps) {
 
   const exportToPDF = async () => {
     if (!pageRef.current) return;
-    const canvas = await html2canvas(pageRef.current, {
-      scale: 2,
-      useCORS: true,
-      backgroundColor: '#faf7f2',
-      logging: false,
-    });
-    const imgData = canvas.toDataURL('image/png');
-    const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-    const pageW = pdf.internal.pageSize.getWidth();
-    const pageH = pdf.internal.pageSize.getHeight();
-    const imgW = canvas.width;
-    const imgH = canvas.height;
-    const ratio = pageW / imgW;
-    const scaledH = imgH * ratio;
-    let y = 0;
-    while (y < scaledH) {
-      if (y > 0) pdf.addPage();
-      pdf.addImage(imgData, 'PNG', 0, -y, pageW, scaledH);
-      y += pageH;
+    try {
+      const canvas = await html2canvas(pageRef.current, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: '#faf7f2',
+        logging: false,
+        allowTaint: true,
+        imageTimeout: 0,
+      });
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+      const pageW = pdf.internal.pageSize.getWidth();
+      const pageH = pdf.internal.pageSize.getHeight();
+      const imgW = canvas.width;
+      const imgH = canvas.height;
+      const ratio = pageW / imgW;
+      const scaledH = imgH * ratio;
+      let y = 0;
+      while (y < scaledH) {
+        if (y > 0) pdf.addPage();
+        pdf.addImage(imgData, 'PNG', 0, -y, pageW, scaledH);
+        y += pageH;
+      }
+      pdf.save(`fiche-feats-${selection.nom || 'personnage'}.pdf`);
+    } catch (e) {
+      console.error('PDF export error:', e);
+      alert('Erreur lors de l\'export PDF de la fiche de feats.');
     }
-    pdf.save(`fiche-feats-${selection.nom || 'personnage'}.pdf`);
   };
 
   return (
