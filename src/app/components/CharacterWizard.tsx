@@ -265,15 +265,6 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   // Abilities text - filter out generic stat text like "Force +1", "miracle niveau 1", etc.
   const GENERIC_ABILITY_RX = /(force|dexterité|constitution|resistance|intelligence|foi|charisme|vitesse)\s*\+\d+|miracle.*niveau|arme.*au choix|robe.*au choix|armure.*au choix|points?\s*(mélodieux|necromancie|vampirique|ki|melodieux)|mana\s*\+|divinité\s*\+|vision|survivance|d[eé]couvert|langue|compétence|malédiction|marque/i;
   
-  // Build feat descriptions with name + description
-  const featDescriptions = state.selectedFeats
-    .map(id => {
-      const feat = FEATS.find(f => f.id === id);
-      if (!feat || GENERIC_ABILITY_RX.test(feat.name)) return null;
-      return `${feat.name} : ${feat.description}`;
-    })
-    .filter(Boolean);
-  
   const classAbilities = cls?.startingEquipment
     ?.filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort') && !GENERIC_ABILITY_RX.test(e))
     .join('\n') ?? '';
@@ -284,7 +275,8 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
     levelUpgrades.push('Armure arcano-mécanique : AC +3, résistance aux dégâts électriques (niveau 8)');
   }
   
-  const habiletes = [...featDescriptions, classAbilities, ...levelUpgrades].filter(Boolean).join('\n\n');
+  // Abilities now contains only class features + level upgrades (NOT feats anymore - they stay in Feats step)
+  const habiletes = [...classAbilities, ...levelUpgrades].filter(Boolean).join('\n\n');
 
   // Inventory text — only physical, non-choice items
   const NON_PHYSICAL_RX = /miracle|mana \+|divinit[eé] \+|\d+ sort|sorts? niveau|sorts? au choix|sort :|sorts et miracles|points? (de )?n[eé]cromancie|charges? vampirique|survie vampirique|vision nocturne|vitesse \+|points? m[eé]lodieux|ki \+|arts martiaux|r[eé]flexes|combattant squelettique/i;
