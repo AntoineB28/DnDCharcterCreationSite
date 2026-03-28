@@ -19,6 +19,10 @@ const LVL_MAP: Record<string, number> = {
   'Niveau 1': 1, 'Niveau 2': 2, 'Niveau 3': 3, 'Suprême': 4, 'Ultime': 5,
 };
 
+const LVL_MAP_SORTS: Record<string, number> = {
+  'Niveau 1': 1, 'Niveau 2': 2, 'Niveau 3': 3, 'Niveau 4': 4, 'Niveau 5': 5, 'Niveau 6': 6,
+};
+
 // --- Section header ---
 function SectionHeader({ title, color, count }: { title: string; color: string; count: number }) {
   return (
@@ -103,8 +107,8 @@ export function SpellSheetExport({ selection }: SpellSheetExportProps) {
   const hasVamp = selectedVamp.length > 0;
   const isEmpty = !hasSorts && !hasMiracles && !hasVamp;
 
-  // Group sorts by level
-  const sortsByLevel = ['Niveau 1', 'Niveau 2', 'Niveau 3'].reduce((acc, lv) => {
+  // Group sorts by level (dynamically up to 6)
+  const sortsByLevel = Array.from({ length: 6 }, (_, i) => `Niveau ${i + 1}`).reduce((acc, lv) => {
     const s = selectedSorts.filter(x => x.subcategory === lv);
     if (s.length) acc.push({ label: lv, items: s });
     return acc;

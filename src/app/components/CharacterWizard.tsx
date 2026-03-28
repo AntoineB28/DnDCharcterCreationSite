@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { ChevronRight, ChevronLeft, Check, User, Shield, Sword, TrendingUp, Package, Star, Zap, BookOpen, FileText } from 'lucide-react';
 import {
   RACES, CLASSES, FEAT_LEVELS, statBonus, ALL_DEITIES, DARK_DEITIES, STAT_LABELS,
-  getMiracleLimit, getSpellLimit, getUltimateSpellLimit, miracleLevelLabel, slotTotal,
+  getMiracleLimit, getSpellLimit, getUltimateSpellLimit, applySpecializationBonus, miracleLevelLabel, slotTotal,
   type StatKey,
 } from '../data/gameData';
 import { FEATS } from './FeatSelector';
@@ -1224,7 +1224,27 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               {hasSpells && (() => {
-                const spellLimits = getSpellLimit(state.classe, state.niveau);
+                // Helper to extract specialization from classUpgrades
+                const getSpecializationChoice = (): string | undefined => {
+                  if (state.classe === 'mage') {
+                    // Look for mage_lvl3_spécialisation or any mage_lvl3_* key
+                    const keys = Object.keys(state.classUpgrades);
+                    const specKey = keys.find(k => k.startsWith('mage_lvl3_'));
+                    if (specKey) {
+                      const val = state.classUpgrades[specKey];
+                      if (typeof val === 'string') return val;
+                    }
+                  }
+                  return undefined;
+                };
+
+                let spellLimits = getSpellLimit(state.classe, state.niveau);
+                // Apply specialization bonus if available
+                const specialization = getSpecializationChoice();
+                if (specialization) {
+                  spellLimits = applySpecializationBonus(state.classe, state.niveau, spellLimits, specialization);
+                }
+                
                 const ultimateLimits = getUltimateSpellLimit(state.classe, state.niveau);
                 
                 // Build level map dynamically: 'Niveau 1' -> 1, 'Niveau 2' -> 2, etc

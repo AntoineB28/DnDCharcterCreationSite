@@ -222,6 +222,56 @@ export function getSpellLimit(
   return { ...empty };
 }
 
+// Apply specialization bonuses to spell limits
+// For Mage: different specializations grant different spell bonuses
+export function applySpecializationBonus(
+  classId: string,
+  niveau: number,
+  spellLimits: { slots: Record<number, number>; maxLevel: number },
+  specialization?: string
+): { slots: Record<number, number>; maxLevel: number } {
+  if (classId !== 'mage' || !specialization || niveau < 3) {
+    return spellLimits;
+  }
+
+  const slots = { ...spellLimits.slots };
+
+  // Extract specialization name (remove " amélioré" suffix if present at level 14+)
+  const spec = specialization.replace(' amélioré', '').trim();
+
+  if (spec === 'Acolyte') {
+    // Level 3: +3 sorts N1 + +2 sorts N2
+    slots[1] = (slots[1] ?? 0) + 3;
+    if (niveau >= 2) {
+      slots[2] = (slots[2] ?? 0) + 2;
+    }
+    // Level 14: +3 sorts N2 + +2 sorts N3 + +1 sort N4
+    if (niveau >= 14) {
+      slots[2] = (slots[2] ?? 0) + 3;
+      if (niveau >= 5) {
+        slots[3] = (slots[3] ?? 0) + 2;
+      }
+      if (niveau >= 9) {
+        slots[4] = (slots[4] ?? 0) + 1;
+      }
+    }
+  } else if (spec === 'Mage guerrier') {
+    // Level 3: No spell bonus
+    // Level 14: No spell bonus
+  } else if (spec === 'Manavore') {
+    // Level 3: +1 sort N2
+    if (niveau >= 2) {
+      slots[2] = (slots[2] ?? 0) + 1;
+    }
+    // Level 14: +1 sort N4
+    if (niveau >= 14 && niveau >= 9) {
+      slots[4] = (slots[4] ?? 0) + 1;
+    }
+  }
+
+  return { slots, maxLevel: spellLimits.maxLevel };
+}
+
 // Get ultimate spell limits per class/level
 // Returns how many ultimate spells can be marked at each spell level
 export function getUltimateSpellLimit(
