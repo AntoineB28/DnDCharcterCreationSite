@@ -263,7 +263,8 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   const vampNames = state.selectedVampPowers.map(id => VAMPIRIQUE.find(v => v.id === id)?.name ?? id);
 
   // Abilities text - filter out generic stat text like "Force +1", "miracle niveau 1", etc.
-  const GENERIC_ABILITY_RX = /(force|dexterité|constitution|resistance|intelligence|foi|charisme|vitesse)\s*\+\d+|miracle.*niveau|arme.*au choix|robe.*au choix|armure.*au choix|points?\s*(mélodieux|necromancie|vampirique|ki|melodieux)|mana\s*\+|divinité\s*\+|vision|survivance|d[eé]couvert|langue|compétence|malédiction|marque/i;
+  // But KEEP important class abilities like "Spécialisation au choix", "Arme à deux mains", "compétence aux armes"
+  const GENERIC_ABILITY_RX = /(force|dexterité|constitution|resistance|intelligence|foi|charisme|vitesse)\s*\+\d+|miracle\s+(niveau|choix)|points?\s+(mélodieux|necromancie|vampirique|ki)|mana\s*\+|divinité\s*\+|vision|survivance|d[eé]couvert|langue(?!\s)|malédiction|marque/i;
   
   const classAbilities = cls?.startingEquipment
     ?.filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort') && !GENERIC_ABILITY_RX.test(e))
