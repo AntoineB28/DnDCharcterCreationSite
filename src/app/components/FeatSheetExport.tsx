@@ -82,18 +82,18 @@ export function FeatSheetExport({ selection }: FeatSheetExportProps) {
 
   const exportToPDF = async () => {
     if (!pageRef.current) return;
-    try {
-      const el = pageRef.current;
-      const clone = el.cloneNode(true) as HTMLElement;
-      clone.style.position = 'fixed';
-      clone.style.top = '0';
-      clone.style.left = '-9999px';
-      clone.style.zIndex = '-1';
-      clone.style.boxShadow = 'none';
-      document.body.appendChild(clone);
+    const el = pageRef.current;
+    const clone = el.cloneNode(true) as HTMLElement;
+    clone.style.position = 'fixed';
+    clone.style.top = '0';
+    clone.style.left = '-9999px';
+    clone.style.zIndex = '-1';
+    clone.style.boxShadow = 'none';
+    document.body.appendChild(clone);
 
+    try {
       const canvas = await html2canvas(clone, {
-        scale: 2,
+        scale: 3,
         useCORS: true,
         backgroundColor: '#faf7f2',
         logging: false,
@@ -120,11 +120,11 @@ export function FeatSheetExport({ selection }: FeatSheetExportProps) {
         y += pageH;
       }
       pdf.save(`fiche-feats-${selection.nom || 'personnage'}.pdf`);
-
-      document.body.removeChild(clone);
     } catch (e) {
       console.error('PDF export error:', e);
       alert('Erreur lors de l\'export PDF de la fiche de feats.');
+    } finally {
+      document.body.removeChild(clone);
     }
   };
 
