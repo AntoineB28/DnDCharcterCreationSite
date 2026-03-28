@@ -141,7 +141,7 @@ function calcMaxPV(state: WizardState, finalStats: Record<StatKey, number>): num
   const basePV = finalStats.constitution * 2;
   const level = state.niveau;
   let classBonus = 0;
-  for (let i = 1; i < level; i++) classBonus += cls.pvPerLevel[i] || 0;
+  for (let i = 1; i <= level; i++) classBonus += cls.pvPerLevel[i] || 0;
   // Feat PV bonuses
   let featPV = 0;
   for (const fid of state.selectedFeats) {
@@ -248,9 +248,14 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   const miracleNames = allMiracleIds.map(id => MIRACLES.find(m => m.id === id)?.name ?? id);
   const vampNames = state.selectedVampPowers.map(id => VAMPIRIQUE.find(v => v.id === id)?.name ?? id);
 
-  // Abilities text
-  const featNames = state.selectedFeats.map(id => FEATS.find(f => f.id === id)?.name ?? id);
-  const classAbilities = cls?.startingEquipment?.filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort')).join('\n') ?? '';
+  // Abilities text - filter out generic stat text like "Force +1", "miracle niveau 1", etc.
+  const GENERIC_ABILITY_RX = /(force|dexterité|constitution|resistance|intelligence|foi|charisme|vitesse)\s*\+\d+|miracle.*niveau|arme.*au choix|robe.*au choix|armure.*au choix|points?\s*(mélodieux|necromancie|vampirique|ki|melodieux)|mana\s*\+|divinité\s*\+|vision|survivance|d[eé]couvert|langue|compétence|malédiction|marque/i;
+  const featNames = state.selectedFeats
+    .map(id => FEATS.find(f => f.id === id)?.name ?? id)
+    .filter(name => name && !GENERIC_ABILITY_RX.test(name));
+  const classAbilities = cls?.startingEquipment
+    ?.filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort') && !GENERIC_ABILITY_RX.test(e))
+    .join('\n') ?? '';
   const habiletes = [...featNames, classAbilities].filter(Boolean).join('\n');
 
   // Inventory text — only physical, non-choice items
@@ -264,7 +269,7 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   const extraEquip: string[] = [];
   if (chosenWeapon) extraEquip.push(`${chosenWeapon.name} (${chosenWeapon.dmg})`);
   if (chosenArmorItem && chosenArmorItem.id !== 'none') extraEquip.push(`${chosenArmorItem.name} (CA ${chosenArmorItem.ca})`);
-  const inventaire = [...equipLines, ...extraEquip, `Or de départ : ${state.or || '0'}`].join('\n');
+  const inventaire = [...equipLines, ...extraEquip].join('\n');
 
   // Resource fields
   const mana = cls?.resource === 'mana' ? String(resource) : '';
