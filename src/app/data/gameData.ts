@@ -168,9 +168,10 @@ export function getSpellLimit(
     if (niveau >= 5) { slots = { ...slots, 3: 1 }; maxLevel = 3; }
     if (niveau >= 7) { slots[3] = (slots[3] ?? 0) + 1; }
     if (niveau >= 9) { slots = { ...slots, 4: 1 }; maxLevel = 4; }
-    if (niveau >= 12) { slots[4] = (slots[4] ?? 0) + 1; }
+    if (niveau >= 11) { slots[4] = (slots[4] ?? 0) + 1; }
     if (niveau >= 14) { slots = { ...slots, 5: 1 }; maxLevel = 5; }
-    if (niveau >= 18) { slots[5] = (slots[5] ?? 0) + 1; }
+    if (niveau >= 17) { slots[5] = (slots[5] ?? 0) + 1; }
+    if (niveau >= 20) { slots = { ...slots, 6: 1 }; maxLevel = 6; }
     return { slots, maxLevel };
   }
 
@@ -219,6 +220,28 @@ export function getSpellLimit(
   }
 
   return { ...empty };
+}
+
+// Get ultimate spell limits per class/level
+// Returns how many ultimate spells can be marked at each spell level
+export function getUltimateSpellLimit(
+  classeId: string, 
+  niveau: number
+): Record<number, number> {
+  // ultimatesByLevel[spellLevel] = count
+  // e.g., { 3: 1, 4: 1, 5: 1, 6: 1 } = 1 ultimate per high level
+
+  if (classeId === 'mage') {
+    let ultimates: Record<number, number> = {};
+    if (niveau >= 6) { ultimates[3] = 1; }  // Level 6+: 1 ultimate Niveau 3
+    if (niveau >= 9) { ultimates[4] = 1; }  // Level 9+: 1 ultimate Niveau 4
+    if (niveau >= 12) { ultimates[5] = 1; } // Level 12+: 1 ultimate Niveau 5
+    if (niveau >= 18) { ultimates[6] = 1; } // Level 18+: 1 ultimate Niveau 6
+    return ultimates;
+  }
+
+  // Other classes have no ultimate spell limits yet
+  return {};
 }
 
 // ─── RACES ───────────────────────────────────────────────────────────────────

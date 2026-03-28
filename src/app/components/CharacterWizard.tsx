@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { ChevronRight, ChevronLeft, Check, User, Shield, Sword, TrendingUp, Package, Star, Zap, BookOpen, FileText } from 'lucide-react';
 import {
   RACES, CLASSES, FEAT_LEVELS, statBonus, ALL_DEITIES, DARK_DEITIES, STAT_LABELS,
-  getMiracleLimit, getSpellLimit, miracleLevelLabel, slotTotal,
+  getMiracleLimit, getSpellLimit, getUltimateSpellLimit, miracleLevelLabel, slotTotal,
   type StatKey,
 } from '../data/gameData';
 import { FEATS } from './FeatSelector';
@@ -1225,11 +1225,26 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               {hasSpells && (() => {
                 const spellLimits = getSpellLimit(state.classe, state.niveau);
-                const LVL_MAP_SPELLS: Record<string, number> = { 'Niveau 1': 1, 'Niveau 2': 2, 'Niveau 3': 3 };
+                const ultimateLimits = getUltimateSpellLimit(state.classe, state.niveau);
+                
+                // Build level map dynamically: 'Niveau 1' -> 1, 'Niveau 2' -> 2, etc
+                const LVL_MAP_SPELLS: Record<string, number> = {};
+                for (let i = 1; i <= spellLimits.maxLevel; i++) {
+                  LVL_MAP_SPELLS[`Niveau ${i}`] = i;
+                }
                 
                 // Per-level counter for selected spells
                 const countBySpellLevel = (selected: string[]) =>
                   selected.reduce((acc, id) => {
+                    const s = SORTS.find(x => x.id === id);
+                    const lvl = LVL_MAP_SPELLS[s?.subcategory ?? ''] ?? 1;
+                    acc[lvl] = (acc[lvl] ?? 0) + 1;
+                    return acc;
+                  }, {} as Record<number, number>);
+                
+                // Per-level counter for ultimate spells
+                const countUltimatesByLevel = (ultimates: string[]) =>
+                  ultimates.reduce((acc, id) => {
                     const s = SORTS.find(x => x.id === id);
                     const lvl = LVL_MAP_SPELLS[s?.subcategory ?? ''] ?? 1;
                     acc[lvl] = (acc[lvl] ?? 0) + 1;
@@ -1247,7 +1262,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                       </div>
                     ) : (
                       <>
-                        {['Niveau 1', 'Niveau 2', 'Niveau 3'].map(lv => {
+                        {Array.from({ length: spellLimits.maxLevel }, (_, i) => `Niveau ${i + 1}`).map(lv => {
                           const lvlNum = LVL_MAP_SPELLS[lv];
                           const spells = SORTS.filter(s => s.subcategory === lv && lvlNum <= spellLimits.maxLevel);
                           if (spells.length === 0) return null;
@@ -1256,6 +1271,12 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                           const counts = countBySpellLevel(state.selectedSpells);
                           const used = counts[lvlNum] ?? 0;
                           const isFull = used >= max;
+                          
+                          // Ultimate spell limits for this level
+                          const ultimateMax = ultimateLimits[lvlNum] ?? 0;
+                          const ultimateCounts = countUltimatesByLevel(state.ultimateSpells);
+                          const ultimateUsed = ultimateCounts[lvlNum] ?? 0;
+                          const ultimateFullForLevel = ultimateUsed >= ultimateMax && ultimateMax > 0;
 
                           return (
                             <div key={lv} style={{ marginBottom: '12px' }}>
@@ -1267,17 +1288,30 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                                   border: `1px solid ${isFull ? '#16a34a' : '#ddd'}` }}>
                                   {used}/{max}
                                 </span>
+                                {ultimateMax > 0 && (
+                                  <span style={{ fontSize: '10px', fontWeight: 700, padding: '1px 7px', borderRadius: '10px',
+                                    background: ultimateFullForLevel ? '#fef3c7' : '#f5f5f5',
+                                    color: ultimateFullForLevel ? '#d97706' : '#888',
+                                    border: `1px solid ${ultimateFullForLevel ? '#d97706' : '#ddd'}` }}>
+                                    ★ {ultimateUsed}/{ultimateMax}
+                                  </span>
+                                )}
                               </div>
                               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '6px' }}>
                                 {spells.map(s => {
                                   const sel = state.selectedSpells.includes(s.id);
                                   const isUltimate = state.ultimateSpells.includes(s.id);
                                   const locked = isFull && !sel;
+                                  const canMarkUltimate = sel && (isUltimate || !ultimateFullForLevel);
                                   return (
                                     <div key={s.id} onClick={(e) => {
                                       if (locked) return;
                                       if (e.shiftKey && sel) {
-                                        // Shift+Click toggles ultimate status
+                                        // Shift+Click toggles ultimate status (if allowed)
+                                        if (!canMarkUltimate && !isUltimate) {
+                                          // Don't allow marking if limit reached
+                                          return;
+                                        }
                                         setState(p => ({
                                           ...p,
                                           ultimateSpells: isUltimate 
@@ -1301,7 +1335,9 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                                       <div style={{ color: '#444', fontSize: '11px', lineHeight: '1.5', marginTop: '5px', padding: '5px 8px', background: sel ? '#ede9fe' : '#f9f9f9', borderRadius: '4px', borderLeft: '2px solid #7c3aed' }}>
                                         {s.description}
                                       </div>
-                                      {sel && <div style={{ fontSize: '10px', color: '#888', marginTop: '4px', fontStyle: 'italic' }}>Shift+Click pour marquer comme ultime</div>}
+                                      {sel && <div style={{ fontSize: '10px', color: ultimateFullForLevel && !isUltimate ? '#d97706' : '#888', marginTop: '4px', fontStyle: 'italic' }}>
+                                        {ultimateFullForLevel && !isUltimate ? '★ Limite atteinte' : 'Shift+Click pour marquer comme ultime'}
+                                      </div>}
                                     </div>
                                   );
                                 })}

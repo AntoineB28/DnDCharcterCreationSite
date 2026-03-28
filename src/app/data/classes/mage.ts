@@ -57,13 +57,6 @@ export const mage: ClassData = {
       displayAsCards: true,
     },
     {
-      level: 6,
-      name: 'Sort ultime niveau 3',
-      description: 'Sélectionne un sort ultime ★ de niveau 3 dans l\'étape Sorts & Miracles. Utilisable 1x par combat en action bonus sans coût mana.',
-      options: ['Sélectionne dans Sorts & Miracles'],
-      maxChoices: 1,
-    },
-    {
       level: 8,
       name: 'Élémentalisme',
       description: 'Choisis un type de dégâts. Tes sorts de ce type ignorent les résistances et tu as expertise avec eux.',
@@ -78,20 +71,6 @@ export const mage: ClassData = {
       maxChoices: 1,
     },
     {
-      level: 9,
-      name: 'Sort ultime niveau 4',
-      description: 'Sélectionne un sort ultime ★ de niveau 4 dans l\'étape Sorts & Miracles. Ton ancien sort ultime N3 devient connu. 1x par combat action bonus.',
-      options: ['Sélectionne dans Sorts & Miracles'],
-      maxChoices: 1,
-    },
-    {
-      level: 12,
-      name: 'Sort ultime niveau 5',
-      description: 'Sélectionne un sort ultime ★ de niveau 5 dans l\'étape Sorts & Miracles. Ton ancien sort ultime N4 devient connu. 1x par combat action bonus.',
-      options: ['Sélectionne dans Sorts & Miracles'],
-      maxChoices: 1,
-    },
-    {
       level: 14,
       name: 'Amélioration de spécialisation',
       description: 'Ta spécialisation évolue.',
@@ -101,13 +80,6 @@ export const mage: ClassData = {
         'Manavore amélioré|Gains: Mana +6 + +1 sort N4',
       ],
       maxChoices: 1,
-    },
-    {
-      level: 18,
-      name: 'Sort ultime niveau 6',
-      description: 'Sélectionne un sort ultime ★ de niveau 6 dans l\'étape Sorts & Miracles. Ton ancien sort ultime N5 devient connu. 1x par combat action bonus.',
-      options: ['Sélectionne dans Sorts & Miracles'],
-      maxChoices: 1,
-    },
+    }
   ],
 };
