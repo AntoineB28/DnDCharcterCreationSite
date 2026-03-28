@@ -74,6 +74,22 @@ export function ClassUpgradesStep({
     return { label: opt, description: '' };
   };
 
+  // Find missing required upgrades
+  const getMissingUpgrades = (): { name: string; level: number }[] => {
+    const missing: { name: string; level: number }[] = [];
+    for (const choice of availableChoices) {
+      if (isToggleChoice(choice.options)) continue; // Toggles are optional
+      const key = getChoiceKey(choice.level, choice.name);
+      const value = classUpgrades[key];
+      if (!value || (typeof value === 'string' && value.trim() === '')) {
+        missing.push({ name: choice.name, level: choice.level });
+      }
+    }
+    return missing;
+  };
+
+  const missingUpgrades = getMissingUpgrades();
+
   return (
     <div className="space-y-6">
       <Card>
@@ -84,6 +100,26 @@ export function ClassUpgradesStep({
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
+          {missingUpgrades.length > 0 && (
+            <div style={{
+              padding: '12px 14px',
+              background: '#fef2f2',
+              border: '1px solid #fca5a5',
+              borderRadius: '6px',
+              color: '#991b1b',
+              fontSize: '13px',
+              fontWeight: 500,
+            }}>
+              ⚠️ Vous devez compléter les choix suivants avant de continuer:
+              <ul style={{ margin: '8px 0 0 20px', paddingLeft: '0' }}>
+                {missingUpgrades.map((upgrade) => (
+                  <li key={`${upgrade.level}-${upgrade.name}`} style={{ marginTop: '4px' }}>
+                    Niveau {upgrade.level}: {upgrade.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           {availableChoices.map((choice) => {
             const key = getChoiceKey(choice.level, choice.name);
             const currentValue = classUpgrades[key];

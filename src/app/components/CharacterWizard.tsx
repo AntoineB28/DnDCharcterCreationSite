@@ -569,11 +569,36 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
 
 
 
+  // Check if all mandatory class upgrades are completed
+  const areAllUpgradesComplete = (): boolean => {
+    const cls = CLASSES.find(c => c.id === state.classe);
+    if (!cls?.levelSpecificChoices) return true;
+    
+    const availableChoices = cls.levelSpecificChoices.filter(choice => choice.level <= state.niveau);
+    
+    for (const choice of availableChoices) {
+      // Only validate non-toggle choices (toggles are optional)
+      const isToggleChoice = choice.options.length === 1 && choice.options[0].toLowerCase().includes('débloquer');
+      if (isToggleChoice) continue;
+      
+      // Check if this choice has been made
+      const key = `${cls.id}_lvl${choice.level}_${choice.name.toLowerCase().replace(/\s+/g, '_')}`;
+      const chosenValue = state.classUpgrades[key];
+      
+      if (!chosenValue || (typeof chosenValue === 'string' && chosenValue.trim() === '')) {
+        return false; // Required choice not made
+      }
+    }
+    
+    return true;
+  };
+
   const canProceed = () => {
     if (state.step === 0) return state.nom.trim().length > 0;
     if (state.step === 1) return pointsLeft === 0;
     if (state.step === 2) return state.race !== '' && (!race?.subtypes || state.raceSubtype !== '');
     if (state.step === 3) return state.classe !== '';
+    if (state.step === 8) return areAllUpgradesComplete();
     return true;
   };
 
