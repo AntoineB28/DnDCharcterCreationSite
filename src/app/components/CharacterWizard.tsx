@@ -472,6 +472,37 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
   const hasMiracles = cls && ['pretre', 'sorcier', 'necromancien', 'druide', 'guerrier'].includes(cls.id);
   const hasVampPowers = cls?.id === 'vampire' || state.selectedFeats.includes('faveur-akasha') || state.selectedFeats.includes('heritier-sanguin');
 
+  // Helper: Check if current class meets feat restriction
+  const meetsClassRestriction = (restriction: string | undefined): boolean => {
+    if (!restriction) return true; // No restriction = always allowed
+    if (!cls) return false; // No class selected = can't meet any restriction
+    
+    // Normalize accents in class names
+    const removeAccents = (s: string) => {
+      return s.toLowerCase()
+        .replace(/é|ê|è/g, 'e')
+        .replace(/à/g, 'a')
+        .replace(/ù|û/g, 'u')
+        .replace(/ç/g, 'c')
+        .replace(/î|ï/g, 'i')
+        .replace(/ô|ö/g, 'o');
+    };
+    
+    // Parse restriction string to extract class names
+    // Examples: "Prêtre ou guerrier uniquement." -> ["pretre", "guerrier"]
+    //           "Prêtre seulement." -> ["pretre"]
+    const cleaned = restriction
+      .replace(/\s+(seulement|uniquement)\.?$/gi, '')
+      .replace(/\s+ou\s+/gi, ',');
+    
+    const classNames = cleaned.split(',')
+      .map(s => removeAccents(s.trim()))
+      .filter(s => s);
+    
+    // Check if current class ID matches any allowed class
+    return classNames.some(name => cls.id.includes(name) || name.includes(cls.id));
+  };
+
   // Helper: Check if all prerequisites are met for a feat
   const canSelectFeat = (featId: string, currentSelected: string[]): boolean => {
     const feat = FEATS.find(f => f.id === featId);
@@ -1099,19 +1130,21 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                 {FEATS.map(feat => {
                   const isSelected = state.selectedFeats.includes(feat.id);
                   const hasPrereq = feat.requires ? !canSelectFeat(feat.id, state.selectedFeats) : false;
+                  const meetsRestriction = meetsClassRestriction(feat.restriction);
                   const slotAvailable = state.selectedFeats.length < featCount;
-                  const canSelect = isSelected || (slotAvailable && !hasPrereq);
+                  const canSelect = isSelected || (slotAvailable && !hasPrereq && meetsRestriction);
                   return (
                     <div key={feat.id} onClick={() => canSelect && toggleFeat(feat.id)} style={{
-                      border: isSelected ? '2px solid #c0392b' : hasPrereq ? '1px solid #f97316' : '1px solid #ccc',
-                      borderRadius: '6px', background: isSelected ? '#fff5f5' : hasPrereq ? '#fff7ed' : canSelect ? '#fff' : '#f9f9f9',
+                      border: isSelected ? '2px solid #c0392b' : !meetsRestriction ? '1px solid #d4a017' : hasPrereq ? '1px solid #f97316' : '1px solid #ccc',
+                      borderRadius: '6px', background: isSelected ? '#fff5f5' : !meetsRestriction ? '#fffbeb' : hasPrereq ? '#fff7ed' : canSelect ? '#fff' : '#f9f9f9',
                       padding: '10px 12px', cursor: canSelect ? 'pointer' : 'not-allowed', opacity: !canSelect ? 0.6 : 1,
                     }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                        <div style={{ fontWeight: 700, fontSize: '13px', color: isSelected ? '#c0392b' : hasPrereq ? '#f97316' : '#1a1a1a' }}>{feat.name}</div>
-                        <span style={{ fontSize: '9px', background: isSelected ? '#c0392b' : hasPrereq ? '#f97316' : '#888', color: '#fff', borderRadius: '8px', padding: '1px 6px', flexShrink: 0, marginLeft: '4px' }}>{feat.category}</span>
+                        <div style={{ fontWeight: 700, fontSize: '13px', color: isSelected ? '#c0392b' : !meetsRestriction ? '#d4a017' : hasPrereq ? '#f97316' : '#1a1a1a' }}>{feat.name}</div>
+                        <span style={{ fontSize: '9px', background: isSelected ? '#c0392b' : !meetsRestriction ? '#d4a017' : hasPrereq ? '#f97316' : '#888', color: '#fff', borderRadius: '8px', padding: '1px 6px', flexShrink: 0, marginLeft: '4px' }}>{feat.category}</span>
                       </div>
-                      {feat.restriction && <div style={{ fontSize: '10px', color: '#888', fontStyle: 'italic' }}>{feat.restriction}</div>}
+                      {feat.restriction && <div style={{ fontSize: '10px', color: !meetsRestriction ? '#d4a017' : '#888', fontStyle: 'italic', fontWeight: !meetsRestriction ? 600 : 400 }}>{feat.restriction}</div>}
+                      {!meetsRestriction && <div style={{ fontSize: '11px', color: '#d4a017', fontWeight: 600, marginTop: '4px' }}>🔒 Réservé aux: {feat.restriction}</div>}
                       {hasPrereq && <div style={{ fontSize: '11px', color: '#f97316', fontWeight: 600, marginTop: '4px' }}>🔒 Requires: {feat.requires}</div>}
                       <div style={{ fontSize: '11px', color: '#555', marginTop: '4px', lineHeight: '1.3' }}>{feat.description}</div>
                       <div style={{ marginTop: '4px' }}>
