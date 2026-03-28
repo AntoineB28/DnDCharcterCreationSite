@@ -54,13 +54,14 @@ export const guerrier: ClassData = {
     {
       level: 3,
       name: 'Spécialisation',
-      description: 'Choisis ta spécialisation martiale : Barbare, Défenseur, ou Double-maniement.',
+      description: 'Choisis ta spécialisation martiale.',
       options: [
-        'Barbare - Violence brute et rage. Priorité à l\'offensive et coups puissants.',
-        'Défenseur - Maître du bouclier. Grande résilience pour les combats longs.',
-        'Double-maniement - Deux armes. Attaques combinées ultra-rapides.'
+        'Barbare|Violence brute et rage. Tu priorises l\'offensive et frappes fort. Les armes à deux mains font 2 dégâts de plus. Rage : Action bonus. Peut seulement être utilisé s\'il te manque au moins 10 PV. La prochaine attaque avec une arme fait 1d8 de plus. Niveau 14 : Les armes à deux mains font 4 dégâts de plus au total',
+        'Défenseur|Maître du bouclier. Grande résilience pour les combats longs. AC +1, PV +6. Coup de bouclier : Une fois par combat. Action bonus. Fait 1d6 contondant. La cible doit réussir un saving throw de résistance (12) ou être sonnée et passer son prochain tour. Niveau 14 : PV +5 et AC +1 supplémentaires',
+        'Double-maniement|Deux armes comme deux poings. Attaques combinées ultra-rapides. Lorsque tu as une arme dans chaque main et que tu attaques avec ton arme principale, tu peux immédiatement attaquer avec ton arme secondaire sans utiliser ton action bonus. Niveau 14 : Lorsque tu attaques avec ton arme secondaire immédiatement après avoir utilisé ton arme principale, tu as +2 à ton attack roll'
       ],
       maxChoices: 1,
+      displayAsCards: true,
     },
     {
       level: 4,

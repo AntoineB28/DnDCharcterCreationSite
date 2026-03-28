@@ -65,6 +65,15 @@ export function ClassUpgradesStep({
     return options.length === 1 && options[0].toLowerCase().includes('débloquer');
   };
 
+  // Parse option with embedded description (format: "Label|Description")
+  const parseOptionWithDescription = (opt: string): { label: string; description: string } => {
+    if (opt.includes('|')) {
+      const [label, description] = opt.split('|', 2);
+      return { label: label.trim(), description: description.trim() };
+    }
+    return { label: opt, description: '' };
+  };
+
   return (
     <div className="space-y-6">
       <Card>
@@ -97,9 +106,12 @@ export function ClassUpgradesStep({
                   previouslyChosen.add(prevValue);
                 }
               }
-              // Filter out previously chosen options
+              // Filter out previously chosen options (extract label for cards with descriptions)
               if (previouslyChosen.size > 0) {
-                availableOptions = choice.options.filter(opt => !previouslyChosen.has(opt));
+                availableOptions = choice.options.filter(opt => {
+                  const label = choice.displayAsCards ? parseOptionWithDescription(opt).label : opt;
+                  return !previouslyChosen.has(label);
+                });
               }
             }
 
@@ -132,6 +144,38 @@ export function ClassUpgradesStep({
                       {currentValue ? '✓ Débloqué' : 'Cliquez pour débloquer'}
                     </Label>
                   </div>
+                ) : choice.displayAsCards && choice.options.length > 0 ? (
+                  /* Cards display for choices with descriptions */
+                  <div className="grid gap-3">
+                    {availableOptions.map((option) => {
+                      const parsed = parseOptionWithDescription(option);
+                      const isSelected = String(currentValue) === parsed.label;
+                      return (
+                        <button
+                          key={parsed.label}
+                          onClick={() => onUpgradeChange(key, parsed.label)}
+                          style={{
+                            border: isSelected ? '2px solid #7c3aed' : '1px solid #e5e7eb',
+                            background: isSelected ? '#f3e8ff' : '#fff',
+                            borderRadius: '8px',
+                            padding: '12px',
+                            textAlign: 'left',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s',
+                          }}
+                        >
+                          <div className="font-semibold text-sm" style={{ color: isSelected ? '#7c3aed' : '#1f2937' }}>
+                            {parsed.label}
+                          </div>
+                          {parsed.description && (
+                            <div className="text-xs text-slate-600 mt-2 leading-relaxed">
+                              {parsed.description}
+                            </div>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
                 ) : choice.options.length === 0 ? (
                   /* Free text input choice */
                   <div className="space-y-2">
@@ -159,11 +203,15 @@ export function ClassUpgradesStep({
                       </SelectTrigger>
                       <SelectContent>
                         {availableOptions.length > 0 ? (
-                          availableOptions.map((option) => (
-                            <SelectItem key={option} value={option}>
-                              {option}
-                            </SelectItem>
-                          ))
+                          availableOptions.map((option) => {
+                            const parsed = parseOptionWithDescription(option);
+                            const storageValue = option.includes('|') ? parsed.label : option;
+                            return (
+                              <SelectItem key={option} value={storageValue}>
+                                {parsed.label}
+                              </SelectItem>
+                            );
+                          })
                         ) : (
                           <div className="text-sm text-slate-500 p-2">Aucune option disponible</div>
                         )}

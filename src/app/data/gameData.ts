@@ -56,6 +56,7 @@ export interface ClassData {
     description: string;
     options: string[];
     maxChoices?: number;
+    displayAsCards?: boolean;
   }[];
 }
 
