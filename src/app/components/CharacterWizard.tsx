@@ -79,6 +79,37 @@ function calcFinalStats(state: WizardState): Record<StatKey, number> {
     val += subtype?.statBonuses[s] ?? 0;
     result[s] = Math.max(1, val);
   }
+  
+  // Apply stat bonuses from class upgrades (e.g., "Force +2", "Dextérité +1")
+  for (const [key, value] of Object.entries(state.classUpgrades)) {
+    if (typeof value === 'string') {
+      // Parse format like "Force +2", "Dextérité +1", "Force +1, Dextérité +1"
+      const parts = value.split(',');
+      for (const part of parts) {
+        const trimmed = part.trim();
+        const statMatch = trimmed.match(/^(\w+)\s*\+(\d+)$/);
+        if (statMatch) {
+          const statName = statMatch[1].toLowerCase();
+          const bonus = parseInt(statMatch[2], 10);
+          // Map French stat names to STATS keys
+          const statKey: StatKey | null = 
+            statName === 'force' ? 'force' :
+            statName === 'dextérité' ? 'dexterite' :
+            statName === 'constitution' ? 'constitution' :
+            statName === 'résistance' ? 'resistance' :
+            statName === 'intelligence' ? 'intelligence' :
+            statName === 'sagesse' ? 'foi' :
+            statName === 'charisme' ? 'charisme' :
+            statName === 'vitesse' ? 'vitesse' :
+            null;
+          if (statKey && result[statKey] !== undefined) {
+            result[statKey] += bonus;
+          }
+        }
+      }
+    }
+  }
+  
   return result;
 }
 
@@ -202,32 +233,25 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   const classAbilitiesArray = cls?.startingEquipment
     ?.filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort') && !GENERIC_ABILITY_RX.test(e)) ?? [];
   
-  // Level-specific upgrades (e.g., Artificier's Armure arcano-mécanique at level 8)
+  // Level-specific upgrades (dynamically built from class levelSpecificChoices)
   const levelUpgrades: string[] = [];
-  if (cls?.id === 'artificier' && level >= 8) {
-    levelUpgrades.push('Armure arcano-mécanique : AC +3, résistance aux dégâts électriques (niveau 8)');
-  }
-  // Guerrier upgrades
-  if (cls?.id === 'guerrier' && level >= 5 && state.classUpgrades['guerrier_stat_5']) {
-    levelUpgrades.push(`Gain de capacité : ${state.classUpgrades['guerrier_stat_5']} (niveau 5)`);
-  }
-  if (cls?.id === 'guerrier' && level >= 7 && state.classUpgrades['guerrier_fighting_style']) {
-    levelUpgrades.push(`Style de combat : ${state.classUpgrades['guerrier_fighting_style']} (niveau 7)`);
-  }
-  if (cls?.id === 'guerrier' && level >= 10 && state.classUpgrades['guerrier_stat_10']) {
-    levelUpgrades.push(`Gain de capacité : ${state.classUpgrades['guerrier_stat_10']} (niveau 10)`);
-  }
-  if (cls?.id === 'guerrier' && level >= 11 && state.classUpgrades['guerrier_surcharge_11']) {
-    levelUpgrades.push(`Action Surcharge améliorée (niveau 11)`);
-  }
-  if (cls?.id === 'guerrier' && level >= 15 && state.classUpgrades['guerrier_stat_15']) {
-    levelUpgrades.push(`Gain de capacité : ${state.classUpgrades['guerrier_stat_15']} (niveau 15)`);
-  }
-  if (cls?.id === 'guerrier' && level >= 16 && state.classUpgrades['guerrier_second_style']) {
-    levelUpgrades.push(`Deuxième style de combat : ${state.classUpgrades['guerrier_second_style']} (niveau 16)`);
-  }
-  if (cls?.id === 'guerrier' && level >= 20 && state.classUpgrades['guerrier_legendary_20']) {
-    levelUpgrades.push(`Attaques Légendaires (niveau 20)`);
+  
+  // Helper to generate consistent choice keys (same as ClassUpgradesStep)
+  const getChoiceKey = (classId: string, level: number, choiceName: string): string => {
+    return `${classId}_lvl${level}_${choiceName.toLowerCase().replace(/\s+/g, '_')}`;
+  };
+  
+  // Build levelUpgrades from class data
+  if (cls?.levelSpecificChoices && cls.levelSpecificChoices.length > 0) {
+    for (const choice of cls.levelSpecificChoices) {
+      if (choice.level <= level) {
+        const key = getChoiceKey(cls.id, choice.level, choice.name);
+        const chosenValue = state.classUpgrades[key];
+        if (chosenValue && typeof chosenValue === 'string' && chosenValue !== 'false') {
+          levelUpgrades.push(`${choice.name} : ${chosenValue} (niveau ${choice.level})`);
+        }
+      }
+    }
   }
   
   // Abilities now contains only class features + level upgrades (NOT feats anymore - they stay in Feats step)
@@ -811,49 +835,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
             </div>
           </div>
 
-          {/* Class specialization at level 3+ */}
-          {cls?.specializations && cls.specializations.length > 0 && state.niveau >= 3 && (
-            <div style={{ marginTop: '20px' }}>
-              <div style={{ fontWeight: 700, marginBottom: '12px', fontSize: '15px' }}>Spécialisation (niveau 3)</div>
-              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '14px' }}>
-                {cls.specializations.map(s => (
-                  <button key={s} onClick={() => set('specialization', s)} style={{
-                    padding: '8px 18px', border: B, borderRadius: '20px', cursor: 'pointer', fontSize: '13px', fontFamily: 'serif',
-                    fontWeight: state.specialization === s ? 700 : 400,
-                    background: state.specialization === s ? '#2c2416' : '#fff',
-                    color: state.specialization === s ? '#f5e6c0' : '#333',
-                    boxShadow: state.specialization === s ? '0 2px 8px rgba(44,36,22,0.3)' : 'none',
-                  }}>{s}</button>
-                ))}
-              </div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: '10px' }}>
-                {(cls.specializationDetails ?? cls.specializations.map(name => ({ name, summary: '', effects: [] }))).map(spec => {
-                  const isSel = state.specialization === spec.name;
-                  return (
-                    <div key={spec.name} onClick={() => set('specialization', spec.name)} style={{
-                      border: isSel ? '2px solid #2c2416' : '1px solid #ccc', borderRadius: '8px', padding: '12px',
-                      background: isSel ? '#f5ede0' : '#fff', cursor: 'pointer',
-                      boxShadow: isSel ? '0 2px 10px rgba(44,36,22,0.15)' : '0 1px 3px rgba(0,0,0,0.06)',
-                    }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                        <span style={{ fontWeight: 700, fontSize: '13px', color: isSel ? '#2c2416' : '#1a1a1a' }}>{spec.name}</span>
-                        {isSel && <span style={{ fontSize: '9px', background: '#2c2416', color: '#f5e6c0', borderRadius: '8px', padding: '2px 7px' }}>Choisi</span>}
-                      </div>
-                      {spec.summary && <div style={{ fontSize: '11px', color: '#666', fontStyle: 'italic', marginBottom: '8px', lineHeight: '1.4' }}>{spec.summary}</div>}
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                        {spec.effects.map((eff, i) => (
-                          <div key={i} style={{ fontSize: '11px', color: '#333', display: 'flex', gap: '5px', alignItems: 'flex-start' }}>
-                            <span style={{ color: '#c0392b', flexShrink: 0 }}>▸</span>
-                            <span style={{ lineHeight: '1.4' }}>{eff}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
+          {/* Note: Class specialization is now handled in Step 9 (ClassUpgradesStep) at level 3 */}
         </div>
       );
 
