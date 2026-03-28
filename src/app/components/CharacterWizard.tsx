@@ -106,6 +106,7 @@ interface WizardState {
   selectedDeityMiracles: string[];  // miracles from chosen deity
   selectedFreeMiracles: string[];   // miracles from any deity (free slots)
   selectedVampPowers: string[];
+  classUpgrades: Record<string, any>;  // Track class-specific upgrades (e.g., armor swaps, equipment changes)
   selectedWeapon: string;
   selectedArmor: string;
   or: string;
@@ -124,6 +125,7 @@ const STEP_LABELS = [
   { icon: Package, label: "Équipement" },
   { icon: Zap, label: 'Feats' },
   { icon: BookOpen, label: 'Sorts & Miracles' },
+  { icon: Package, label: 'Class Upgrades' },
   { icon: FileText, label: 'Résumé' },
 ];
 
@@ -284,7 +286,15 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   const isPhysEq = (s: string) => !NON_PHYSICAL_RX.test(s);
   const isWeaponChoiceItem = (s: string) => /arme[s]?.*(au choix)/i.test(s);
   const isArmorChoiceItem = (s: string) => / OU /i.test(s) && /(armure|robe)/i.test(s);
-  const equipLines = (cls?.startingEquipment ?? []).filter(e => isPhysEq(e) && !isWeaponChoiceItem(e) && !isArmorChoiceItem(e));
+  let equipLines = (cls?.startingEquipment ?? []).filter(e => isPhysEq(e) && !isWeaponChoiceItem(e) && !isArmorChoiceItem(e));
+  
+  // Apply class upgrades
+  if (cls?.id === 'artificier' && state.niveau >= 8 && state.classUpgrades['artificier_armor'] === 'arcanotech') {
+    // Remove "Robes d'artificier" and add "Armure arcano-mécanique"
+    equipLines = equipLines.filter(e => !e.includes("Robes d'artificier"));
+    equipLines.push("Armure arcano-mécanique (AC +3, résistance électrique)");
+  }
+  
   const chosenWeapon = WEAPONS.find(w => w.id === state.selectedWeapon);
   const chosenArmorItem = ARMORS.find(a => a.id === state.selectedArmor);
   const extraEquip: string[] = [];
@@ -424,6 +434,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
     selectedWeapon: '',
     selectedArmor: '',
     or: '0',
+    classUpgrades: {},
   });
 
   const set = <K extends keyof WizardState>(k: K, v: WizardState[K]) => setState(p => ({ ...p, [k]: v }));
@@ -1362,8 +1373,47 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
         </div>
       );
 
-      // ── Step 8: Summary ──
+      // ── Step 8: Class Upgrades ──
       case 8: return (
+        <div>
+          <SectionTitle>Améliorations de classe</SectionTitle>
+          {(() => {
+            const cls = CLASSES.find(c => c.id === state.classe);
+            if (!cls) return <div style={{ color: '#888' }}>Aucune classe sélectionnée</div>;
+
+            // Artificier: Armor upgrade at level 8
+            if (cls.id === 'artificier' && state.niveau >= 8) {
+              return (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <div style={{ padding: '12px', background: '#fffbeb', border: '1px solid #d4a017', borderRadius: '6px' }}>
+                    <div style={{ fontWeight: 700, marginBottom: '8px', color: '#d4a017' }}>Armure arcano-mécanique (Niveau 8+)</div>
+                    <div style={{ fontSize: '13px', marginBottom: '10px' }}>Tu peux améliorer tes robes d'artificier avec des barres de métal pour créer une armure arcano-mécanique.</div>
+                    <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}>
+                      <input
+                        type="checkbox"
+                        checked={state.classUpgrades['artificier_armor'] === 'arcanotech'}
+                        onChange={e => setState(p => ({
+                          ...p,
+                          classUpgrades: {
+                            ...p.classUpgrades,
+                            artificier_armor: e.target.checked ? 'arcanotech' : 'robes'
+                          }
+                        }))}
+                      />
+                      <span>Utiliser Armure arcano-mécanique (AC +3, résistance électrique)</span>
+                    </label>
+                  </div>
+                </div>
+              );
+            }
+
+            return <div style={{ color: '#888' }}>Aucune amélioration disponible pour ta classe et ton niveau.</div>;
+          })()}
+        </div>
+      );
+
+      // ── Step 9: Summary ──
+      case 9: return (
         <div>
           <SectionTitle>Résumé du personnage</SectionTitle>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>

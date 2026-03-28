@@ -50,6 +50,13 @@ export interface ClassData {
   startingMiracles?: number;
   requiresDeity?: boolean;
   dlc?: boolean;
+  levelSpecificChoices?: {
+    level: number;
+    name: string;
+    description: string;
+    options: string[];
+    maxChoices?: number;
+  }[];
 }
 
 // ─── MIRACLE LIMITS ──────────────────────────────────────────────────────────
@@ -305,6 +312,40 @@ export const CLASSES: ClassData[] = [
           'Avec une arme dans chaque main, après avoir attaqué avec l\'arme principale, attaque secondaire gratuite (pas d\'action bonus)',
           'Niveau 14 : +2 au attack roll de l\'arme secondaire',
         ],
+      },
+    ],
+    levelSpecificChoices: [
+      {
+        level: 7,
+        name: 'Style de combat',
+        description: 'Développe ton propre style de combat qui te rend plus efficace.',
+        options: [
+          'Protection : AC +1',
+          'Champion : Les armes donnent des coups critiques sur 19 et plus',
+          'Athlète : Vitesse +1. Tu peux rerouler ton initiative une fois au début du combat',
+          'Double tranchant : Avantage sur tes attaques avec armes, mais les attaques ennemies ont avantage contre toi',
+          'Contreur : Quand un ennemi rate une attaque mêlée contre toi, tu peux riposter (1x/combat)',
+          'Conquérant : Tu as une attaque extra à ton premier tour en combat',
+          'Longue haleine : Chaque tour, tu récupères 1d4 PV',
+          'Presseur : Quand tu rates une attaque, tu peux accepter de recevoir une riposte et rerouler ton attaque',
+        ],
+        maxChoices: 1,
+      },
+      {
+        level: 16,
+        name: 'Deuxième style de combat',
+        description: 'Choisis un deuxième style de combat parmi ceux disponibles.',
+        options: [
+          'Protection : AC +1',
+          'Champion : Les armes donnent des coups critiques sur 19 et plus',
+          'Athlète : Vitesse +1. Tu peux rerouler ton initiative une fois au début du combat',
+          'Double tranchant : Avantage sur tes attaques avec armes, mais les attaques ennemies ont avantage contre toi',
+          'Contreur : Quand un ennemi rate une attaque mêlée contre toi, tu peux riposter (1x/combat)',
+          'Conquérant : Tu as une attaque extra à ton premier tour en combat',
+          'Longue haleine : Chaque tour, tu récupères 1d4 PV',
+          'Presseur : Quand tu rates une attaque, tu peux accepter de recevoir une riposte et rerouler ton attaque',
+        ],
+        maxChoices: 1,
       },
     ],
   },
