@@ -128,14 +128,28 @@ export function SpellSheetExport({ selection }: SpellSheetExportProps) {
   const exportPDF = async () => {
     if (!pageRef.current) return;
     try {
-      const canvas = await html2canvas(pageRef.current, {
+      const el = pageRef.current;
+      const clone = el.cloneNode(true) as HTMLElement;
+      clone.style.position = 'fixed';
+      clone.style.top = '0';
+      clone.style.left = '-9999px';
+      clone.style.zIndex = '-1';
+      clone.style.boxShadow = 'none';
+      document.body.appendChild(clone);
+
+      const canvas = await html2canvas(clone, {
         scale: 2,
         useCORS: true,
         backgroundColor: '#faf7f2',
         logging: false,
         allowTaint: true,
         imageTimeout: 0,
+        width: clone.offsetWidth,
+        height: clone.offsetHeight,
+        scrollX: 0,
+        scrollY: 0,
       });
+
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
       const pageW = pdf.internal.pageSize.getWidth();
@@ -151,6 +165,8 @@ export function SpellSheetExport({ selection }: SpellSheetExportProps) {
         y += pageH;
       }
       pdf.save(`fiche-sorts-${selection.nom || 'personnage'}.pdf`);
+
+      document.body.removeChild(clone);
     } catch (e) {
       console.error('PDF export error:', e);
       alert('Erreur lors de l\'export PDF de la fiche de sorts.');
