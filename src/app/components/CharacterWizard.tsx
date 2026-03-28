@@ -39,6 +39,7 @@ interface WizardState {
   deity: string;
   selectedFeats: string[];
   selectedSpells: string[];
+  ultimateSpells: string[]; // Spell IDs marked as ultimate (1x per combat)
   selectedDeityMiracles: string[];
   selectedFreeMiracles: string[];
   selectedVampPowers: string[];
@@ -432,6 +433,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
     deity: '',
     selectedFeats: [],
     selectedSpells: [],
+    ultimateSpells: [],
     selectedDeityMiracles: [],
     selectedFreeMiracles: [],
     selectedVampPowers: [],
@@ -544,7 +546,12 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
   const toggleSpell = (id: string) => {
     setState(p => {
       const cur = p.selectedSpells;
-      return { ...p, selectedSpells: cur.includes(id) ? cur.filter(s => s !== id) : [...cur, id] };
+      const newSelected = cur.includes(id) ? cur.filter(s => s !== id) : [...cur, id];
+      // If removing a spell, also remove it from ultimateSpells
+      const newUltimate = cur.includes(id) 
+        ? p.ultimateSpells.filter(s => s !== id)
+        : p.ultimateSpells;
+      return { ...p, selectedSpells: newSelected, ultimateSpells: newUltimate };
     });
   };
 
@@ -1264,21 +1271,37 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '6px' }}>
                                 {spells.map(s => {
                                   const sel = state.selectedSpells.includes(s.id);
+                                  const isUltimate = state.ultimateSpells.includes(s.id);
                                   const locked = isFull && !sel;
                                   return (
-                                    <div key={s.id} onClick={() => !locked && toggleSpell(s.id)} style={{
+                                    <div key={s.id} onClick={(e) => {
+                                      if (locked) return;
+                                      if (e.shiftKey && sel) {
+                                        // Shift+Click toggles ultimate status
+                                        setState(p => ({
+                                          ...p,
+                                          ultimateSpells: isUltimate 
+                                            ? p.ultimateSpells.filter(id => id !== s.id)
+                                            : [...p.ultimateSpells, s.id]
+                                        }));
+                                      } else {
+                                        // Normal click toggles selection
+                                        toggleSpell(s.id);
+                                      }
+                                    }} style={{
                                       padding: '8px 10px', border: sel ? '2px solid #7c3aed' : '1px solid #ddd', borderRadius: '6px',
                                       background: sel ? '#f5f0ff' : locked ? '#f5f5f5' : '#fff', cursor: locked ? 'not-allowed' : 'pointer', fontSize: '12px',
-                                      opacity: locked ? 0.5 : 1, transition: 'border-color 0.1s',
+                                      opacity: locked ? 0.5 : 1, transition: 'border-color 0.1s', position: 'relative',
                                     }}>
                                       <div style={{ fontWeight: 700, color: sel ? '#7c3aed' : '#1a1a1a' }}>
                                         {s.name}
-                                        {s.ultimate && <span style={{ marginLeft: '4px', color: '#f59e0b', fontSize: '14px' }}>★</span>}
+                                        {isUltimate && <span style={{ marginLeft: '4px', color: '#f59e0b', fontSize: '14px' }}>★</span>}
                                       </div>
                                       <div style={{ color: '#666', fontSize: '10px', marginTop: '1px' }}>{s.action}{s.neverMisses ? ' · Ne rate jamais' : ''}</div>
                                       <div style={{ color: '#444', fontSize: '11px', lineHeight: '1.5', marginTop: '5px', padding: '5px 8px', background: sel ? '#ede9fe' : '#f9f9f9', borderRadius: '4px', borderLeft: '2px solid #7c3aed' }}>
                                         {s.description}
                                       </div>
+                                      {sel && <div style={{ fontSize: '10px', color: '#888', marginTop: '4px', fontStyle: 'italic' }}>Shift+Click pour marquer comme ultime</div>}
                                     </div>
                                   );
                                 })}
