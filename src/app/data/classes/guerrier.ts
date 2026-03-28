@@ -55,7 +55,11 @@ export const guerrier: ClassData = {
       level: 3,
       name: 'Spécialisation',
       description: 'Choisis ta spécialisation martiale : Barbare, Défenseur, ou Double-maniement.',
-      options: ['Barbare', 'Défenseur', 'Double-maniement'],
+      options: [
+        'Barbare - Violence brute et rage. Priorité à l\'offensive et coups puissants.',
+        'Défenseur - Maître du bouclier. Grande résilience pour les combats longs.',
+        'Double-maniement - Deux armes. Attaques combinées ultra-rapides.'
+      ],
       maxChoices: 1,
     },
     {

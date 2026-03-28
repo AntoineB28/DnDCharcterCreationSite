@@ -19,6 +19,7 @@ export interface CharacterData {
   resistance: string; intelligence: string; foi: string; charisme: string;
   habiletes: string; sorts: string; mana: string; miracles: string; divinite: string;
   pointsMelodieux: string; ki: string; pointsNecromancie: string; chargesVampiriques: string;
+  selectedFeats: string[];
 }
 export interface VisibleSections {
   sorts: boolean; mana: boolean; miracles: boolean; divinite: boolean;
@@ -354,6 +355,7 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
     ki,
     pointsNecromancie,
     chargesVampiriques,
+    selectedFeats: state.selectedFeats,
   };
 
   return { data, vis };

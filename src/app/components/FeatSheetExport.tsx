@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { Download } from 'lucide-react';
+import { Download, Scroll } from 'lucide-react';
 import { jsPDF } from 'jspdf';
 import html2canvas from 'html2canvas';
 import { FEATS } from './FeatSelector';
@@ -14,6 +14,7 @@ interface FeatSheetExportProps {
 
 const B = '1px solid #2c2416';
 const ACCENT = '#7c3aed';
+const GOLD = '#b8860b';
 
 // --- Section header ---
 function SectionHeader({ title, color, count }: { title: string; color: string; count: number }) {
@@ -31,16 +32,28 @@ function SectionHeader({ title, color, count }: { title: string; color: string; 
   );
 }
 
+// --- Level divider ---
+function LevelDivider({ label, color }: { label: string; color: string }) {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', margin: '12px 0 8px' }}>
+      <div style={{ width: '20px', height: '1px', background: color, opacity: 0.4 }} />
+      <span style={{ fontSize: '10px', fontWeight: 800, color, textTransform: 'uppercase', letterSpacing: '1px', opacity: 0.7 }}>{label}</span>
+      <div style={{ flex: 1, height: '1px', background: color, opacity: 0.2 }} />
+    </div>
+  );
+}
+
 // --- Feat card ---
 function FeatCard({ name, description, accentColor }: {
   name: string; description?: string; accentColor: string;
 }) {
   return (
     <div style={{
-      border: `1px solid ${accentColor}22`, borderLeft: `3px solid ${accentColor}`, borderRadius: '4px',
-      padding: '10px 12px', marginBottom: '10px', background: '#f9f6f0',
+      border: `1px solid ${accentColor}44`, borderLeft: `3px solid ${accentColor}`,
+      borderRadius: '5px', padding: '9px 12px', marginBottom: '7px',
+      background: '#fff', breakInside: 'avoid',
     }}>
-      <div style={{ fontWeight: 700, fontSize: '12px', color: '#1a1a1a', marginBottom: '4px' }}>
+      <div style={{ fontWeight: 700, fontSize: '13px', color: '#1a1208', marginBottom: '4px' }}>
         {name}
       </div>
       {description && (
@@ -122,8 +135,13 @@ export function FeatSheetExport({ selection }: FeatSheetExportProps) {
             FICHE DE FEATS
           </div>
           <div style={{ fontSize: '13px', color: '#666', marginTop: '4px' }}>
-            {selection.nom || 'Personnage'}{selection.classe ? ` · ${selection.classe}` : ''}
+            {selection.nom || 'Personnage'}
           </div>
+          {selection.classe && (
+            <div style={{ fontSize: '12px', color: '#888', marginTop: '2px' }}>
+              {selection.classe}
+            </div>
+          )}
           {hasFeats && (
             <div style={{ marginTop: '10px', fontSize: '11px', fontWeight: 700, color: ACCENT }}>
               ✦ {selectedFeats.length} feat{selectedFeats.length > 1 ? 's' : ''}
