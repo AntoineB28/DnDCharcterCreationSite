@@ -598,7 +598,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
     if (state.step === 1) return pointsLeft === 0;
     if (state.step === 2) return state.race !== '' && (!race?.subtypes || state.raceSubtype !== '');
     if (state.step === 3) return state.classe !== '';
-    if (state.step === 8) return areAllUpgradesComplete();
+    if (state.step === 9) return areAllUpgradesComplete();
     return true;
   };
 
