@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { ChevronRight, ChevronLeft, Check, User, Shield, Sword, TrendingUp, Package, Star, Zap, BookOpen, FileText } from 'lucide-react';
 import {
   RACES, CLASSES, FEAT_LEVELS, statBonus, ALL_DEITIES, DARK_DEITIES, STAT_LABELS,
-  getMiracleLimit, miracleLevelLabel, slotTotal,
+  getMiracleLimit, getSpellLimit, miracleLevelLabel, slotTotal,
   type StatKey,
 } from '../data/gameData';
 import { FEATS } from './FeatSelector';
@@ -63,8 +63,8 @@ const STEP_LABELS = [
   { icon: Package, label: "Équipement" },
   { icon: Sword, label: 'Armes' },
   { icon: Zap, label: 'Feats' },
-  { icon: BookOpen, label: 'Sorts & Miracles' },
   { icon: Package, label: 'Class Upgrades' },
+  { icon: BookOpen, label: 'Sorts & Miracles' },
   { icon: FileText, label: 'Résumé' },
 ];
 
@@ -1188,8 +1188,26 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
         </div>
       );
 
-      // ── Step 8: Spells & Miracles ──
+      // ── Step 8: Class Upgrades ──
       case 8: return (
+        <ClassUpgradesStep
+          classe={CLASSES.find(c => c.id === state.classe) || null}
+          niveau={state.niveau}
+          classUpgrades={state.classUpgrades}
+          onUpgradeChange={(key: string, value: string | boolean) => {
+            setState(p => ({
+              ...p,
+              classUpgrades: {
+                ...p.classUpgrades,
+                [key]: value
+              }
+            }));
+          }}
+        />
+      );
+
+      // ── Step 9: Spells & Miracles ──
+      case 9: return (
         <div>
           <SectionTitle>Sorts, Miracles & Pouvoirs</SectionTitle>
           {!hasSpells && !hasMiracles && !hasVampPowers ? (
@@ -1198,39 +1216,78 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-              {hasSpells && (
-                <div>
-                  <div style={{ fontWeight: 700, fontSize: '15px', marginBottom: '10px', color: '#7c3aed' }}>
-                    ✦ Sorts ({state.selectedSpells.length} sélectionnés)
-                  </div>
-                  {['Niveau 1', 'Niveau 2', 'Niveau 3'].map(lv => {
-                    const spells = SORTS.filter(s => s.subcategory === lv);
-                    return (
-                      <div key={lv} style={{ marginBottom: '12px' }}>
-                        <div style={{ fontSize: '12px', fontWeight: 700, color: '#7c3aed', marginBottom: '6px', textTransform: 'uppercase', borderBottom: '1px solid #e9d5ff', paddingBottom: '4px' }}>{lv}</div>
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '6px' }}>
-                          {spells.map(s => {
-                            const sel = state.selectedSpells.includes(s.id);
-                            return (
-                              <div key={s.id} onClick={() => toggleSpell(s.id)} style={{
-                                padding: '8px 10px', border: sel ? '2px solid #7c3aed' : '1px solid #ddd', borderRadius: '6px',
-                                background: sel ? '#f5f0ff' : '#fff', cursor: 'pointer', fontSize: '12px',
-                                transition: 'border-color 0.1s',
-                              }}>
-                                <div style={{ fontWeight: 700, color: sel ? '#7c3aed' : '#1a1a1a' }}>{s.name}</div>
-                                <div style={{ color: '#666', fontSize: '10px', marginTop: '1px' }}>{s.action}{s.neverMisses ? ' · Ne rate jamais' : ''}</div>
-                                <div style={{ color: '#444', fontSize: '11px', lineHeight: '1.5', marginTop: '5px', padding: '5px 8px', background: sel ? '#ede9fe' : '#f9f9f9', borderRadius: '4px', borderLeft: '2px solid #7c3aed' }}>
-                                  {s.description}
-                                </div>
-                              </div>
-                            );
-                          })}
-                        </div>
+              {hasSpells && (() => {
+                const spellLimits = getSpellLimit(state.classe, state.niveau);
+                const LVL_MAP_SPELLS: Record<string, number> = { 'Niveau 1': 1, 'Niveau 2': 2, 'Niveau 3': 3 };
+                
+                // Per-level counter for selected spells
+                const countBySpellLevel = (selected: string[]) =>
+                  selected.reduce((acc, id) => {
+                    const s = SORTS.find(x => x.id === id);
+                    const lvl = LVL_MAP_SPELLS[s?.subcategory ?? ''] ?? 1;
+                    acc[lvl] = (acc[lvl] ?? 0) + 1;
+                    return acc;
+                  }, {} as Record<number, number>);
+
+                return (
+                  <div>
+                    <div style={{ fontWeight: 700, fontSize: '15px', marginBottom: '10px', color: '#7c3aed' }}>
+                      ✦ Sorts ({state.selectedSpells.length} sélectionnés)
+                    </div>
+                    {spellLimits.maxLevel === 0 ? (
+                      <div style={{ padding: '12px 16px', background: '#f5f5f5', border: '1px solid #ccc', borderRadius: '6px', fontSize: '13px', color: '#888' }}>
+                        Aucun sort disponible à ce niveau.
                       </div>
-                    );
-                  })}
-                </div>
-              )}
+                    ) : (
+                      <>
+                        {['Niveau 1', 'Niveau 2', 'Niveau 3'].map(lv => {
+                          const lvlNum = LVL_MAP_SPELLS[lv];
+                          const spells = SORTS.filter(s => s.subcategory === lv && lvlNum <= spellLimits.maxLevel);
+                          if (spells.length === 0) return null;
+                          
+                          const max = spellLimits.slots[lvlNum] ?? 0;
+                          const counts = countBySpellLevel(state.selectedSpells);
+                          const used = counts[lvlNum] ?? 0;
+                          const isFull = used >= max;
+
+                          return (
+                            <div key={lv} style={{ marginBottom: '12px' }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+                                <div style={{ fontSize: '12px', fontWeight: 700, color: '#7c3aed', textTransform: 'uppercase' }}>{lv}</div>
+                                <span style={{ fontSize: '10px', fontWeight: 700, padding: '1px 7px', borderRadius: '10px',
+                                  background: isFull ? '#f0fdf4' : '#f5f5f5',
+                                  color: isFull ? '#16a34a' : '#888',
+                                  border: `1px solid ${isFull ? '#16a34a' : '#ddd'}` }}>
+                                  {used}/{max}
+                                </span>
+                              </div>
+                              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '6px' }}>
+                                {spells.map(s => {
+                                  const sel = state.selectedSpells.includes(s.id);
+                                  const locked = isFull && !sel;
+                                  return (
+                                    <div key={s.id} onClick={() => !locked && toggleSpell(s.id)} style={{
+                                      padding: '8px 10px', border: sel ? '2px solid #7c3aed' : '1px solid #ddd', borderRadius: '6px',
+                                      background: sel ? '#f5f0ff' : locked ? '#f5f5f5' : '#fff', cursor: locked ? 'not-allowed' : 'pointer', fontSize: '12px',
+                                      opacity: locked ? 0.5 : 1, transition: 'border-color 0.1s',
+                                    }}>
+                                      <div style={{ fontWeight: 700, color: sel ? '#7c3aed' : '#1a1a1a' }}>{s.name}</div>
+                                      <div style={{ color: '#666', fontSize: '10px', marginTop: '1px' }}>{s.action}{s.neverMisses ? ' · Ne rate jamais' : ''}</div>
+                                      <div style={{ color: '#444', fontSize: '11px', lineHeight: '1.5', marginTop: '5px', padding: '5px 8px', background: sel ? '#ede9fe' : '#f9f9f9', borderRadius: '4px', borderLeft: '2px solid #7c3aed' }}>
+                                        {s.description}
+                                      </div>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </>
+                    )}
+                  </div>
+                );
+              })()}
               {hasMiracles && (() => {
                 const baseLimit = getMiracleLimit(state.classe, state.niveau);
                 
@@ -1469,24 +1526,6 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
             </div>
           )}
         </div>
-      );
-
-      // ── Step 9: Class Upgrades ──
-      case 9: return (
-        <ClassUpgradesStep
-          classe={CLASSES.find(c => c.id === state.classe) || null}
-          niveau={state.niveau}
-          classUpgrades={state.classUpgrades}
-          onUpgradeChange={(key: string, value: string | boolean) => {
-            setState(p => ({
-              ...p,
-              classUpgrades: {
-                ...p.classUpgrades,
-                [key]: value
-              }
-            }));
-          }}
-        />
       );
 
       // ── Step 10: Summary ──

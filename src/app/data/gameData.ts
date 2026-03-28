@@ -150,6 +150,77 @@ export function miracleLevelLabel(lvl: number): string {
   return labels[lvl] ?? '';
 }
 
+// Get spell learning limits per class/level (similar structure to getMiracleLimit)
+export function getSpellLimit(
+  classeId: string, niveau: number
+): {
+  slots: Record<number, number>; // spells per level
+  maxLevel: number;
+} {
+  const empty = { slots: {}, maxLevel: 0 };
+
+  if (classeId === 'mage') {
+    // Mage learns spells at specific levels; per-level limits
+    let slots: Record<number, number> = { 1: 3 }; // Level 1: 3 spells
+    let maxLevel = 1;
+    if (niveau >= 2) { slots = { ...slots, 2: 1 }; maxLevel = 2; }
+    if (niveau >= 4) { slots[2] = (slots[2] ?? 0) + 1; }
+    if (niveau >= 5) { slots = { ...slots, 3: 1 }; maxLevel = 3; }
+    if (niveau >= 7) { slots[3] = (slots[3] ?? 0) + 1; }
+    if (niveau >= 9) { slots = { ...slots, 4: 1 }; maxLevel = 4; }
+    if (niveau >= 12) { slots[4] = (slots[4] ?? 0) + 1; }
+    if (niveau >= 14) { slots = { ...slots, 5: 1 }; maxLevel = 5; }
+    if (niveau >= 18) { slots[5] = (slots[5] ?? 0) + 1; }
+    return { slots, maxLevel };
+  }
+
+  if (classeId === 'druide') {
+    // Druide learning spells via Aromates
+    let slots: Record<number, number> = {};
+    let maxLevel = 0;
+    if (niveau >= 4) { slots = { 1: 2 }; maxLevel = 1; }
+    if (niveau >= 12) { slots = { ...slots, 2: 1 }; maxLevel = 2; }
+    return { slots, maxLevel };
+  }
+
+  if (classeId === 'barde') {
+    // Barde learning spells
+    let slots: Record<number, number> = {};
+    let maxLevel = 0;
+    if (niveau >= 3) { slots = { 1: 2 }; maxLevel = 1; }
+    if (niveau >= 9) { slots = { ...slots, 2: 1 }; maxLevel = 2; }
+    return { slots, maxLevel };
+  }
+
+  if (classeId === 'rogue') {
+    // Rogue via Invisibilité spell
+    let slots: Record<number, number> = {};
+    let maxLevel = 0;
+    if (niveau >= 5) { slots = { 2: 1 }; maxLevel = 2; }
+    return { slots, maxLevel };
+  }
+
+  if (classeId === 'sorcier') {
+    // Sorcier learning spells (dark themed)
+    let slots: Record<number, number> = { 1: 2 };
+    let maxLevel = 1;
+    if (niveau >= 5) { slots = { ...slots, 2: 1 }; maxLevel = 2; }
+    if (niveau >= 12) { slots = { ...slots, 3: 1 }; maxLevel = 3; }
+    return { slots, maxLevel };
+  }
+
+  if (classeId === 'necromancien') {
+    // Necromancien learning spells
+    let slots: Record<number, number> = { 1: 1 };
+    let maxLevel = 1;
+    if (niveau >= 6) { slots = { ...slots, 2: 1 }; maxLevel = 2; }
+    if (niveau >= 12) { slots = { ...slots, 3: 1 }; maxLevel = 3; }
+    return { slots, maxLevel };
+  }
+
+  return { ...empty };
+}
+
 // ─── RACES ───────────────────────────────────────────────────────────────────
 export const RACES: RaceData[] = [
   {
