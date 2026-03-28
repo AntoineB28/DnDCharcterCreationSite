@@ -83,6 +83,21 @@ export function FeatSheetExport({ selection }: FeatSheetExportProps) {
   const exportToPDF = async () => {
     if (!pageRef.current) return;
     const el = pageRef.current;
+    
+    // Override oklch CSS variables not supported by html2canvas
+    const root = document.documentElement;
+    const overrides: Record<string, string> = {
+      '--foreground': '#111', '--card-foreground': '#111', '--popover': '#fff',
+      '--popover-foreground': '#111', '--primary-foreground': '#fff',
+      '--secondary': '#f1f0f8', '--secondary-foreground': '#111', '--ring': '#aaa',
+      '--background': '#ffffff', '--card': '#ffffff', '--muted': '#f1f0f8',
+      '--muted-foreground': '#666666', '--border': '#e2e2e2', '--input': '#e2e2e2',
+      '--primary': '#111111', '--accent': '#f1f0f8', '--accent-foreground': '#111111',
+    };
+    const saved: Record<string, string> = {};
+    for (const p of Object.keys(overrides)) saved[p] = root.style.getPropertyValue(p);
+    for (const [p, v] of Object.entries(overrides)) root.style.setProperty(p, v);
+    
     const clone = el.cloneNode(true) as HTMLElement;
     clone.style.position = 'fixed';
     clone.style.top = '0';
@@ -125,6 +140,10 @@ export function FeatSheetExport({ selection }: FeatSheetExportProps) {
       alert('Erreur lors de l\'export PDF de la fiche de feats.');
     } finally {
       document.body.removeChild(clone);
+      // Restore CSS variables
+      for (const [p, v] of Object.entries(saved)) {
+        if (v) root.style.setProperty(p, v); else root.style.removeProperty(p);
+      }
     }
   };
 
