@@ -80,6 +80,29 @@ export function ClassUpgradesStep({
             const currentValue = classUpgrades[key];
             const isToggle = isToggleChoice(choice.options);
 
+            // For duplicate choice types (same options, different levels), filter out already chosen values
+            let availableOptions = choice.options;
+            if (choice.options.length > 0) {
+              // Find other choices with the same options (different level, same option list)
+              const sameOptionChoices = availableChoices.filter(c => 
+                c.level < choice.level && 
+                JSON.stringify(c.options) === JSON.stringify(choice.options)
+              );
+              // Collect all previously chosen values at lower levels
+              const previouslyChosen = new Set<string>();
+              for (const prevChoice of sameOptionChoices) {
+                const prevKey = getChoiceKey(prevChoice.level, prevChoice.name);
+                const prevValue = classUpgrades[prevKey];
+                if (prevValue && typeof prevValue === 'string') {
+                  previouslyChosen.add(prevValue);
+                }
+              }
+              // Filter out previously chosen options
+              if (previouslyChosen.size > 0) {
+                availableOptions = choice.options.filter(opt => !previouslyChosen.has(opt));
+              }
+            }
+
             return (
               <div
                 key={key}
@@ -135,11 +158,15 @@ export function ClassUpgradesStep({
                         <SelectValue placeholder="Sélectionner une option..." />
                       </SelectTrigger>
                       <SelectContent>
-                        {choice.options.map((option) => (
-                          <SelectItem key={option} value={option}>
-                            {option}
-                          </SelectItem>
-                        ))}
+                        {availableOptions.length > 0 ? (
+                          availableOptions.map((option) => (
+                            <SelectItem key={option} value={option}>
+                              {option}
+                            </SelectItem>
+                          ))
+                        ) : (
+                          <div className="text-sm text-slate-500 p-2">Aucune option disponible</div>
+                        )}
                       </SelectContent>
                     </Select>
                   </div>

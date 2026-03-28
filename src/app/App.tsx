@@ -3,14 +3,16 @@ import { CharacterSheet } from './components/CharacterSheet';
 import { FeatSelector } from './components/FeatSelector';
 import { SpellSelector } from './components/SpellSelector';
 import { SpellSheetExport } from './components/SpellSheetExport';
+import { FeatSheetExport } from './components/FeatSheetExport';
 import { CharacterWizard, type CharacterData, type VisibleSections, type SpellSelection } from './components/CharacterWizard';
 
-type Page = 'wizard' | 'sheet' | 'feats' | 'spells' | 'spellsheet';
+type Page = 'wizard' | 'sheet' | 'feats' | 'spells' | 'spellsheet' | 'featsheet';
 
 const TABS: { id: Page; label: string }[] = [
   { id: 'wizard',     label: '🧙 Créer un personnage' },
   { id: 'sheet',      label: '⚔️ Fiche de personnage' },
   { id: 'spellsheet', label: '📖 Fiche de sorts' },
+  { id: 'featsheet',  label: '📋 Fiche de Feats' },
   { id: 'feats',      label: '✨ Feats' },
   { id: 'spells',     label: '🔮 Sorts & Miracles' },
 ];
@@ -51,7 +53,7 @@ export default function App() {
               position: 'relative',
             }}>
             {tab.label}
-            {(tab.id === 'sheet' || tab.id === 'spellsheet') && wizardDone && (
+            {(tab.id === 'sheet' || tab.id === 'spellsheet' || tab.id === 'featsheet') && wizardDone && (
               <span style={{ position: 'absolute', top: '4px', right: '4px', width: '8px', height: '8px', background: '#16a34a', borderRadius: '50%' }} />
             )}
           </button>
@@ -63,6 +65,15 @@ export default function App() {
       {page === 'spellsheet' && (
         <SpellSheetExport
           selection={spellSelection ?? { spells: [], deityMiracles: [], freeMiracles: [], vampPowers: [], deity: '', classe: '', nom: '' }}
+        />
+      )}
+      {page === 'featsheet' && (
+        <FeatSheetExport
+          selection={{
+            nom: sheetData?.nom,
+            classe: sheetData?.classe,
+            selectedFeats: sheetData?.selectedFeats ?? []
+          }}
         />
       )}
       {page === 'feats' && <FeatSelector />}
