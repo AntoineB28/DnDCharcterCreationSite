@@ -275,16 +275,34 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   if (cls?.id === 'artificier' && level >= 8) {
     levelUpgrades.push('Armure arcano-mécanique : AC +3, résistance aux dégâts électriques (niveau 8)');
   }
+  if (cls?.id === 'guerrier' && level >= 16 && state.classUpgrades['guerrier_second_style']) {
+    levelUpgrades.push(`Deuxième style de combat : ${state.classUpgrades['guerrier_second_style']} (niveau 16)`);
+  }
   
   // Abilities now contains only class features + level upgrades (NOT feats anymore - they stay in Feats step)
   const habiletes = [...classAbilities, ...levelUpgrades].filter(Boolean).join('\n\n');
 
   // Inventory text — only physical, non-choice items
+  // Important: exclude items that already went to classAbilities (habiletes)
   const NON_PHYSICAL_RX = /miracle|mana \+|divinit[eé] \+|\d+ sort|sorts? niveau|sorts? au choix|sort :|sorts et miracles|points? (de )?n[eé]cromancie|charges? vampirique|survie vampirique|vision nocturne|vitesse \+|points? m[eé]lodieux|ki \+|arts martiaux|r[eé]flexes|combattant squelettique/i;
   const isPhysEq = (s: string) => !NON_PHYSICAL_RX.test(s);
   const isWeaponChoiceItem = (s: string) => /arme[s]?.*(au choix)/i.test(s);
   const isArmorChoiceItem = (s: string) => / OU /i.test(s) && /(armure|robe)/i.test(s);
-  let equipLines = (cls?.startingEquipment ?? []).filter(e => isPhysEq(e) && !isWeaponChoiceItem(e) && !isArmorChoiceItem(e));
+  
+  // Build list of items that went to abilities to exclude them from inventory
+  const abilityItems = (cls?.startingEquipment ?? [])
+    .filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort') && !GENERIC_ABILITY_RX.test(e));
+  
+  let equipLines = (cls?.startingEquipment ?? []).filter(e => {
+    // Exclude abilities
+    if (abilityItems.includes(e)) return false;
+    // Exclude non-physical items
+    if (!isPhysEq(e)) return false;
+    // Exclude weapon/armor choices
+    if (isWeaponChoiceItem(e)) return false;
+    if (isArmorChoiceItem(e)) return false;
+    return true;
+  });
   
   // Apply class upgrades
   if (cls?.id === 'artificier' && state.niveau >= 8 && state.classUpgrades['artificier_armor'] === 'arcanotech') {
@@ -1426,6 +1444,49 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
           {(() => {
             const cls = CLASSES.find(c => c.id === state.classe);
             if (!cls) return <div style={{ color: '#888' }}>Aucune classe sélectionnée</div>;
+
+            // Guerrier: Second fighting style at level 16
+            if (cls.id === 'guerrier' && state.niveau >= 16) {
+              const fightingStyles = [
+                'Protection : AC +1',
+                'Champion : Coups critiques sur 19+',
+                'Athlète : Vitesse +1, rerouler initiative 1x/combat',
+                'Double tranchant : Avantage attaques, ennemis ont avantage aussi',
+                'Contreur : Riposte quand ennemi rate (1x/combat)',
+                'Conquérant : Attaque extra tour 1 du combat',
+                'Longue haleine : Récupère 1d4 PV chaque tour',
+                'Presseur : Rerouler attaque manquée en acceptant riposte',
+              ];
+              return (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <div style={{ padding: '14px', background: '#f0f4ff', border: '1px solid #2c5fa5', borderRadius: '6px' }}>
+                    <div style={{ fontWeight: 700, marginBottom: '8px', color: '#2c5fa5', fontSize: '14px' }}>Deuxième Style de Combat (Niveau 16+)</div>
+                    <div style={{ fontSize: '13px', marginBottom: '12px', color: '#1a3a6e' }}>Tu as maîtrisé un style de combat. Choisis un second style pour renforcer tes capacités.</div>
+                    <select 
+                      value={state.classUpgrades['guerrier_second_style'] || ''}
+                      onChange={e => setState(p => ({
+                        ...p,
+                        classUpgrades: {
+                          ...p.classUpgrades,
+                          guerrier_second_style: e.target.value
+                        }
+                      }))}
+                      style={{ width: '100%', padding: '8px 10px', border: '1px solid #2c5fa5', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
+                    >
+                      <option value="">— Choisir un style —</option>
+                      {fightingStyles.map((style, idx) => (
+                        <option key={idx} value={style}>{style}</option>
+                      ))}
+                    </select>
+                    {state.classUpgrades['guerrier_second_style'] && (
+                      <div style={{ marginTop: '10px', padding: '8px', background: '#f5f0ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
+                        ✓ Style choisi : <strong>{state.classUpgrades['guerrier_second_style']}</strong>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            }
 
             // Artificier: Armor upgrade at level 8
             if (cls.id === 'artificier' && state.niveau >= 8) {
