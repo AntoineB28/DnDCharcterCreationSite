@@ -70,16 +70,5 @@ export const mage: ClassData = {
       ],
       maxChoices: 1,
     },
-    {
-      level: 14,
-      name: 'Amélioration de spécialisation',
-      description: 'Ta spécialisation évolue.',
-      options: [
-        'Acolyte amélioré|Gains: +3 sorts N2 + +2 sorts N3 + +1 sort N4 + Mana +2 + Intelligence +1',
-        'Mage guerrier amélioré|Gains: PV +10 + Force/Dextérité +2 + Action surge',
-        'Manavore amélioré|Gains: Mana +6 + +1 sort N4',
-      ],
-      maxChoices: 1,
-    }
   ],
 };
