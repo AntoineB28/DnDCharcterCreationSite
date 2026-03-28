@@ -275,6 +275,9 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   if (cls?.id === 'artificier' && level >= 8) {
     levelUpgrades.push('Armure arcano-mécanique : AC +3, résistance aux dégâts électriques (niveau 8)');
   }
+  if (cls?.id === 'guerrier' && level >= 7 && state.classUpgrades['guerrier_fighting_style']) {
+    levelUpgrades.push(`Style de combat : ${state.classUpgrades['guerrier_fighting_style']} (niveau 7)`);
+  }
   if (cls?.id === 'guerrier' && level >= 16 && state.classUpgrades['guerrier_second_style']) {
     levelUpgrades.push(`Deuxième style de combat : ${state.classUpgrades['guerrier_second_style']} (niveau 16)`);
   }
@@ -1445,8 +1448,8 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
             const cls = CLASSES.find(c => c.id === state.classe);
             if (!cls) return <div style={{ color: '#888' }}>Aucune classe sélectionnée</div>;
 
-            // Guerrier: Second fighting style at level 16
-            if (cls.id === 'guerrier' && state.niveau >= 16) {
+            // Guerrier: Fighting styles at level 7 and 16
+            if (cls.id === 'guerrier' && state.niveau >= 7) {
               const fightingStyles = [
                 'Protection : AC +1',
                 'Champion : Coups critiques sur 19+',
@@ -1459,31 +1462,60 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
               ];
               return (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  <div style={{ padding: '14px', background: '#f0f4ff', border: '1px solid #2c5fa5', borderRadius: '6px' }}>
-                    <div style={{ fontWeight: 700, marginBottom: '8px', color: '#2c5fa5', fontSize: '14px' }}>Deuxième Style de Combat (Niveau 16+)</div>
-                    <div style={{ fontSize: '13px', marginBottom: '12px', color: '#1a3a6e' }}>Tu as maîtrisé un style de combat. Choisis un second style pour renforcer tes capacités.</div>
-                    <select 
-                      value={state.classUpgrades['guerrier_second_style'] || ''}
-                      onChange={e => setState(p => ({
-                        ...p,
-                        classUpgrades: {
-                          ...p.classUpgrades,
-                          guerrier_second_style: e.target.value
-                        }
-                      }))}
-                      style={{ width: '100%', padding: '8px 10px', border: '1px solid #2c5fa5', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
-                    >
-                      <option value="">— Choisir un style —</option>
-                      {fightingStyles.map((style, idx) => (
-                        <option key={idx} value={style}>{style}</option>
-                      ))}
-                    </select>
-                    {state.classUpgrades['guerrier_second_style'] && (
-                      <div style={{ marginTop: '10px', padding: '8px', background: '#f5f0ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
-                        ✓ Style choisi : <strong>{state.classUpgrades['guerrier_second_style']}</strong>
-                      </div>
-                    )}
-                  </div>
+                  {state.niveau >= 7 && (
+                    <div style={{ padding: '14px', background: '#f0f4ff', border: '1px solid #2c5fa5', borderRadius: '6px' }}>
+                      <div style={{ fontWeight: 700, marginBottom: '8px', color: '#2c5fa5', fontSize: '14px' }}>Style de Combat (Niveau 7+)</div>
+                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#1a3a6e' }}>Développe ton propre style de combat qui te rend plus efficace.</div>
+                      <select 
+                        value={state.classUpgrades['guerrier_fighting_style'] || ''}
+                        onChange={e => setState(p => ({
+                          ...p,
+                          classUpgrades: {
+                            ...p.classUpgrades,
+                            guerrier_fighting_style: e.target.value
+                          }
+                        }))}
+                        style={{ width: '100%', padding: '8px 10px', border: '1px solid #2c5fa5', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
+                      >
+                        <option value="">— Choisir un style —</option>
+                        {fightingStyles.map((style, idx) => (
+                          <option key={idx} value={style}>{style}</option>
+                        ))}
+                      </select>
+                      {state.classUpgrades['guerrier_fighting_style'] && (
+                        <div style={{ marginTop: '10px', padding: '8px', background: '#f5f0ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
+                          ✓ Style choisi : <strong>{state.classUpgrades['guerrier_fighting_style']}</strong>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  {state.niveau >= 16 && (
+                    <div style={{ padding: '14px', background: '#f0f4ff', border: '1px solid #2c5fa5', borderRadius: '6px' }}>
+                      <div style={{ fontWeight: 700, marginBottom: '8px', color: '#2c5fa5', fontSize: '14px' }}>Deuxième Style de Combat (Niveau 16+)</div>
+                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#1a3a6e' }}>Tu as maîtrisé un style de combat. Choisis un second style pour renforcer tes capacités.</div>
+                      <select 
+                        value={state.classUpgrades['guerrier_second_style'] || ''}
+                        onChange={e => setState(p => ({
+                          ...p,
+                          classUpgrades: {
+                            ...p.classUpgrades,
+                            guerrier_second_style: e.target.value
+                          }
+                        }))}
+                        style={{ width: '100%', padding: '8px 10px', border: '1px solid #2c5fa5', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
+                      >
+                        <option value="">— Choisir un style —</option>
+                        {fightingStyles.map((style, idx) => (
+                          <option key={idx} value={style}>{style}</option>
+                        ))}
+                      </select>
+                      {state.classUpgrades['guerrier_second_style'] && (
+                        <div style={{ marginTop: '10px', padding: '8px', background: '#f5f0ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
+                          ✓ Style choisi : <strong>{state.classUpgrades['guerrier_second_style']}</strong>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               );
             }
@@ -1661,13 +1693,27 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
       </div>
 
       {/* Content */}
-      <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '24px 16px' }}>
+      <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '24px 16px 120px 16px' }}>
         <div style={{ background: '#fff', border: B, borderRadius: '8px', padding: '24px', minHeight: '400px', boxShadow: '0 2px 20px rgba(0,0,0,0.1)' }}>
           {renderStep()}
         </div>
+      </div>
 
-        {/* Navigation */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '16px' }}>
+      {/* Fixed Navigation */}
+      <div style={{ 
+        position: 'fixed', 
+        bottom: 0, 
+        left: 0, 
+        right: 0, 
+        background: '#e8e4dc', 
+        borderTop: '1px solid #ccc',
+        padding: '16px 20px',
+        display: 'flex',
+        justifyContent: 'center',
+        zIndex: 100,
+        boxShadow: '0 -2px 10px rgba(0,0,0,0.1)'
+      }}>
+        <div style={{ maxWidth: '1000px', width: '100%', display: 'flex', justifyContent: 'space-between' }}>
           <button onClick={() => go(-1)} disabled={state.step === 0}
             style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '10px 20px', border: B, borderRadius: '6px', background: '#fff', cursor: state.step === 0 ? 'not-allowed' : 'pointer', opacity: state.step === 0 ? 0.4 : 1, fontFamily: 'serif', fontSize: '14px' }}>
             <ChevronLeft size={16} /> Précédent
