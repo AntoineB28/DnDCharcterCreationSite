@@ -861,61 +861,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
         // ── Helpers ──────────────────────────────────────────────────────────
         const NON_PHYS = /miracle|mana \+|divinit[eé] \+|\d+ sort|sorts? niveau|sorts? au choix|sort :|sorts et miracles|points? (de )?n[eé]cromancie|charges? vampirique|survie vampirique|vision nocturne|vitesse \+|points? m[eé]lodieux|ki \+|arts martiaux|r[eé]flexes|combattant squelettique/i;
         const isPhys      = (s: string) => !NON_PHYS.test(s);
-        const isWpnChoice = (s: string) => /arme[s]?.*(au choix)/i.test(s);
         const isArmChoice = (s: string) => / OU /i.test(s) && /(armure|robe)/i.test(s);
-
-        // What weapons can this class pick?
-        type WFilter = 'all' | 'simple' | 'dexterity' | 'melee' | 'arcanotech' | 'none';
-        const weaponFilter: WFilter = (() => {
-          switch (cls?.id) {
-            case 'guerrier':     return 'all';
-            case 'valkyrie':     return 'all';
-            case 'bastion':      return 'melee';
-            case 'ravageur':     return 'melee';
-            case 'maraudeur':    return 'melee';
-            case 'inquisiteur':  return 'melee';
-            case 'fourbesang':   return 'melee';
-            case 'venox':        return 'melee';
-            case 'rogue':        return 'dexterity';
-            case 'vampire':      return 'dexterity';
-            case 'scorpion':     return 'dexterity';
-            case 'rapacier':     return 'dexterity';
-            case 'chasseur':     return 'dexterity';
-            case 'mage':         return 'simple';
-            case 'pretre':       return 'simple';
-            case 'druide':       return 'simple';
-            case 'barde':        return 'simple';
-            case 'sorcier':      return 'simple';
-            case 'moine':        return 'simple';
-            case 'necromancien': return 'simple';
-            case 'astromancien': return 'simple';
-            case 'mystique':     return 'simple';
-            case 'artificier':   return 'arcanotech';
-            case 'shaman':       return 'simple';
-            case 'vigilant':     return 'simple';
-            case 'sepulcral':    return 'simple';
-            case 'fleau':        return 'none'; // fixed épée longue
-            default:             return 'none';
-          }
-        })();
-
-        const weaponFilterLabel: Record<WFilter, string> = {
-          all:       'Arme au choix',
-          simple:    'Arme simple au choix',
-          dexterity: 'Arme de dextérité au choix',
-          melee:     'Arme rapprochée au choix',
-          arcanotech:'Arme arcano-mécanique au choix',
-          none:      '',
-        };
-
-        const filteredWeapons = WEAPONS.filter(w => {
-          if (weaponFilter === 'all')       return true;
-          if (weaponFilter === 'simple')    return w.category.startsWith('Armes simples');
-          if (weaponFilter === 'dexterity') return w.props.includes('Finesse') || w.category.includes('distance');
-          if (weaponFilter === 'melee')     return w.category.includes('mêlée');
-          if (weaponFilter === 'arcanotech') return w.category === 'Armes arcano-mécaniques';
-          return false;
-        });
 
         // Does this class have an armor choice?
         const armorChoices: typeof ARMORS | null = (() => {
@@ -929,10 +875,9 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
 
         // Physical fixed items (no magic/resource bonuses, no "choice" lines)
         const physicalItems = (cls?.startingEquipment ?? []).filter(
-          e => isPhys(e) && !isWpnChoice(e) && !isArmChoice(e)
+          e => isPhys(e) && !isArmChoice(e)
         );
 
-        const selW = WEAPONS.find(x => x.id === state.selectedWeapon);
         const selA = ARMORS.find(x => x.id === state.selectedArmor);
 
         return (
@@ -948,37 +893,6 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                     <span style={{ fontSize: '13px' }}>{item}</span>
                   </div>
                 ))}
-
-                {/* ── Weapon dropdown (only when class has a weapon choice) ── */}
-                {weaponFilter !== 'none' && (
-                  <div style={{ marginTop: '14px' }}>
-                    <label style={{ display: 'block', fontWeight: 700, marginBottom: '6px', fontSize: '13px' }}>
-                      {weaponFilterLabel[weaponFilter]}
-                    </label>
-                    <select
-                      value={state.selectedWeapon}
-                      onChange={e => set('selectedWeapon', e.target.value)}
-                      style={{ width: '100%', padding: '8px 10px', border: B, borderRadius: '6px', fontSize: '13px', fontFamily: 'serif', background: '#fff', cursor: 'pointer' }}
-                    >
-                      <option value="">— Choisir une arme —</option>
-                      {/* Group by category */}
-                      {Array.from(new Set(filteredWeapons.map(w => w.category))).map(cat => (
-                        <optgroup key={cat} label={cat}>
-                          {filteredWeapons.filter(w => w.category === cat).map(w => (
-                            <option key={w.id} value={w.id}>
-                              {w.name} — {w.dmg} ({w.props})
-                            </option>
-                          ))}
-                        </optgroup>
-                      ))}
-                    </select>
-                    {selW && (
-                      <div style={{ marginTop: '6px', padding: '7px 10px', background: '#f5f5f5', border: '1px solid #ccc', borderRadius: '5px', fontSize: '12px', color: '#444' }}>
-                        <strong>{selW.name}</strong> · {selW.dmg} · {selW.props}
-                      </div>
-                    )}
-                  </div>
-                )}
 
                 {/* ── Armor: choice dropdown OR fixed armor display ── */}
                 {armorChoices ? (
@@ -1085,7 +999,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                     <select value={state.selectedWeapon} onChange={e => setState(p => ({ ...p, selectedWeapon: e.target.value }))} style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #bbb', fontSize: '12px' }}>
                       <option value="">— Choisir une arme —</option>
                       {WEAPONS.filter(w => w.hand === 'two' && w.category.includes('mêlée')).map(w => (
-                        <option key={w.id} value={w.id}>{w.name} — {w.dmg}</option>
+                        <option key={w.id} value={w.id}>{w.name} — {w.dmg} ({w.props})</option>
                       ))}
                     </select>
                   )}
@@ -1106,7 +1020,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                         <select value={state.selectedWeapon} onChange={e => setState(p => ({ ...p, selectedWeapon: e.target.value }))} style={{ width: '100%', padding: '6px', borderRadius: '4px', border: '1px solid #bbb', fontSize: '11px' }}>
                           <option value="">— Choisir —</option>
                           {WEAPONS.filter(w => w.hand === 'one' && w.category.includes('mêlée')).map(w => (
-                            <option key={w.id} value={w.id}>{w.name}</option>
+                            <option key={w.id} value={w.id}>{w.name} — {w.dmg} ({w.props})</option>
                           ))}
                         </select>
                       </div>
@@ -1115,7 +1029,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                         <select value={state.selectedSecondWeapon || ''} onChange={e => setState(p => ({ ...p, selectedSecondWeapon: e.target.value }))} style={{ width: '100%', padding: '6px', borderRadius: '4px', border: '1px solid #bbb', fontSize: '11px' }}>
                           <option value="">— Choisir —</option>
                           {WEAPONS.filter(w => w.hand === 'one' && w.category.includes('mêlée')).map(w => (
-                            <option key={w.id} value={w.id}>{w.name}</option>
+                            <option key={w.id} value={w.id}>{w.name} — {w.dmg} ({w.props})</option>
                           ))}
                         </select>
                       </div>
@@ -1135,7 +1049,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                     <select value={state.selectedWeapon} onChange={e => setState(p => ({ ...p, selectedWeapon: e.target.value }))} style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #bbb', fontSize: '12px' }}>
                       <option value="">— Choisir une arme —</option>
                       {WEAPONS.filter(w => (w.hand === 'one' || w.hand === 'two') && w.category.includes('mêlée')).map(w => (
-                        <option key={w.id} value={w.id}>{w.name} — {w.dmg}</option>
+                        <option key={w.id} value={w.id}>{w.name} — {w.dmg} ({w.props})</option>
                       ))}
                     </select>
                   )}
