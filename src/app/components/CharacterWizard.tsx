@@ -1390,10 +1390,10 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
       // ── Step 9: Class Upgrades ──
       case 9: return (
         <ClassUpgradesStep
-          classId={state.classe}
-          level={state.niveau}
+          classe={CLASSES.find(c => c.id === state.classe) || null}
+          niveau={state.niveau}
           classUpgrades={state.classUpgrades}
-          onUpgradeChange={(key, value) => {
+          onUpgradeChange={(key: string, value: string | boolean) => {
             setState(p => ({
               ...p,
               classUpgrades: {
