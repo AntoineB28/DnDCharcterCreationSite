@@ -293,9 +293,21 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   }
   
   const chosenWeapon = WEAPONS.find(w => w.id === state.selectedWeapon);
+  const chosenSecondWeapon = state.selectedSecondWeapon ? WEAPONS.find(w => w.id === state.selectedSecondWeapon) : null;
   const chosenArmorItem = ARMORS.find(a => a.id === state.selectedArmor);
   const extraEquip: string[] = [];
-  if (chosenWeapon) extraEquip.push(`${chosenWeapon.name} (${chosenWeapon.dmg})`);
+  
+  // Add weapon(s) to inventory
+  if (chosenWeapon) {
+    if (chosenSecondWeapon) {
+      // Dual-wield: show both weapons
+      extraEquip.push(`${chosenWeapon.name} + ${chosenSecondWeapon.name}`);
+    } else {
+      // Single weapon: show just the main weapon
+      extraEquip.push(`${chosenWeapon.name} (${chosenWeapon.dmg})`);
+    }
+  }
+  
   if (chosenArmorItem && chosenArmorItem.id !== 'none') extraEquip.push(`${chosenArmorItem.name} (CA ${chosenArmorItem.ca})`);
   const inventaire = [...equipLines, ...extraEquip].join('\n');
 
