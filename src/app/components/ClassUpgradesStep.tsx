@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
+import { Input } from './ui/input';
 import {
   Select,
   SelectContent,
@@ -107,6 +108,21 @@ export function ClassUpgradesStep({
                     <Label htmlFor={key} className="cursor-pointer text-sm font-medium">
                       {currentValue ? '✓ Débloqué' : 'Cliquez pour débloquer'}
                     </Label>
+                  </div>
+                ) : choice.options.length === 0 ? (
+                  /* Free text input choice */
+                  <div className="space-y-2">
+                    <Label htmlFor={key} className="text-sm font-medium">
+                      Entrez votre choix :
+                    </Label>
+                    <Input
+                      id={key}
+                      type="text"
+                      placeholder="Écrivez votre réponse ici..."
+                      value={String(currentValue || '')}
+                      onChange={(e) => onUpgradeChange(key, e.target.value)}
+                      className="w-full"
+                    />
                   </div>
                 ) : (
                   /* Select/dropdown choice */
