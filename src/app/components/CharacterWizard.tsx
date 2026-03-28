@@ -81,6 +81,13 @@ export const WEAPONS = [
   { id: 'hxbow',       name: 'Arbalète de poing',     dmg: '1d6 perçant',     props: 'Munitions (30/120), légère',     category: 'Armes de guerre à distance' },
   { id: 'hxbow2',      name: 'Arbalète lourde',       dmg: '1d10 perçant',    props: 'Munitions (100/400), deux mains',category: 'Armes de guerre à distance' },
   { id: 'longbow',     name: 'Arc long',              dmg: '1d8 perçant',     props: 'Munitions (150/600), deux mains',category: 'Armes de guerre à distance' },
+  // Arcanotech weapons (Artificier)
+  { id: 'arbaletes-auto',    name: 'Arbalètes auto',       dmg: '2d6 perçant',     props: 'Arcano-mécanique, munitions automatiques', category: 'Armes arcano-mécaniques' },
+  { id: 'marteau-explosif',  name: 'Marteau explosif',     dmg: '1d10 contondant', props: 'Arcano-mécanique, explosion (1d6 feu)', category: 'Armes arcano-mécaniques' },
+  { id: 'rapiere-retractable',name: 'Rapière rétractable', dmg: '1d8 perçant',     props: 'Arcano-mécanique, finesse',          category: 'Armes arcano-mécaniques' },
+  { id: 'fleau-electrifie',  name: 'Fléau électrifié',     dmg: '2d4 contondant',  props: 'Arcano-mécanique, 1d4 électrique',    category: 'Armes arcano-mécaniques' },
+  { id: 'gants-pistons',     name: 'Gants à pistons',      dmg: '1d6 contondant',  props: 'Arcano-mécanique, allonge +5ft',     category: 'Armes arcano-mécaniques' },
+  { id: 'carabine-arcanique',name: 'Carabine arcanique',   dmg: '1d12 magique',    props: 'Arcano-mécanique, munitions magiques', category: 'Armes arcano-mécaniques' },
 ];
 
 // ─── WIZARD STATE ─────────────────────────────────────────────────────────────
@@ -263,7 +270,14 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   const classAbilities = cls?.startingEquipment
     ?.filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort') && !GENERIC_ABILITY_RX.test(e))
     .join('\n') ?? '';
-  const habiletes = [...featDescriptions, classAbilities].filter(Boolean).join('\n\n');
+  
+  // Level-specific upgrades (e.g., Artificier's Armure arcano-mécanique at level 8)
+  const levelUpgrades: string[] = [];
+  if (cls?.id === 'artificier' && level >= 8) {
+    levelUpgrades.push('Armure arcano-mécanique : AC +3, résistance aux dégâts électriques (niveau 8)');
+  }
+  
+  const habiletes = [...featDescriptions, classAbilities, ...levelUpgrades].filter(Boolean).join('\n\n');
 
   // Inventory text — only physical, non-choice items
   const NON_PHYSICAL_RX = /miracle|mana \+|divinit[eé] \+|\d+ sort|sorts? niveau|sorts? au choix|sort :|sorts et miracles|points? (de )?n[eé]cromancie|charges? vampirique|survie vampirique|vision nocturne|vitesse \+|points? m[eé]lodieux|ki \+|arts martiaux|r[eé]flexes|combattant squelettique/i;
@@ -833,7 +847,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
         const isArmChoice = (s: string) => / OU /i.test(s) && /(armure|robe)/i.test(s);
 
         // What weapons can this class pick?
-        type WFilter = 'all' | 'simple' | 'dexterity' | 'melee' | 'none';
+        type WFilter = 'all' | 'simple' | 'dexterity' | 'melee' | 'arcanotech' | 'none';
         const weaponFilter: WFilter = (() => {
           switch (cls?.id) {
             case 'guerrier':     return 'all';
@@ -858,11 +872,12 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
             case 'necromancien': return 'simple';
             case 'astromancien': return 'simple';
             case 'mystique':     return 'simple';
-            case 'artificier':   return 'simple';
+            case 'artificier':   return 'arcanotech';
             case 'shaman':       return 'simple';
             case 'vigilant':     return 'simple';
             case 'sepulcral':    return 'simple';
-            case 'fleau':        return 'none'; // fixed épée longue\n            default:             return 'none';
+            case 'fleau':        return 'none'; // fixed épée longue
+            default:             return 'none';
           }
         })();
 
@@ -871,6 +886,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
           simple:    'Arme simple au choix',
           dexterity: 'Arme de dextérité au choix',
           melee:     'Arme rapprochée au choix',
+          arcanotech:'Arme arcano-mécanique au choix',
           none:      '',
         };
 
@@ -879,6 +895,7 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
           if (weaponFilter === 'simple')    return w.category.startsWith('Armes simples');
           if (weaponFilter === 'dexterity') return w.props.includes('Finesse') || w.category.includes('distance');
           if (weaponFilter === 'melee')     return w.category.includes('mêlée');
+          if (weaponFilter === 'arcanotech') return w.category === 'Armes arcano-mécaniques';
           return false;
         });
 
