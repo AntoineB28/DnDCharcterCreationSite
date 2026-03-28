@@ -8,6 +8,8 @@ import {
 import { FEATS } from './FeatSelector';
 import { SORTS, MIRACLES, VAMPIRIQUE } from './SpellSelector';
 import { ARMORS } from './data/armorData';
+import { WEAPONS } from './data/weaponData';
+import { ClassUpgradesStep } from './ClassUpgradesStep';
 
 // ─── CharacterData (matches CharacterSheet) ───────────────────────────────────
 export interface CharacterData {
@@ -1387,274 +1389,20 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
 
       // ── Step 9: Class Upgrades ──
       case 9: return (
-        <div>
-          <SectionTitle>Améliorations de classe</SectionTitle>
-          {(() => {
-            const cls = CLASSES.find(c => c.id === state.classe);
-            if (!cls) return <div style={{ color: '#888' }}>Aucune classe sélectionnée</div>;
-
-            // Guerrier: Fighting styles, stats upgrades, weapon mastery
-            if (cls.id === 'guerrier' && state.niveau >= 5) {
-              const fightingStyles = [
-                'Protection : AC +1',
-                'Champion : Coups critiques sur 19+',
-                'Athlète : Vitesse +1, rerouler initiative 1x/combat',
-                'Double tranchant : Avantage attaques, ennemis ont avantage aussi',
-                'Contreur : Riposte quand ennemi rate (1x/combat)',
-                'Conquérant : Attaque extra tour 1 du combat',
-                'Longue haleine : Récupère 1d4 PV chaque tour',
-                'Presseur : Rerouler attaque manquée en acceptant riposte',
-              ];
-              
-              // For level 16, filter out the style already chosen at level 7
-              const firstStyleChosen = state.classUpgrades['guerrier_fighting_style'];
-              const availableStylesForLevel16 = fightingStyles.filter(style => style !== firstStyleChosen);
-              
-              const statOptions5 = ['Force +2', 'Dextérité +2', 'Constitution +2', 'Force +1, Dextérité +1'];
-              const statOptions10 = ['Force +2', 'Dextérité +2', 'Constitution +2', 'Sagesse +2', 'Force +1, Dextérité +1', 'Force +1, Constitution +1', 'Dextérité +1, Constitution +1'];
-              const statOptions15 = ['Force +2', 'Dextérité +2', 'Constitution +2', 'Sagesse +2', 'Force +1, Dextérité +1', 'Force +1, Constitution +1', 'Dextérité +1, Constitution +1'];
-              
-              return (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  {state.niveau >= 5 && (
-                    <div style={{ padding: '14px', background: '#ede9fe', border: '1px solid #7c3aed', borderRadius: '6px' }}>
-                      <div style={{ fontWeight: 700, marginBottom: '8px', color: '#7c3aed', fontSize: '14px' }}>Gain de score de capacité (Niveau 5+)</div>
-                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#5b21b6' }}>Tu t'entraînes intensément et tes capacités augmentent.</div>
-                      <select 
-                        value={state.classUpgrades['guerrier_stat_5'] || ''}
-                        onChange={e => setState(p => ({
-                          ...p,
-                          classUpgrades: {
-                            ...p.classUpgrades,
-                            guerrier_stat_5: e.target.value
-                          }
-                        }))}
-                        style={{ width: '100%', padding: '8px 10px', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
-                      >
-                        <option value="">— Choisir un bonus —</option>
-                        {statOptions5.map((stat, idx) => (
-                          <option key={idx} value={stat}>{stat}</option>
-                        ))}
-                      </select>
-                      {state.classUpgrades['guerrier_stat_5'] && (
-                        <div style={{ marginTop: '10px', padding: '8px', background: '#f3e8ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
-                          ✓ Bonus: <strong>{state.classUpgrades['guerrier_stat_5']}</strong>
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {state.niveau >= 7 && (
-                    <div style={{ padding: '14px', background: '#f0f4ff', border: '1px solid #2c5fa5', borderRadius: '6px' }}>
-                      <div style={{ fontWeight: 700, marginBottom: '8px', color: '#2c5fa5', fontSize: '14px' }}>Style de Combat (Niveau 7+)</div>
-                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#1a3a6e' }}>Développe ton propre style de combat qui te rend plus efficace.</div>
-                      <select 
-                        value={state.classUpgrades['guerrier_fighting_style'] || ''}
-                        onChange={e => setState(p => ({
-                          ...p,
-                          classUpgrades: {
-                            ...p.classUpgrades,
-                            guerrier_fighting_style: e.target.value
-                          }
-                        }))}
-                        style={{ width: '100%', padding: '8px 10px', border: '1px solid #2c5fa5', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
-                      >
-                        <option value="">— Choisir un style —</option>
-                        {fightingStyles.map((style, idx) => (
-                          <option key={idx} value={style}>{style}</option>
-                        ))}
-                      </select>
-                      {state.classUpgrades['guerrier_fighting_style'] && (
-                        <div style={{ marginTop: '10px', padding: '8px', background: '#f5f0ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
-                          ✓ Style choisi : <strong>{state.classUpgrades['guerrier_fighting_style']}</strong>
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {state.niveau >= 10 && (
-                    <div style={{ padding: '14px', background: '#ede9fe', border: '1px solid #7c3aed', borderRadius: '6px' }}>
-                      <div style={{ fontWeight: 700, marginBottom: '8px', color: '#7c3aed', fontSize: '14px' }}>Gain de score de capacité (Niveau 10+)</div>
-                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#5b21b6' }}>Tu t'entraînes au-delà de tes limites.</div>
-                      <select 
-                        value={state.classUpgrades['guerrier_stat_10'] || ''}
-                        onChange={e => setState(p => ({
-                          ...p,
-                          classUpgrades: {
-                            ...p.classUpgrades,
-                            guerrier_stat_10: e.target.value
-                          }
-                        }))}
-                        style={{ width: '100%', padding: '8px 10px', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
-                      >
-                        <option value="">— Choisir un bonus —</option>
-                        {statOptions10.map((stat, idx) => (
-                          <option key={idx} value={stat}>{stat}</option>
-                        ))}
-                      </select>
-                      {state.classUpgrades['guerrier_stat_10'] && (
-                        <div style={{ marginTop: '10px', padding: '8px', background: '#f3e8ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
-                          ✓ Bonus: <strong>{state.classUpgrades['guerrier_stat_10']}</strong>
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {state.niveau >= 11 && (
-                    <div style={{ padding: '14px', background: '#fef3c7', border: '1px solid #d97706', borderRadius: '6px' }}>
-                      <div style={{ fontWeight: 700, marginBottom: '8px', color: '#d97706', fontSize: '14px' }}>Action Surcharge améliorée (Niveau 11+)</div>
-                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#92400e' }}>Tu peux maintenant utiliser ton action Surcharge sans utiliser ton action bonus.</div>
-                      <button 
-                        onClick={() => setState(p => ({
-                          ...p,
-                          classUpgrades: {
-                            ...p.classUpgrades,
-                            guerrier_surcharge_11: !p.classUpgrades['guerrier_surcharge_11']
-                          }
-                        }))}
-                        style={{
-                          width: '100%',
-                          padding: '10px',
-                          border: state.classUpgrades['guerrier_surcharge_11'] ? '2px solid #d97706' : '1px solid #d97706',
-                          borderRadius: '4px',
-                          background: state.classUpgrades['guerrier_surcharge_11'] ? '#fef3c7' : '#fff',
-                          color: '#92400e',
-                          fontSize: '13px',
-                          fontWeight: state.classUpgrades['guerrier_surcharge_11'] ? 700 : 500,
-                          cursor: 'pointer'
-                        }}
-                      >
-                        {state.classUpgrades['guerrier_surcharge_11'] ? '✓ Débloqué - Action Surcharge libre' : 'Débloquer - Action Surcharge libre'}
-                      </button>
-                    </div>
-                  )}
-
-                  {state.niveau >= 15 && (
-                    <div style={{ padding: '14px', background: '#ede9fe', border: '1px solid #7c3aed', borderRadius: '6px' }}>
-                      <div style={{ fontWeight: 700, marginBottom: '8px', color: '#7c3aed', fontSize: '14px' }}>Gain de score de capacité (Niveau 15+)</div>
-                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#5b21b6' }}>Tu atteins le summum de ta force martiale.</div>
-                      <select 
-                        value={state.classUpgrades['guerrier_stat_15'] || ''}
-                        onChange={e => setState(p => ({
-                          ...p,
-                          classUpgrades: {
-                            ...p.classUpgrades,
-                            guerrier_stat_15: e.target.value
-                          }
-                        }))}
-                        style={{ width: '100%', padding: '8px 10px', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
-                      >
-                        <option value="">— Choisir un bonus —</option>
-                        {statOptions15.map((stat, idx) => (
-                          <option key={idx} value={stat}>{stat}</option>
-                        ))}
-                      </select>
-                      {state.classUpgrades['guerrier_stat_15'] && (
-                        <div style={{ marginTop: '10px', padding: '8px', background: '#f3e8ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
-                          ✓ Bonus: <strong>{state.classUpgrades['guerrier_stat_15']}</strong>
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {state.niveau >= 16 && (
-                    <div style={{ padding: '14px', background: '#f0f4ff', border: '1px solid #2c5fa5', borderRadius: '6px' }}>
-                      <div style={{ fontWeight: 700, marginBottom: '8px', color: '#2c5fa5', fontSize: '14px' }}>Deuxième Style de Combat (Niveau 16+)</div>
-                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#1a3a6e' }}>Tu as maîtrisé un style de combat. Choisis un second style DIFFÉRENT pour renforcer tes capacités.</div>
-                      {firstStyleChosen && (
-                        <div style={{ marginBottom: '10px', padding: '8px', background: '#e0f2fe', border: '1px solid #0284c7', borderRadius: '4px', fontSize: '12px', color: '#0c4a6e' }}>
-                          Premier style : <strong>{firstStyleChosen}</strong>
-                        </div>
-                      )}
-                      <select 
-                        value={state.classUpgrades['guerrier_second_style'] || ''}
-                        onChange={e => setState(p => ({
-                          ...p,
-                          classUpgrades: {
-                            ...p.classUpgrades,
-                            guerrier_second_style: e.target.value
-                          }
-                        }))}
-                        style={{ width: '100%', padding: '8px 10px', border: '1px solid #2c5fa5', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
-                      >
-                        <option value="">— Choisir un style —</option>
-                        {availableStylesForLevel16.length > 0 ? (
-                          availableStylesForLevel16.map((style, idx) => (
-                            <option key={idx} value={style}>{style}</option>
-                          ))
-                        ) : (
-                          <option disabled>Aucun style disponible</option>
-                        )}
-                      </select>
-                      {state.classUpgrades['guerrier_second_style'] && (
-                        <div style={{ marginTop: '10px', padding: '8px', background: '#f5f0ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
-                          ✓ Second style : <strong>{state.classUpgrades['guerrier_second_style']}</strong>
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {state.niveau >= 20 && (
-                    <div style={{ padding: '14px', background: '#f0fdf4', border: '1px solid #16a34a', borderRadius: '6px' }}>
-                      <div style={{ fontWeight: 700, marginBottom: '8px', color: '#16a34a', fontSize: '14px' }}>Attaques Légendaires (Niveau 20)</div>
-                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#166534' }}>Tu peux effectuer des attaques extraordinaires et des mouvements impossibles.</div>
-                      <button 
-                        onClick={() => setState(p => ({
-                          ...p,
-                          classUpgrades: {
-                            ...p.classUpgrades,
-                            guerrier_legendary_20: !p.classUpgrades['guerrier_legendary_20']
-                          }
-                        }))}
-                        style={{
-                          width: '100%',
-                          padding: '10px',
-                          border: state.classUpgrades['guerrier_legendary_20'] ? '2px solid #16a34a' : '1px solid #16a34a',
-                          borderRadius: '4px',
-                          background: state.classUpgrades['guerrier_legendary_20'] ? '#f0fdf4' : '#fff',
-                          color: '#166534',
-                          fontSize: '13px',
-                          fontWeight: state.classUpgrades['guerrier_legendary_20'] ? 700 : 500,
-                          cursor: 'pointer'
-                        }}
-                      >
-                        {state.classUpgrades['guerrier_legendary_20'] ? '✓ Débloqué - Attaques Légendaires' : 'Débloquer - Attaques Légendaires'}
-                      </button>
-                    </div>
-                  )}
-                </div>
-              );
-            }
-
-            // Artificier: Armor upgrade at level 8
-            if (cls.id === 'artificier' && state.niveau >= 8) {
-              return (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  <div style={{ padding: '12px', background: '#fffbeb', border: '1px solid #d4a017', borderRadius: '6px' }}>
-                    <div style={{ fontWeight: 700, marginBottom: '8px', color: '#d4a017' }}>Armure arcano-mécanique (Niveau 8+)</div>
-                    <div style={{ fontSize: '13px', marginBottom: '10px' }}>Tu peux améliorer tes robes d'artificier avec des barres de métal pour créer une armure arcano-mécanique.</div>
-                    <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}>
-                      <input
-                        type="checkbox"
-                        checked={state.classUpgrades['artificier_armor'] === 'arcanotech'}
-                        onChange={e => setState(p => ({
-                          ...p,
-                          classUpgrades: {
-                            ...p.classUpgrades,
-                            artificier_armor: e.target.checked ? 'arcanotech' : 'robes'
-                          }
-                        }))}
-                      />
-                      <span>Utiliser Armure arcano-mécanique (AC +3, résistance électrique)</span>
-                    </label>
-                  </div>
-                </div>
-              );
-            }
-
-            return <div style={{ color: '#888' }}>Aucune amélioration disponible pour ta classe et ton niveau.</div>;
-          })()}
-        </div>
+        <ClassUpgradesStep
+          classId={state.classe}
+          level={state.niveau}
+          classUpgrades={state.classUpgrades}
+          onUpgradeChange={(key, value) => {
+            setState(p => ({
+              ...p,
+              classUpgrades: {
+                ...p.classUpgrades,
+                [key]: value
+              }
+            }));
+          }}
+        />
       );
 
       // ── Step 10: Summary ──
