@@ -266,9 +266,8 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   // But KEEP important class abilities like "Spécialisation au choix", "Arme à deux mains", "compétence aux armes"
   const GENERIC_ABILITY_RX = /(force|dexterité|constitution|resistance|intelligence|foi|charisme|vitesse)\s*\+\d+|miracle\s+(niveau|choix)|points?\s+(mélodieux|necromancie|vampirique|ki)|mana\s*\+|divinité\s*\+|vision|survivance|d[eé]couvert|langue(?!\s)|malédiction|marque/i;
   
-  const classAbilities = cls?.startingEquipment
-    ?.filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort') && !GENERIC_ABILITY_RX.test(e))
-    .join('\n') ?? '';
+  const classAbilitiesArray = cls?.startingEquipment
+    ?.filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort') && !GENERIC_ABILITY_RX.test(e)) ?? [];
   
   // Level-specific upgrades (e.g., Artificier's Armure arcano-mécanique at level 8)
   const levelUpgrades: string[] = [];
@@ -283,7 +282,7 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   }
   
   // Abilities now contains only class features + level upgrades (NOT feats anymore - they stay in Feats step)
-  const habiletes = [...classAbilities, ...levelUpgrades].filter(Boolean).join('\n\n');
+  const habiletes = [...classAbilitiesArray, ...levelUpgrades].filter(Boolean).join('\n\n');
 
   // Inventory text — only physical, non-choice items
   // Important: exclude items that already went to classAbilities (habiletes)
@@ -293,8 +292,7 @@ function buildCharacterData(state: WizardState): { data: CharacterData; vis: Vis
   const isArmorChoiceItem = (s: string) => / OU /i.test(s) && /(armure|robe)/i.test(s);
   
   // Build list of items that went to abilities to exclude them from inventory
-  const abilityItems = (cls?.startingEquipment ?? [])
-    .filter(e => !e.includes('AC') && !e.includes('Armure') && !e.includes('sort') && !e.includes('Sort') && !GENERIC_ABILITY_RX.test(e));
+  const abilityItems = classAbilitiesArray;
   
   let equipLines = (cls?.startingEquipment ?? []).filter(e => {
     // Exclude abilities
