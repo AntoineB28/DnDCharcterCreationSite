@@ -1,0 +1,1681 @@
+DLC : Les Étoiles et les Cendres
+Ceci est une expansion du système de jeu DnD Midian. Elle prend place dans le même univers et approfondit les options de roleplay en ajoutant 9 races et 16 classes jouables.
+Ce premier DLC est centré sur les forces du bien et du mal régissant le monde ainsi que sur les phénomènes étranges, voire déstabilisant, qui prennent place sur Midian. Cette expansion amène le joueur aussi haut que les feus rugissant dans les étoiles du cosmos et aussi bas que les cendres aux tréfonds des enfers.
+Races
+Sythrak
+Les sythraks sont des créatures amphibiennes originaires des marais au sud de Midian. Tous comme les orcs, les impitoyables sythraks descendent de la déesse Mitulia. Leur peau serpentine, variant du vert émeraude au bleu profond, est parsemée de cicatrices et de taches sombres. Leurs yeux, brillants d’un rouge fiévreux, dégagent une lueur inquiétante, et leurs crocs acérés ressortent d’une mâchoire puissante contenant une langue fourchue. Leur posture est une étrange combinaison de grâce reptilienne et de vigilance prédatrice, prête à bondir. Ils sont froids et calculateurs, d'une loyauté à toute épreuve envers leur clan et leurs alliés. Cependant, leur nature avare et égoïste les pousse souvent à des actes moralement répréhensibles. Ainsi, les sythraks sont rarement les bienvenus dans les communautés de Midian. Un sythrak peut vivre jusqu’à environ 100 ans.
+Attributs : Résistance +1, dextérité +2. Résistance aux dégâts acides. Peut respirer sous l’eau.
+Crocs perçants : Action bonus. Une fois par combat. Mord la cible, ignorant 1 de son AC. Inflige 1d4 dégâts perçants par niveau (jusqu’à un maximum de 6).
+Bugbear
+Les bugbears, originaires des plaines de Skoydal à l’est de Midian et lointains cousins des kobalos, sont d'imposantes créatures à l'apparence bestiale, couvertes de fourrure sombre et hérissée. Leur visage est déformé par des crocs saillants et des yeux jaunes perçants, donnant l'impression d'un chasseur à l’affut. Leur corps massif et musclé dissimule une agilité surprenante. Les bugbears sont des créatures solitaires, silencieux dans leur approche, mais capables d'une violence extrême une fois engagés au combat. Leur nature sauvage est un mélange de ruse et de brutalité, et ils n'hésitent pas à user de leur force pour écraser leurs ennemis ou intimider les faibles. Leur tempérament est imprévisible, oscillant entre une calme observation et une colère explosive. Un bugbear a une espérance de vie d’une cinquantaine d’années.
+Attributs : Force +2, dextérité +1, constitution +1, charisme -1. Compétence avec armes simples.
+Ivrak
+Les ivraks sont les infortunés descendants de Sugriok, le Dieu des Enfers qui règne sur un désert de glace infini, un royaume où le froid mordant est plus cruel que n’importe quel tourment. Nés de mères sorcières ou démonistes ayant accueilli le dieu des Enfers en elles en échange d’un pouvoir quelconque, les ivraks sont tous mâles et leur progéniture, s’ils en ont, n’hérite d’aucun de leurs traits infernaux. De ce fait, les ivraks sont rares sur Midian et souvent pris pour des démons. Leur peau pâle, presque translucide, ressemble à de la glace d’un bleu frigorifiant ou d’un blanc enneigé, leur donnant un aspect spectral. Des veines d’un rouge sombre ou d’un mauve intense traversent leur corps, comme des ruisseaux gelés. Ils possèdent des cornes recourbées et noires, comme des piques de glace carbonisée, et leurs yeux, d’un violet ou d’un bleu abyssal, semblent refléter un ciel éternellement sans étoiles. S’ils ne rencontrent pas de mort violente, les ivraks peuvent vivre éternellement.
+Attributs : Vitesse +1, résistance au froid.
+Cœur de glace : Réaction. Une fois par long rest. L’ivrak rend sa peau gelée et insensible. Il ignore 1d6 dégâts.
+Velshaari
+Les velshaaris sont des créatures draconiques descendant des dragons anciens. Leur peau est écailleuse et tissée de motifs colorés (rouges pour les velshaaris descendant des dragons primordiaux de feu Gorshua la Calamité et Kerakzol le Tyrant, jaunes pour ceux descendant des anciens dragons électriques Bayle la Terreur et Zulrum la Foudre, bleus pour les descendants des dragons de givre Erebax la Dracoliche et Nifernia le Souffle Hivernal). Leur tête comporte des cornes, des pics osseux autour de la mâchoire et des dents acérées. Leurs yeux brillent d’un feu ardent. La présence d’un velshaari dégage une aura étrange, car ils semblent toujours en réflexion. Les velshaaris sont des manipulateurs du temps et de l'espace, leurs dirigeants, les magistrats, étant de puissants astromanciens capables de ralentir, d’accélérer ou de manipuler les événements autour d'eux. Ils sont souvent solitaires et mystérieux, préférant observer le monde d’un œil détaché tout en tissant des fils invisibles. Les velshaaris viennent d’une cité connue à travers le monde comme Ashai, qui selon les rumeurs se trouveraient très loin à l’est du continent principal de Midian. Ashai est également décrite comme une cité de richesses inégalées où l’observation et la patience sont les vertus principales. Les velshaaris vivent souvent jusqu’à un impressionnant cinq siècles.
+Attributs : Intelligence +1, constitution +1. Lorsque le velshaari ne porte pas d’armure, son AC de base est de 13.
+Velshaari rouge
+Souffle de feu : Action. Une fois par long rest. Inflige 3d6 dégâts brûlants.
+Morsure : Action bonus. Une fois par long rest. Inflige 1d6 tranchant + 1d6 brûlant.
+Résistance au feu.
+Velshaari jaune
+Souffle de foudre : Action. Une fois par long rest. Inflige 2d6 dégâts électriques. La cible doit réussir un saving throw constitution 12 ou être stun un tour.
+Morsure : Action bonus. Une fois par long rest. Inflige 1d6 tranchant + 1d6 électrique.
+Résistance à l’électricité.
+Velshaari bleu
+Souffle de glace : Action. Une fois par long rest. Inflige 2d6 dégâts froids. La cible doit réussir un saving throw constitution 12 ou être affecté d’engelure et perdre 2 AC pour un tour.
+Morsure : Action bonus. Une fois par long rest. Inflige 1d6 tranchant + 1d6 froid.
+Résistance au froid.
+Carnog
+Les carnogs sont une race cannibale pâle et déformée, résultat de millénaires de vie sous terre, loin de la lumière du soleil. Leur peau est d'une blancheur maladive, presque translucide, parcourue de veines bleues visibles sous la surface. Leurs traits sont décharnés, leurs visages marqués par l'atrophie, avec de longs muscles déliés mais maigres qui ne semblent avoir qu'une utilité : la survie dans l'obscurité. Leurs yeux, d’un blanc pur et dépourvus de pupilles, semblent sans vie, mais sont d'une acuité terrifiante, capables de percevoir des mouvements dans les ténèbres les plus profondes. Leurs oreilles sont longues et pointues, rappelant de manière sinistre qu’ils étaient autrefois des elfes, il y a très longtemps. Les carnogs ne vivent en général pas plus de 100 ans.
+Attributs : Intelligence -1, charisme -2, vitesse +2, constitution +2. Vision parfaite dans le noir. Résilience souterraine : Le carnog récupère 1d4 PV au début de son tour en combat.
+Tharoc’zar
+Les tharoc’zars sont une race de géants imposants, mesurant entre 8 et 11 pieds de hauteur. Leur peau grise, semblable à de la roche, est marbrée de veines lumineuses d’un vert forêt ou d’un bleu pâle. Leur corps est couvert de cicatrices de guerre. Leur visage est rectangulaire, avec de grandes mâchoires et des canines saillantes, tandis que leurs yeux brillent d’une lueur surnaturelle. Ils viennent des sommets des Montagnes Azures qui entourent Alfheim, le royaume des elfes, où ils sont nés de l’acier et de la pierre, forgés par la foudre qui s’abat et fait fondre les éléments ensemble. Leur voix, grave et profonde, résonne comme un écho venant d’une caverne. Les tharoc’zars sont une race mystérieuse, préférant rester à l’écart des civilisations et suivant quelques shamans qui régissent leur société ésotérique. Les tharoc’zar semblent prendre leur temps en toute chose, même pour mourir. En effet, il n’est pas rare qu’un tharoc’zar atteigne un millénaire de vie.
+Attributs : Résistance +2, force +1.
+Nyxian
+Les nyxians sont une race énigmatique et nocturne habitant les tréfonds de vestiges météoriques laissés par des impacts astraux sur Midian. Il est dit que leur capitale, Etrynox, se trouve sous un cratère immense laissé par la collision de Midian avec une lune il y a des millions d’années. Leur peau est d'un noir profond, presque absorbant, semblable à de l'onyx, et elle semble se fondre dans les ténèbres. Parfois, des motifs scintillants ressemblant à des constellations apparaissent sur leur peau, pulsant faiblement à la lumière. Leurs yeux sont entièrement noirs avec des pupilles en forme de fentes verticales, leur donnant un regard perçant, capable de voir à travers l'obscurité la plus totale. Leurs corps dénués de poil sont longs et élancés, avec une musculature souple mais puissante, idéale pour la furtivité et les déplacements rapides. Leur visage est dur, avec des traits anguleux et une bouche sans lèvres, laissant entrevoir des dents acérées. Leurs mains sont dotées de doigts longs et agiles. Les nyxians sont la seule culture de Midian pour laquelle la magie du sang n’est pas mal vue. Ainsi, ils forment des fourbesangs qui hantent les cratères météoriques, protégeant les entrées de leur cités. Les nyxians ont une espérance de vie similaire à celle des humains.
+Attributs : Vitesse +1, dextérité +1, vision parfaite dans le noir.
+Fondre dans les ombres : Action bonus, une fois par long rest. La zone doit être au moins partiellement obscure. Le nyxian fait un saving throw dextérité 10. S’il réussit, il semble disparaître dans l’obscurité.
+Qharaku
+Partageant un ancêtre commun avec les kenkus, les qharakus sont des êtres élégants dont l’apparence évoque les oiseaux tropicaux qui vivent dans leur région natale, les Îles d’Émeraude, au sud-ouest du continent principal de Midian. Leur visage au centre duquel se trouve leur bec est souvent marqué de taches colorées. Leur peau comporte de fines plumes allant du vert au rouge en passant par le jaune et le orange. Ces plumes couvrent particulièrement densément leur dos, leurs bras ailés et leurs épaules, donnant aux qharakus une sorte de manteau naturel. Sur leur tête se trouve une crête aux couleurs vives que les qharakus décorent souvent de bijoux. Leur trait le plus distinctif est leur queue aux motifs magnifiques que les qharakus peuvent déployer comme celle d’un paon et qui leur sert pour communiquer, impressionner et séduire. Les qharakus ont une des cultures les plus vieilles de Midian. Ils vénéraient le soleil avant même la révélation de Moiifhb, l’évènement fondateur de la Chantrie de l’Empire qui a mis fin à l’ère précédente, L’Âge de la Noirceur, lorsque le dieu soleil s’est montré dans le ciel et a, avec l’aide d’Erkanos dont les armes ont cicatrisé la terre durant la bataille, renvoyé Sugriok aux enfers. Comme leurs cousins les kenkus, les qharakus peuvent vivre sans difficulté jusqu’à environ 300 ans.
+Attributs : Peut voler (avantage contre les cibles au sol). Dextérité +2, charisme +2, constitution -1, résistance -1.
+Pandai
+Les pandais sont une race de petits ursidés noirs et blancs qui font environ 3 pieds de hauteur. Les pandais ont découvert il y a longtemps une hydre plumée millénaire qui dormait dans un volcan éteint et ils ont décidés que la bête était leur dieu. Ayant pris l’hydre plumée pour une sorte de canard, les pandais l’ont appelée Cwak. Maintenant, sous la direction de leur souverain Yukamenistorizogatruyivno (abrévié Yuka) Soukata, ils offrent à Cwak des dizaines de sacrifices par jour. Les pandais parlent une langue incompréhensible pour les autres races de Midian et il leur semble impossible d’apprendre d’autres langues sans conserver un fort accent qui les rend, aux yeux de certains, comiques. Comme leurs prénoms sont particulièrement longs et difficile à prononcer, ayant en moyenne entre 11 et 16 syllabes, les pandais, lorsqu’ils interagissent avec d’autres peuples, se donnent des pseudonymes. De toute évidence immunisés au ridicule, les pandais ne trouvent pas étrange d’utiliser des objets communs comme surnom et ainsi de se présenter en tant que ‘’baril’’, ‘’chaise de bois’’ ou encore ‘’lampe à l’huile’’ et il n’est pas étonnant de croiser un pandai qui se donne un faux nom absurde. Pouvant vivre jusqu’à une cinquantaine d’années, les pandais sont des piètres orateurs et des horribles artistes. Toutefois, cela ne veut pas dire que les pandais ne sont pas intelligents ou charismatiques. Ils sont particulièrement inventifs, constituant la civilisation la plus évoluée scientifiquement de Midian. Ils construisent des armes arcano-mécaniques qui peuvent tirer de l’énergie magique électrique ou incorporer des propriétés étonnantes dans une arme rapprochée. Ils sont également fourbes, avares et trompeurs, très doués pour tourner des situations difficiles à leur avantage.
+Attributs : Force -1, dextérité -1, constitution -1. Intelligence +2, vitesse +1, charisme +1. Résistance aux dégâts psychiques.
+Déni : Réaction à une attaque qui touche. Une fois par long rest. Ce que le pandai ne croit pas ne l’affecte pas. Par exemple, si un pandai manque d’air, il ne mourra pas tant qu’il ne s’en rend pas compte. Ainsi, il est possible pour un pandai d’ignorer volontairement jusqu’à 1d10 de dégâts une fois par jour.
+Classes
+Astromancien**
+Les astromanciens sont maîtres des étoiles, des constellations et des phénomènes cosmiques. Ils puisent dans l’énergie des astres pour manipuler la réalité, affecter le temps ainsi que l’espace et prédire des événements futurs. L’astromancien n’est ni un mage utilisant la mana, ni un prêtre vénérant Kadath. Sa puissance lui vient de sa connexion mystique avec le cosmos réel, physique et non pas magique comme la dimension de Kadath. Les forces en constant mouvement qui s’exercent entre les corps célestes inspirent l’astromancien a des exploits de manipulation de la réalité. L'astromancien marche sous la lueur des étoiles, sa magie aussi infinie que le ciel. Les magistrats velshaari de la cité d’Ashai et les mages de la Shaiksa kobalos forment les astromanciens les plus puissants du monde.
+Compétences : Sorts, armes simples, armures légères. (Les capacités propres à l’astromancien sont des sorts cosmiques.)
+L’astromancien utilise son intelligence pour ses sorts cosmiques. Comme il n’a pas de ressource comme la mana, tous ses sorts ont une limite d’utilisations définie.
+Niveau 1
+Armure de cuir (Légère, AC +1), sceptre météorique (+1 au attack roll avec sorts cosmiques), dague (1d4 + adresse).
+L’astromancien peut utiliser la télékinésie à volonté.
+Orbe céleste : Action. Le lanceur crée un orbe de la grosseur d’une pomme, mais dont la force gravitationnelle est celle d’un boulet de canon. Inflige 2d8 dégâts de force et jette la cible au sol si elle est de taille moyenne ou petite. Peut utiliser 5 fois par long rest.
+Niveau 2
+PV +5.
+Apprend le sort clignement qui peut être utilisé une fois par long rest.
+Calme cosmique : Action bonus. Une fois par long rest. L’astromancien entre en communion avec une vaste étendue de vide où la matière n’existe pas. Il utilise la vision pour calmer son esprit et celui de ses alliés. R56end 1d4 PV à tous les alliés.
+Niveau 3
+PV +5.
+Choix de spécialisation :
+-	Stellamancie : Le stellamancien est maître de l’astrologie et des cartes du ciel. Il tire un grand pouvoir des alignements célestes.
+•	Constellation maudite : Action bonus. Une fois par long rest. Une constellation avec une énergie sombre flash dans le ciel et rend la cible vulnérable à tous les types de dégâts jusqu’à la fin du tour de l’astromancien.
+•	Constellation régénératrice : Action bonus. Une fois par long rest. Une constellation apaisante heal un personnage pour 3d6.
+-	Chronomancie : Les chronomanciens sont des manipulateurs du temps, capables de ralentir, d’accélérer, ou même d’altérer le cours des événements. Leur pouvoir les place entre l’espace et le temps, leur permettant de modifier la réalité.
+•	Voile temporel : Aucun coût d’action. Une fois par long rest. Pendant un tour, le joueur et ses alliés peuvent utiliser des actions et actions bonus de manière interchangeable.
+-	Astrophage : Ces astromanciens puisent leur magie dans les étoiles mourantes, consommant leur énergie et la transformant en pouvoir. Cette magie est dévastatrice et nourrissante, mais inévitablement liée à la fin de l’univers.
+•	Rayon dévorant : Action bonus. Trois fois par long rest. Une minuscule fraction d’un immense rayon de lumière traversant l’espace, l’un des derniers vestiges d’une étoile morte, est puisé et envoyé vers une cible qui subit 2d4 dégâts magiques. L’astromancien récupère des PV égaux aux dégâts.
+-	Cometari : Les cometari sont des maîtres de la magie gravitationnelle. Ils peuvent influencer le mouvement de petits objets célestes comme des comètes et des météorites pour en tirer une puissance dévastatrice.
+•	Chute astrale : Action : Une fois par long rest. Un morceau microscopique et extrêmement tranchant d’une comète est arraché de la roche et tombe du ciel sur jusqu’à 3 cibles à une vitesse fulgurante. Il prend feu dans l’atmosphère, puis frappe les cibles sous forme d’une boule de flammes et de fragments. Inflige 1d6 dégâts tranchants et 1d8 dégâts de feu.
+-	Météoricien : Les astromanciens météoriciens sont des adeptes de la magie gravitationnelle, comme les cometari. Contrairement aux cometari qui utilisent la gravité pour lancer des sorts, les météoriciens utilisent la roche météorique pour augmenter la puissance de leurs armes rapprochées.
+•	Compétence avec toutes les armes rapprochées.
+•	Arme météorique : Action bonus. Une fine poussière météorique vient se coller à l’arme de l’astromancien, lui donnant 1d10 dégâts de force de plus que son dégât normal jusqu’à la fin du combat.
+Niveau 4
+PV +5.
+Lueur astrale : Action bonus. Une fois par long rest. Une lumière brillante émane de l’astromancien et révèle les objets invisibles ainsi que les illusions dans une petite zone.
+Niveau 5
+PV +5. Intelligence +1.
+L’astromancien gagne résistance aux dégâts magiques. Il peut maintenant utiliser l’orbe céleste jusqu’à 7 fois par long rest. L’orbe céleste fait maintenant 3d8.
+Niveau 6
+PV +6.
+Souffle cosmique : Action. Une fois par long rest. L’astromancien souffle un vent cosmique qui frappe toutes les cibles, alliées ou ennemies, dans un cône devant lui et inflige 1d4 dégâts de force, 1d6 dégâts de froid et 1d6 dégâts de foudre. Les cibles touchées sont également jetées au sol.
+Niveau 7
+PV +6.
+Voyage astral : Les Astromanciens peuvent projeter leur esprit dans le cosmos pour voir des événements passés ou futurs. Cette capacité permet d'anticiper des attaques ou d’apprendre des informations essentielles sur une situation. Utilisable seulement hors combat. Pour utiliser cette capacité, l’astromancien doit réussir saving throw intelligence (10). S’il échoue, le voyage astral arrête et il subit 1d4 dégâts psychiques.
+Niveau 8
+PV +8. Amélioration de spécialisation :
+-	Stellamancie : 
+•	Constellation de puissance : Une fois par long rest. Action bonus. Une constellation apparait dans le ciel, inspirant la force et la puissance à l’astromancien. Son prochain sort cosmique a +4 au attack roll et fait 1d8 dégâts magiques de plus.
+-	Chronomancie : Le chronomancien manipule constamment le temps autour de lui, le rendant aux yeux des autres extrêmement rapide. Vitesse +2.
+-	Astrophage : L’astromancien est capable d’absorber l’énergie magique qui l’entoure. Chaque fois qu’il utilise un sort cosmique, il récupère 1d4 PV.
+-	Cometari : 
+•	Puits gravitationnel : Action bonus. Les ennemis dans une zone autour de l’astromancien doivent réussir un saving throw de résistance (12) ou être jetés au sol et subir 1d6 dégâts de force.
+-	Météoricien : 
+•	Armure météorique : Action bonus. Une fois par long rest. L’astromancien fait appel à des morceaux solides d’astres célestes qui viennent se coller à lui comme une armure. Pour les trois prochains tours, il a un AC de 19.
+Niveau 9
+PV +8.
+Saut antigravité : L’astromancien peut sauter comme s’il était dans un espace avec une gravité 10x plus faible que celle de Midian. Ainsi, il peut sauter haut et loin et il ignore les dégâts de chute.
+Niveau 10
+PV +8.
+L’orbe céleste fait maintenant 4d8.
+Fusion avec l’univers : Action bonus. Une fois par long rest. Jusqu’à son prochain tour, l’astromancien se fond dans la matière et devient intangible. Il est immunisé à toutes les sources, mais ne peut pas utiliser de réaction.
+Niveau 11
+PV +10.
+Expertise avec les sorts cosmiques.
+Vol céleste : L’astromancien peut maintenant lever son corps en le mettant en connexion avec la force gravitationnelle d’un astre. De cette manière, il donne l’illusion de voler. Une fois par combat, l’astromancien peut utiliser son mouvement pour s’envoler, ce qui lui donne avantage avec ses sorts cosmiques contre les cibles au sol.
+Niveau 12
+PV +10.
+Supernova : Action et action bonus. Une fois par long rest. L’astromancien utilise l’énergie accumulée des étoiles pour créer une explosion dévastatrice en concentrant une supernova dans une zone. Pour résister à l’explosion, les ennemis dans la zone doivent réussir un saving throw de résistance (18). L’explosion inflige 5d6 dégâts de feu à tous les ennemis (même ceux qui réussissent le saving throw) dans un grand rayon autour de l’astromancien, dévastant toute la zone. Ceux qui échouent reçoivent 5d6 dégâts de force et sont également projetés au sol.
+Niveau 13
+PV +10.
+Siphon astral : Action bonus. Une fois par long rest. L’astromancien crée momentanément un puits de gravité autour de lui. Tous les ennemis qui sont proches doivent réussir un saving throw de résistance (12) ou subir 2d6 dégâts de force et être projetés au sol.
+Niveau 14
+PV +12.
+Amélioration de spécialisation :
+-	Stellamancie : 
+•	Alignement cosmique : Une fois par long rest. Réaction L'astromancien appelle un alignement parfait de constellations dans le ciel, créant une fenêtre dans l’espace-temps. Il fait un saving throw de dextérité (10). S’il réussit, il se téléporte se une courte distance pour éviter une attaque ou un sort.
+-	Chronomancie : 
+•	Inversion temporelle : Une fois par long rest. Aucun coût d’action. Le chronomancien annule la dernière action ou action bonus qu’il a entrepris et revient dans le temps au moment juste avant de le faire. Il peut donc réessayer une action ou faire autre chose.
+-	Astrophage : 
+•	Noyau d’étoile : Action bonus. L’astrophage se nourrit de l’énergie incroyable du noyau d’une étoile mourante. Cela le revigore, lui rendant 4d6 PV.
+-	Cometari : 
+•	Pluie d’étoiles. Action. Une fois par long rest. Le cometari fait tomber une pluie de fragments métalliques brûlants sur les ennemis qui l’entourent. Tous les ennemis à portée de vue doivent réussir un saving throw résistance (15) ou subissent 4d8 dégâts brûlants. Les ennemis qui réussissent le saving throw subissent 2d6.
+-	Météoricien : Expertise avec les armes rapprochées. 
+•	Arme météorique avancée : La poussière météorique sur l’arme est maintenant accompagnée de morceaux de comète incandescents. En plus du 1d10 dégâts de force, l’arme fait maintenant 1d10 dégâts brûlants.
+Niveau 15
+PV +12.
+L’orbe céleste peut maintenant être utilisé jusqu’à 9 fois et fait 4d8.
+Niveau 16
+PV +12. Intelligence +1.
+Impact gravitationnel : Action. Une fois par long rest. L’astromancien frappe le sol du pied, envoyant dans la terre une onde de choc qui fait ressortir des pierres affutées comme des couteaux. Tous les ennemis dans une petite zone devant l’astromancien doivent réussir un saving throw dextérité (15) ou subir 4d10 dégâts tranchants et être projetés dans les airs.
+Niveau 17
+PV +14.
+Amplification : Action bonus. Une fois par long rest. L’astromancien rend la gravité autour de lui extrêmement lourde. Les ennemis autour de lui doivent réussir un saving throw de résistance (15) ou ne peuvent pas utiliser leur mouvement pendant un tour et ne peuvent pas envoyer de projectiles.
+Niveau 18
+PV +14. 
+Amélioration de spécialisation :
+-	Stellamancie : 
+•	Constellation protectrice : Réaction. Une fois par long rest. Lorsque l’astromancien ou un allié est touché par une attaque, les dégâts sont réduits de Xd6 où X est le bonus d’intelligence de l’astromancien.
+-	Chronomancie : 
+•	Paralysie temporelle : Action bonus. Une fois par long rest. Le chronomancien est capable de brièvement suspendre le temps autour d’une cible. Elle doit réussir un saving throw de vitesse (15) ou être paralysée pendant un tour.
+-	Astrophage : 
+•	Trou noir : Action et action bonus. Une fois par long rest. L’astromancien aspire tout l’énergie d’une étoile, créant un trou immense dans la fabrique de la réalité qu’il fait apparaitre dans le ciel pour un bref instant. Tous les ennemis doivent réussir un saving throw de résistance (15) ou subir 8d10 dégâts de force. Les ennemis dont les PV tombent à 0 à cause de cet effet sont aspirés dans le trou noir.
+-	Cometari : 
+•	Tempête gravitationnelle : Action. Une fois par long rest. Pour les trois prochains tours, une tempête de débris météoriques flotte autour de l’astromancien. Au début de leur tour, les ennemis doivent réussir un saving throw de dextérité (15) pour éviter les débris ou subir 2d8 dégâts de force et 2d8 dégâts brûlants.
+-	Météoricien : Maîtrise avec les armes rapprochées. 
+•	Arme météorique suprême : Les débris et la poussière sur l’arme du météoricien sont maintenant accompagnés de morceaux tranchants de métal cosmique. L’arme fait maintenant, en plus du 1d10 de force et 1d10 brûlants, un autre 1d10 dégâts tranchants.
+Niveau 19
+PV +16.
+Inversion gravitationnelle : Action. Ne rate jamais. Une fois par long rest. L’astromancien inverse la gravité autour de lui, projetant les objets et les ennemis vers le ciel, puis les faisant retomber à une vitesse incroyable. Lorsqu’ils frappent le sol, ils subissent 6d6 dégâts de force.
+Niveau 20
+PV +18.
+Maîtrise avec les sorts cosmiques.
+Tu es maintenant parmi les astromanciens les plus puissants du monde. Ta maîtrise du temps et de l’espace te permet de consulter les évènements du passé et du futur à tout moment avec une précision incroyable.
+L’orbe cosmique peut être utilisé à volonté et fait 5d8.
+Fourbesang****
+Les fourbesangs sont des maîtres de la corruption vitale, des guerriers qui manipulent leur propre corps et celui de leurs ennemis pour se renforcer, semer la malédiction et altérer le cours de la vie. En puisant dans une magie ancienne et interdite, ils exploitent l’énergie vitale qui circule dans leurs veines, façonnant leur corps pour accomplir des exploits de douleur et de mutation. Ces rituels macabres, souvent au prix de leur propre bien-être, leur permettent de sacrifier des morceaux d’humanité pour infliger de terribles souffrances à leurs adversaires, tout en les affaiblissant et en les condamnant à des maux qui dépassent l'entendement. Les fourbesangs portent souvent les marques de leur art douloureux : cicatrices profondes, mutations grotesques ou tatouages déformés gravés sur leur peau. À chaque transformation, une partie de leur âme semble se faner un peu plus, mais leur pouvoir s’intensifie. Redoutés de tous, ils sont des entités de terreur, capables de manipuler la vie, la chair et la souffrance à leur guise. Toutes les sociétés de Midian craignent les fourbesangs qui sont souvent considérés comme les plus horribles créatures du monde.
+Compétences : Toutes armes rapprochées, corruptions (les pouvoirs uniques du fourbesang s’appellent des corruptions).
+Niveau 1
+Vêtements déchirés, une arme rapprochée au choix.
+Profanation : Coût 4 PV. Le fourbesang utilise son énergie vitale pour augmenter sa prochaine attaque avec une arme. Cette attaque reçoit +2 au attack roll et inflige 1d4 dégâts nécrotiques supplémentaires.
+Niveau 2
+PV +8.
+Marque maudite : Coût 2 PV. Action bonus. Le fourbesang marque la cible d’un tatouage sanglant. Sa prochaine attaque contre cette cible a avantage.
+Niveau 3
+PV +8. Choix d’une spécialisation :
+-	Écorcheur : Maître de la chair, l’écorcheur inflige des mutilations brutales, déformant le corps de ses ennemis pour les rendre plus vulnérables.
+•	Déformation : Coût 5 PV. Action bonus. Une fois par long rest. La cible doit réussir un saving throw de constitution (18) ou voir sa chair devenir temporairement plus molle et faible. Jusqu’au prochain tour du fourbesang, la cible a -2 AC et -2 sur ses attack rolls et saving throws.
+•	Carnophagie : Chaque fois que le fourbesang touche un ennemi avec une attaque, il récupère 2 PV.
+-	Sanguinier : Le sanguinier manipule le sang pour guérir ses blessures et affaiblir ses ennemis, utilisant la vie qui coule dans ses veines comme une arme.
+•	Drain de sang : Action bonus. Une fois par long rest. Ne rate jamais. La cible subit 1d8 dégâts tranchants. Le fourbesang récupère des PV égaux aux dégâts.
+•	Armure coagulée : Coût 2 PV. En réaction à une attaque, tu peux faire coaguler une croute de sang comme une armure qui colle à ta peau pour augmenter ton AC de 2 par rapport à cette attaque.
+-	Tisseur d’os : Ce fourbesang déforme les structures corporelles, renforçant ses os et créant des armes brutales à partir de son propre squelette.
+•	Carapace osseuse : Les os du fourbesang se réarrangent pour protéger ses points vitaux de l’extérieur. Son AC de base devient 13 tant qu’il ne porte pas d’armure. Résistance aux dégâts contondants et aux dégâts de force.
+•	Pique d’ivoire : Coût 4 PV. Action bonus. Le fourbesang fait pousser un os piquant qui sort de sa chair, puis l’utilise comme un projectile. Inflige 2d6 dégâts perçants.
+Niveau 4
+PV +8.
+Corruption réveillée : Une fois par long rest. Action bonus. Coût 6 PV. Le fourbesang déchaîne une partie de sa corruption intérieure pour libérer une puissance brute. Une fois activé, le fourbesang reste en état d'éveil de manière indéfinie, mais au début de chaque tour suivant, il perd 4 PV. Il peut maintenir cet état aussi longtemps qu'il le souhaite. Tant que corruption réveillée est active, le fourbesang gagne +2 à ses attack rolls et chacune de ses attaques inflige 1d6 dégâts nécrotiques de plus.
+Niveau 5
+PV +10.
+Mutation génétique : Le fourbesang appelle la corruption en lui pour transformer son corps et lui donner accès à des habiletés qui dépassent les limites que son corps avait jusqu’à présent.
+-	Genoux inversés: Tes jambes deviennent plus longues et plient désormais vers l’intérieur. Tu cours à quatre pattes comme un chien de chasse. Vitesse +2. Tu ignores les terrains difficiles.
+-	Pronation cérébrale : Le devant de ton cerveau pousse sur ton crâne et écrase tes structures faciales, te faisant couler du nez et des yeux en permanence. Intelligence +2. Tu as de la difficulté à te concentrer dans des endroits trop brillants ou trop lumineux.
+-	Ailes déformées : Des ailes grotesques sortent de ton dos, faites de fragments d’os ornés de chair déchirée. Tu peux maintenant voler sur de courtes distances.
+-	Fentes oculaires: La structure moléculaire de tes yeux change, fendant les pupilles en quatre angles à la manière d’une croix. Tu absorbes tant de lumière que tu as par moment l’impression de vivre sous ciel constamment ensoleillé. +4 aux jets de perception. Vision parfaite dans le noir.
+-	Musculature saillante : Tes muscles semblent grossir plus vite que ta peau ne peut les contenir, menaçant de déchirer leur enveloppe sous le moindre effort. Force +2.
+-	Articulations supplémentaires : Tes doigts allongent de manière non naturelle et développent une quatrième, puis une cinquième jointures, leur permettant de plier dans des angles grotesques. Dextérité +2.
+-	Coquilles cartilagineuses : Ta chair se mobilise et durcit, formant des cages gélatineuses autour de tes organes et articulations comme du cartilage robuste. Résistance +2.
+-	Excroissances thoraciques : Les os de ta cage thoracique poussent et plient dans tous les sens, formant des pics comme ceux d’un hérisson sur ton dos et tes épaules. Chaque fois qu’une créature te touche avec une attaque mêlée, elle subit 1d6 dégâts tranchants.
+Niveau 6
+PV +10.
+Tu peux attaquer deux fois en une action avec tes armes rapprochées.
+Douloureuse communion : Peut être utilisé seulement hors combat. Un allié à la fois peut être choisi. Une fois la marque établie, elle ne peut jamais être retirée. Le fourbesang marque la chair d’un allié d’un tatouage runique qui inflige une douleur vive à la manière d’une brûlure, liant son corps et son énergie vitale à son allié. L’allié désigné perd 2 PV max à cause du trauma causé par la marque. Le fourbesang et l’allié en question peuvent maintenant s’échanger des PV une fois par tour sans utiliser d’action ou d’action bonus. Il n’y a pas de limite de PV qui peuvent être échangés d’un coup, mais le donneur subit 1d4 dégâts nécrotiques pour chaque tranche de 10 PV ainsi transférés.
+Niveau 7
+PV +12.
+Mutilation: Action. Coût 5 PV. Une fois par long rest. L'ennemi se tord de douleur alors que des verrues noires et des tissus déformés apparaissent à la surface de sa peau, semblant étouffer ses muscles et organes. Il doit réussir un saving throw constitution (15) ou subir 2d8 dégâts nécrotiques. Au début de chacun de ses tours, cet ennemi doit réessayer le saving throw pour se déprendre de la corruption ou resubir les dégâts. Si la cible réussit le saving throw initial, elle prend quand même la moitié des dégâts (1d8).
+Niveau 8
+PV +12.
+Explosions Pustuleuses : Coût 3 PV par projectile (6 projectiles maximum). Action. Une fois par long rest. Des pustules et des excroissances apparaissent sur le dos du fourbesang, prêtes à éclater sous la pression. Lorsqu’il active cette capacité, il peut lancer 1 à 6 projectiles de pustules infectées sur jusqu’à trois cibles dans un petit rayon autour de lui. Chaque projectile explose à l'impact, infligeant 1d6 dégâts nécrotiques et laissant la cible empoisonnée pour 3.
+Niveau 9
+PV +12.
+Sauvagerie : Coût 8 PV. Action. Une fois par long rest. Le fourbesang fait un geste violent, ses bras se tordant et se déformant comme des élastiques, multipliant les lames de chair et d'os qui en sortent. Il attaque toutes les créatures dans un rayon autour de lui. Fait 3d6 dégâts tranchants à chaque créature touchée. Après avoir utilisé cette capacité, le fourbesang doit réussir un saving throw de constitution (15) ou subir 2d4 dégâts nécrotiques en raison de la souffrance infligée à son propre corps par l’activation de cette capacité.
+Niveau 10
+PV +14.
+Choix d’une mutation qui n’a pas été choisie au niveau 5.
+Expertise avec les armes rapprochées et les corruptions.
+Niveau 11
+PV +14.
+Régénération surnaturelle : La corruption dans ton corps te maintient en vie. Au début de ton tour, tu récupères 1d6 PV.
+Niveau 12
+PV +15.
+Transcendance : Coût 10 PV. Action bonus. Une fois par long rest. Le fourbesang fusionne son corps avec la corruption qu'il a accumulée pour les trois prochains tours, libérant toute la puissance de ses mutations. Pour la durée de l'effet, le fourbesang bénéficie d'améliorations en fonction des mutations qu'il a subies.
+-	Genoux inversés : Gagne une action bonus de plus par tour. Les attaques rapprochées infligent 1d6 dégâts de force supplémentaires en raison de la vitesse incroyable.
+-	Pronation cérébrale : En action bonus, tu peux assillir l’esprit d’une cible qui doit réussir un saving throw d’une difficulté égale à ton score d’intelligence ou subir 2d6 dégâts psychiques.
+-	Ailes déformées : Les attaques rapprochées infligent 2d6 dégâts tranchants supplémentaires lorsque le fourbesang est en hauteur par rapport à ses ennemis.
+-	Fentes oculaires : Tous les ennemis subissent un malus de -2 sur leurs saving throws.
+-	Musculature saillante : Les attaques rapprochées infligent 1d8 dégâts supplémentaires et le fourbesang bénéficie d’un bonus de +2 à la force.
+-	Articulations supplémentaires : Le fourbesang peut faire une attaque supplémentaire par action.
+-	Coquilles cartilagineuses : Le fourbesang ignore 1d4 chaque fois qu’il subit des dégâts physiques.
+-	Excroissances thoraciques : Le fourbesang gagne +2 AC.
+À la fin de l’effet, le fourbesang subit 2d10 dégâts nécrotiques en raison du tollé infligé à son corps par la manipulation de ses propres mutations.
+Niveau 13
+PV +15.
+Tu es capable d’adapter ton corps à tes besoins, manipulant ta chair comme un instrument qui t’obéit. +1 dans une stat au choix.
+Niveau 14
+PV +15. Amélioration de spécialisation :
+-	Écorcheur : Dextérité +1. 
+•	Peste de Chair : Action bonus. Une fois par long rest. L'écorcheur inflige une corruption de chair à une créature qu'il a blessé ce tour-ci. La cible subit 2d6 dégâts nécrotiques et doit réussir un saving throw constitution (16) ou vivre une souffrance si intense que tous ses mouvements jusqu’à la fin du combat lui font mal. Chaque fois qu’elle utilise une action ou action bonus, elle subit 1d4 dégâts nécrotiques.
+-	Sanguinier : PV +4. 
+•	Rituel sanguinolant : Action bonus. Une fois par long rest. Le sanguinier sacrifie jusqu’à 10 PV pour transférer son énergie vitale à un allié. Pour chaque PV sacrifié, la cible récupère 1d4 PV.
+-	Tisseur d’os : Résistance +1. 
+•	Enveloppe macabre : Réaction à une attaque qui touche. Une fois par long rest. L’exosquelette du tisseur d’os se prépare à une attaque. Le fourbesang gagne résistance contre un type de dégâts au choix durant cette attaque.
+Niveau 15
+PV +15.
+Renaissance corrompue : Une fois par long rest. Lorsque les PV du fourbesang tombent à 0, il puise dans sa corruption intérieure pour immédiatement regagner 1d10 PV. Frôler la mort le laisse cependant dans une stupeur douloureuse, lui donnant -2 à tous ses rolls jusqu’à la fin de son prochain tour.
+Tu peux maintenant attaquer trois fois par action avec tes armes rapprochées.
+Niveau 16
+PV +18.
+Maîtrise avec les armes rapprochées et les corruptions.
+Choix d’une mutation qui n’a pas été choisie au niveau 5 ou au niveau 10.
+Niveau 17
+PV +18.
+Cicatrice vivante : Réaction à une attaque mêlée qui fait au moins 10 dégâts d’un coup. Une fois par long rest. Ton corps est devenu une arme redoutable, capable de supporter des souffrances inimaginables. À force de manipuler ta chair, tu peux exploiter la douleur pour décupler ta puissance. Tu fais immédiatement une attaque avec arme en réponse à celle que tu viens de subir. Tu subis 1d4 dégâts nécrotiques en raison de l’extrême effort, mais ton attaque bénéficie de +3 au attack roll et inflige 1d10 dégâts nécrotiques supplémentaires.
+Niveau 18
+PV +20.
+Fragment de souffrance : Action bonus. Coût 6 PV. Tu peux contrôler un seul avatar à la fois. Ton corps, déformé et façonné par des années de souffrance, n'est plus simplement une enveloppe physique, mais une entité qui défie les lois de la nature. À partir de ce moment, ton contrôle sur la chair et la corruption devient total, te permettant de créer des avatars de douleur. Tu détaches temporairement une partie de ta chair qui devient une créature avec 10 dans toutes ses stats. Ses PV sont de 10 + ton modificateur de constitution. Elle a +5 sur ses attack rolls et ses attaques font 1d8 tranchants + 1d6 nécrotiques.
+Niveau 19
+PV +22.
+Hurlement d’agonie : Action. Une fois par long rest. Coût 20 PV. Tu as transcendé la douleur et la corruption pour devenir une véritable incarnation de la souffrance, capable de dévorer la vie elle-même. Tu libères un cri dévastateur d’agonie pure qui traverse les âmes et la chair. Toutes les créatures ennemies qui l’entendent doivent réussir un saving throw de constitution (20) ou subir 6d6 dégâts nécrotiques et être étourdies sonnées pour 1 tour. Tu récupères 2 PV pour chaque créature touchée.
+Niveau 20
+PV +24.
+Extinction de l’existence : Aucun coût. Tu canalises toute la douleur, la corruption et les mutations que tu as subies pour atteindre l'ultime forme de puissance. Pendant 3 tours, tu deviens une incarnation vivante de la souffrance et de la destruction. Pendant cette période, tu bénéficies des effets suivants :
+-	Force +4.
+-	Dextérité +4.
+-	Tes attaques font 3d6 nécrotiques de plus.
+-	Tu peux attaquer 4 fois par action.
+-	L’effet transcendance (gagné au niveau 12) est activé.
+-	Immunité aux effets qui t’empêcheraient de bouger ou d’utiliser tes actions (comme sonné, paralysie, etc.)
+Lorsque l’effet prend fin, ton corps détruit par les mutations succombe finalement à la douleur que tu lui as infligée et tu meurs instantanément.
+Sépulcral**
+Le sépulcral est un guerrier qui a traversé la frontière entre la vie et la mort, un champion désigné par Laeth, déesse de la fin. Sa chair insensible est imprégnée par le froid de la tombe, son esprit imprégné de la noirceur des ténèbres. Il n’est ni vivant, ni totalement mort, mais une incarnation de l’inévitable fin qui attend tous les êtres. Animé par une puissance glacée et une volonté implacable, il devient une force imparable sur le champ de bataille, traînant derrière lui le souffle glacial des rites funèbres et des créatures perdues. Il se bat pour Laeth, portant la promesse que la fin viendra pour tous, peu importe la résistance. Dans ses actions, il reflète la neutralité de la mort : ni bonne, ni mauvaise, simplement inévitable. Il brise ses ennemis avec une brutalité glaciale, mais sans passion. Il est un spectre physique qui marche parmi les vivants pour leur rappeler leur destin inéluctable.
+Compétences : Épées longues, épées à deux mains, haches de guerre, haches de bataille, masses, marteaux de guerre, boucliers, armures moyennes et lourdes, sorts qui infligent des dégâts de froid, miracles de Laeth.
+Le sépulcral utilise sa foi au lieu de son intelligence pour jeter des sorts qui infligent des dégâts de froid. Le sépulcral utilise la mana pour invoquer les miracles de Laeth qu’il connait et jeter des sorts. Le coût en mana est toujours égal au niveau du miracle ou au nombre de points de divinité spécifiés dans la description du miracle.
+Il est impossible pour le sépulcral d’apprendre des sorts / miracles qui ne sont pas dans sa liste (avec des feats par exemple). Le sépulcral ne peut pas multiclass et ne peut pas être choisi comme multiclass.
+Le sépulcral ne dort pas vraiment. Lorsqu’il long rest, son esprit retourne au royaume des morts pour communier avec Laeth.
+Résistance aux dégâts froids et nécrotiques. Vulnérabilité aux dégâts brûlants et divins.
+Niveau 1
+Choix d’une arme à l’effigie de Laeth parmi les armes avec lesquelles le sépulcral est compétent. Armure à l’effigie de Laeth (lourde, AC +5).
+Peut utiliser le miracle Communion avec la mort à volonté.
+Mana +2.
+Tu apprends le sort Pique de glace et le miracle Froid de la tombe.
+Niveau 2
+PV +6. Mana +1.
+Communion funeste: Action bonus. Une fois par combat. Ta connexion à la mort te revigore. Tu sens un froid spectral qui parcoure ton corps et te redonne la force que tu as épuisée. Tu récupères 1d4 mana et 1d8 PV.
+Niveau 3
+PV +6.
+Choix d’une spécialisation :
+-	Glace brisée : Tu excelles dans l'art de ralentir et de déstabiliser tes ennemis, infligeant des dégâts glacés qui figent tout sur leur passage. Tu combats comme un fléau gelé, semant le chaos tout en contrôlant le rythme du combat, ta rage aussi froide que l’acier.
+•	Les attaques avec armes font 1d4 dégâts de froid supplémentaires.
+•	Quand un ennemi te touche avec une attaque mêlée, il doit réussir un saving throw constitution (12) ou subir 1d4 dégâts de froid.
+-	Dernier souffle : Tu puises dans la nécrose pour guérir tes blessures et renforcer ton pouvoir. Chaque coup porté est comme un pacte avec la fin, débilitant tes victimes.
+•	Les attaques avec armes font 2 dégâts nécrotiques supplémentaires.
+•	Chaque fois que tu touches un ennemi avec une attaque, tu récupères 2 PV.
+-	Voix de Laeth : Tu portes les mots de Laeth en toi. Tes sorts et tes miracles ne sont pas simplement des pouvoirs, mais des décrets de la mort elle-même. Avec la froideur d'un jugement divin, tu utilises la glace et la nécrose pour apporter pour faire plier le monde à ta volonté implacable.
+•	Mana +2.
+•	Tes sorts et miracles qui infligent des dégâts de froid ou nécrotiques font 1d4 de plus.
+Niveau 4
+PV +6.
+Dîme des âmes : Action. Coût 2 mana. Jusqu’à quatre créatures que tu peux voir doivent réussir un saving throw de foi (15) ou subir 1d8 dégâts nécrotiques. Pour chaque créature que tu touches, tu récupères 2 PV.
+Niveau 5
+PV +8. Mana +1.
+Tu apprends le sort Armure de glace.
+Niveau 6
+PV +10.
+Tu apprends le miracle Nécrose et le sort Javelot de glace.
+Tu peux maintenant attaquer deux fois par action avec ton arme.
+Niveau 7
+PV +12. Mana +1.
+Marcheur des ténèbres : Utilise ton mouvement. Une fois par long rest. Lorsque tu es dans l’ombre ou un endroit peu éclairé, tu prends une forme spectrale pour te téléporter sur une courte distance.
+Niveau 8
+PV +12.
+Marque de la mort : Action bonus. Coût 1 mana. Tu ne peux marquer qu’une cible à la fois. Tu désignes une créature pour laquelle l’heure de la mort est arrivée. Toutes tes attaques, sorts ou miracles contre cette créature ont avantage et font 1d8 dégâts nécrotiques de plus. Lorsque cette créature meurt, tu gagnes 1d8 PV et tu peux immédiatement marquer une autre cible sans coût d’action bonus.
+Expertise avec épées longues, épées à deux mains, haches de guerre, haches de bataille, masses, marteaux de guerre, sorts qui infligent des dégâts de froid, miracles de Laeth.
+Niveau 9
+PV +10. Mana +1.
+Tu apprends le sort Lance de glace.
+Voile funeste : Action bonus. Coût 2 mana. Tu t’entoures d’un voile de ténèbres glacées dans lesquelles tu bouges librement comme un spectre. Les ennemis à distance mêlée subissent 1d8 dégâts de froid. Tu gagnes +2 AC et tu n’es plus vulnérable aux dégâts de feu et divins jusqu’à ton prochain tour.
+La communion funeste rend maintenant 2d4 mana et 2d8 PV.
+Niveau 10
+PV +10.
+Rétribution de Laeth : Coût 2 mana. Une fois par long rest. Réaction a une attaque qui te fait passer à la moitié de tes PV ou moins. Une vague glacée de mort émane de toi et fait 3d6 nécrotiques + 3d6 froids à tous les ennemis dans un petit rayon autour de toi.
+Niveau 11
+PV +12. Mana +2.
+Tu gagnes +2 distribué comme tu le souhaites parmi les stats force, résistance ou foi.
+Tu apprends le miracle Mot de la mort.
+Niveau 12
+PV +10.
+Cryomancie : Une fois par long rest, tu peux utiliser une action bonus pour jeter un sort ou utiliser une habileté propre au sépulcral qui fait des dégâts de froid et qui prendrait normalement une action. Son coût en mana est réduit de 1.
+Niveau 13
+PV +12. Mana +2.
+Tu apprends le sort glace tranchante.
+Sérénité finale : Action. Coût 3 mana. Tu te concentres pleinement sur la mort elle-même et sur ta propre fin inévitable, t'imprégnant de son calme glacial. Tous les ennemis qui te voient doivent réussir un saving throw de foi (15) ou être pris de panique et passer leur prochain tour. Pendant les 3 prochains tours, tu es invulnérable aux conditions qui réduiraient ton mouvement ou tes actions et tu régénère 5 PV au début de ton tour.
+Tu peux maintenant attaquer trois fois par action avec ton arme.
+La communion funeste rend maintenant 3d4 mana et 3d8 PV.
+Niveau 14
+PV +14.
+Amélioration de spécialisation :
+-	Glace brisée : Force +1.
+•	Maîtrise du gel : Les attaques avec armes infligent désormais 2d4 dégâts de froid supplémentaires.
+•	Frissons paralysants : Lorsque tu infliges des dégâts de froid à un ennemi, il doit réussir un saving throw de Constitution (15) ou être paralysé jusqu'à la fin de son prochain tour.
+-	Dernier souffle : PV +6.
+•	Ressource nécrotique : Chaque fois que tu infliges des dégâts nécrotiques, tu récupères 2d4 PV supplémentaires.
+•	Pacte de la fin : Lorsque tu réussis une attaque avec ton arme, tu peux choisir d’infliger 1d8 dégâts nécrotiques supplémentaires en échange de 2 mana.
+-	Voix de Laeth : Mana +1.
+•	Décret implacable : Tes sorts et miracles infligeant des dégâts de froid ou nécrotiques ignorent désormais la résistance à ces types de dégâts.
+•	Invocation du gouffre: Action. Coût 3 mana. Une fois par long rest. Tu invoques un spectre fait de morceaux d’âmes rapiécées, comme une tornade de mort. Le spectre est intangible et flotte à côté de toi pendant 3 tours, infligeant 2d6 dégâts nécrotiques à une cible de ton choix qui est à quelques mètres au début de ton tour.
+Niveau 15
+PV +14.
+Autorité de la tombe : Tu dégages une aura sombre qui effraie les ennemis autour de toi. Au début de leur tour, les ennemis qui sont en combat avec toi doivent réussir un saving throw de foi (17) ou être effrayés. Les ennemis effrayés ont désavantage sur leurs jets contre toi et tes attaques, sorts et miracles leur infligent 1d8 dégâts nécrotiques supplémentaires.
+Niveau 16
+PV +15. Mana +2.
+Tu apprends le sort Épieu de givre.
+Tu apprends une nouvelle fois le miracle Mot de la mort.
+Maîtrise avec épées longues, épées à deux mains, haches de guerre, haches de bataille, masses, marteaux de guerre, sorts qui infligent des dégâts de froid, miracles de Laeth.
+Niveau 17
+PV +15.
+Tu apprends le miracle suprême de Laeth (Sombre bénédiction) que tu peux utiliser une fois par long rest en payant 6 mana.
+Tu gagnes le miracle Puits d’âmes qui est actif en permanence.
+Niveau 18
+PV +15. Mana +2.
+Tu peux utiliser cryomancie deux fois par long rest.
+Tu gagnes +2 distribué comme tu le souhaites parmi les stats force, résistance ou foi.
+La communion funeste rend maintenant 4d4 mana et 4d8 PV.
+Niveau 19
+PV +15.
+Le saving throw pour autorité de la tombe devient 19.
+Tu apprends le sort Perçage boréal.
+Niveau 20
+PV +18. Mana +2.
+Comme champion de Laeth, tu apprends le miracle ultime de Laeth (Étreinte des ombres) que tu peux utiliser en payant 8 mana une fois par long rest.
+Tu apprends à nouveau le miracle Mot de la mort.
+La communion funeste rend maintenant 5d4 mana et 5d8 PV.
+Venox***
+Les venox sont des maîtres des poisons, des toxines et des venins. Avec une habileté surnaturelle dans l’art de l’empoisonnement, ils exploitent les substances les plus mortelles pour affaiblir, déstabiliser et détruire leurs ennemis. En utilisant des concoctions mortelles, les venox sèment la mort et la confusion sur le champ de bataille. Le venox maitrise les poisons hallucinogènes, paralysants, ou mortels, capables d’infliger des souffrances prolongées ou de tuer silencieusement. Les venox ne se contentent pas de tuer, ils manipulent également les émotions et les perceptions de leurs cibles, utilisant des poisons pour induire des visions terrifiantes, des peurs irrationnelles ou une perte de contrôle total. Les venox sont également capables de produire des toxines, des fleurs et des fungi de leur propre corps, les rendant immunisés aux poisons. Les meilleurs venox de Midian sont les mercenaires sythraks ainsi que les assassins de la Shaiksa kobalos. Les venox utilisent trois types de poisons : Les mortels qui tuent, les incapacitants qui paralysent ou affaiblissent et les déstabilisants qui causent des hallucinations.
+Compétences : Armure légère, dagues, toxines (les compétences propres au venox s’appellent toxines et utilisent la dextérité). Immunité au poison.
+Le venox n’a pas besoin d’utiliser d’action bonus pour appliquer un poison à ses armes. S’il utilise deux dagues, le venox les empoisonne les deux en utilisant un seul poison (les poisons restent sur les armes jusqu’au début du prochain tour du joueur).
+Après chaque long rest, le venox prépare ses poisons pour la journée, ce qui lui prend environ une heure. Le venox utilise les toxines produites par son corps pour préparer ses poisons, donc il n’a pas besoin d’ingrédients. Il doit les annoncer à ce moment. Chaque poison a un nombre d’utilisations qui lui est associé (voir charges des poisons). Tout dépendant de son niveau, le venox peut préparer et donc avoir à sa disponibilité un certain nombre de poisons de chaque type. Le même poison ne peut pas être préparé deux fois.
+Tous les poisons que le venox trouve ou achète peuvent être étudiés. Le venox apprend à préparer le poison. Il est ajouté à son catalogue, mais la portion étudiée se détruit dans le processus.
+Niveau 1
+Deux dagues recourbées (1d4 + dex), veste de cuir (légère, AC +1).
+Au niveau 1, le venox peut concocter et transporter 1 poison mortel et 1 incapacitant.
+Crachat de cobra: Toxine. 1 fois par long rest. Action bonus. Tu produis une réaction chimique dégageant un produit puissant dans ta bouche, puis tu craches un filet de bave acide sur la cible. Inflige 2d8 dégâts acides. La cible doit réussir un saving throw de résistance (10) ou perdre 2 AC pour un tour.
+La mort pourpre : Mortel. 3 charges. Un poison puissant extrait de fleurs qui prend une couleur pourpre sombre lorsqu'il est exposé à l'air. Lorsqu'il pénètre dans le corps, il détruit les organes internes. Inflige 1d10 dégâts nécrotiques et empoisonne pour 2.
+Foudre cinglante : Incapacitant. 2 charges. Un poison jaune qui semble sursauter dans la fiole. Attaque le système nerveux central. La cible doit réussir un saving throw de constitution (12) ou être paralysée pour un tour.
+Niveau 2
+PV +5.
+Le venox peut concocter et transporter 1 déstabilisant.
+Rêves d’Etrynox : Déstabilisant. 1 charge. Une substance noire et visqueuse qui plonge la victime dans un état hallucinatoire intense. Les hallucinations sont liées à la peur et à la folie, la victime étant submergée par des visions de créatures cauchemardesques ou de l’obscurité qui l’engloutit. La cible doit réussir un saving throw de constitution (15) ou subir 1d4 dégâts psychiques. Au début de son tour, elle refait le saving throw. Si elle réussit, le poison arrête. Si elle échoue, elle prend 1d4 dégâts psychiques et passe son tour.
+Niveau 3
+PV +5.
+Choix d’une spécialisation :
+-	Basilisk : Tu manipules les dagues avec une précision mortelle, une finesse dévastatrice. Les dagues que tu manies sont comme les crocs acérés d’une vipère.
+•	Sang froid : Réaction à une attaque mêlée qui te cible. Une fois par combat. Tu fais une attaque immédiate avec une dague contre l’ennemi qui t’attaque. Ton attaque passe avant celle de l’ennemi.
+•	Les attaques avec les dagues font 2 dégâts perçants de plus.
+-	Venimeux : Tes sécrétions empoisonnées sont particulièrement efficaces, dévastant tes cibles avec facilité.
+•	Tu peux utiliser Crachat de cobra 2 fois par long rest (plutôt qu’une) et le saving throw associé est de 14.
+•	Sueur acide : Toxine. Action bonus. Une fois par long rest. Jusqu’à la fin du combat, quand un ennemi te touche avec une attaque mêlée, il subit 2 dégâts acides.
+-	Miasma : Tu es capable de créer des nuages pestilents à partir de poisons pour affecter plusieurs ennemis à la fois.
+•	Nuage empoissonné : Dépense une utilisation d’un poison. Action. Une fois par long rest. Le poison choisi affecte jusqu’à trois cibles dans une zone rapprochée.
+-	Sulfureux : Ta connaissance des poisons te permet de créer plus de doses à partir des mêmes ressources. Tes poisons sont aussi plus efficaces.
+•	Tu as une charge de plus d’un poison au choix chaque jour.
+•	Les saving throws associés à tes poisons ont +2 de difficulté.
+Niveau 4
+PV +6.
+Absorption : Action bonus. Une fois par long rest. Tu ingères un de tes propres poisons pour en absorber la force. Au lieu de souffrir des conséquences négatives, cela te revigore. Les effets sont différents dépendamment du type de poison ingéré.
+-	Mortel : Récupères 2d8 PV.
+-	Incapacitant : Gagne une action ce tour ci.
+-	Déstabilisant : +3 à tous tes rolls ce tour ci.
+-	Tueur impitoyable : Tes attaques avec dagues ont avantage contre les ennemis empoisonnés.
+Niveau 5
+PV +6.
+Faufilement serpentin : Une fois par combat. Réaction à une attaque mêlée qui touche, avant que les dégâts soient roulés. Tu ajoutes ton bonus de dextérité à ton AC pour cette attaque.
+Bave de salamandre : Mortel. 3 charges. Le poison vert-de-gris entre dans le sang de la victime tranquillement, puis va lentement causer des douleurs vives dans les organes vitaux. La douleur disparait, puis revient sporadiquement, encore plus intense, comme des morsures de serpent imprévisibles. Au début du tour de la créature empoisonnée, elle subit 1d12 dégâts nécrotiques.
+Niveau 6
+PV +6.
+Le venox peut maintenant concocter 2 poisons mortels par jour.
+Fièvre de minuit : Incapacitant. 1 charge. La substance d’un bleu profond, presque noir, tourbillonne sur elle-même dans la fiole. La victime a chaud, puis sa vision devient trouble et ses os commencent à élancer. La cible doit réussir un saving throw de constitution (16) ou elle devient inconsciente pour un tour. Lorsque / si elle se réveille, elle a -1 à ses rolls jusqu’à la fin du combat.
+Niveau 7
+PV +8.
+Sphère corrosive : Toxine. Une fois par long rest. Action. Le venox concentre l’humidité de son corps dans la paume de sa main pour créer une sphère d’un vert jaune maladif qui est projetée vers une cible. Inflige 4d6 dégâts acides. Cette toxine ignore la moitié du AC de la cible, arrondi au chiffre le plus haut (Un AC de 15 deviendrait 8).
+Essaim d’abeilles : Déstabilisant. 2 charges. La substance jaune devient gazeuse au contact avec la chair, libérant des vapeur hallucinogènes à l’odeur de miel. La victime a l’impression que des milliers d’abeilles la piquent en même temps et se met à ressentir une douleur fantôme qui alourdi ses membres. Elle subit 1d8 dégâts piquants, puis doit réussir un saving throw de constitution (14) ou recevoir un additionnel 3d6 dégâts psychiques.
+Niveau 8
+PV +8.
+Larmes de glace : Incapacitant. 1 charge. Le liquide cristallin attaque les muqueuses et les tissus mous. Les yeux et le nez se mettent à couler de manière incontrôlable, puis l’eau qui sort du corps gèle sur la peau, fermant les paupières. Inflige 2d4 dégâts de froid. La cible doit réussir un saving throw de constitution (18) ou avoir -4 sur tous ses rolls pendant un tour.
+Baiser de Laeth : Mortel. 2 charges. La mixture noire a la même consistance que la mélasse. Lorsqu’administrée, aucune douleur n’est ressentie. La victime se sent calme, engourdie et extrêmement fatiguée, puis elle ferme lentement les yeux. Inflige 3d10 dégâts nécrotiques et empoisonne pour 2.
+Niveau 9
+PV +10.
+Le venox peut maintenant préparer 2 incapacitants.
+Expertise avec les dagues.
+L’Étrangleur : Incapacitant. 2 charges. Le poison insidieux entre dans les veines et se propage à travers le corps. Il est possible de suivre la progression du poison comme il colore la peau d’un brun rouillé sur son passage. Lorsqu’il atteint les poumons, il les empêche de bien s’étirer et rend la respiration de la cible difficile. Chaque fois que la victime utilise une action ou action bonus, elle subit 1d8 dégâts nécrotiques.
+Niveau 10
+PV +10.
+Le venox peut maintenant préparer 2 déstabilisants.
+Miroir brisé : Déstabilisant. 2 charges. Des éclats de vitre fracassent sans cesse dans les oreilles de la victime qui se prend la tête et tente de faire arrêter le bruit, grinçant et douloureux, mais irréel. La cible doit réussir un saving throw de constitution (15) ou subir 1d12 dégâts psychiques. Si elle échoue, elle doit refaire le saving throw chaque tour pour se débarrasser de l’effet. Tant que l’effet persiste, la cible n’est pas capable de se concentrer et ne peut donc pas utiliser de sorts ou de miracles.
+Soupir d’agonie : Mortel. 2 charges. D’un rose bonbon, cette substance a l’allure innocente sent même la cannelle. Une fois administrée, elle fait gonfler la langue, les yeux, les organes et les bubons jusqu’à ce qu’ils craquent ou explosent, détruisant rapidement l’entièreté du corps. La cible subit un 2d8 dégâts nécrotiques initial, puis, comme elle doit absolument s’en débarrasser pour survivre, la cible effectue des saving throws de constitution (12) à répétition jusqu’à ce qu’elle réussisse ou meure. Chaque fois qu’elle rate, elle subit 2d8 dégâts nécrotiques.
+Niveau 11
+PV +10.
+Le venox peut maintenant préparer un poison ultime. Ce poison est une substance rare dont les effets sont spectaculaires. Le venox prépare un seul de ces poisons par jour. Ce poison compte également par rapport au total de poisons de chaque type que le venox peut avoir sur lui. Ces poisons n’ont qu’une seule charge et ont toujours le même saving throw (même pour la spécialisation sulfureux).
+Souffle du néant : Poison ultime. Mortel. Un poison sombre comme la nuit, qui réduit lentement la vitalité de la victime jusqu’à l’annihiler, dévorant les tissus qui entourent les os et ne laissant que poussière. La cible doit réussir un saving throw de constitution (18) ou subir 4d10 dégâts nécrotiques et être empoisonnée pour 6. La cible est maintenant vulnérable aux dégâts physiques qu’elle réussisse ou non le saving throw.
+Mélancolie de la gorgone : Poison ultime. Incapacitant. La substance grise fait éclater les veines et fige sous la peau, lui donnant l’apparence de la pierre parfaitement sculptée. La victime ne peut plus utiliser de réactions ou de mouvement. De plus, au début de son tour jusqu’à la fin du combat, la victime doit réussir un saving throw de constitution (18) ou subir 2d8 dégâts nécrotiques et passer son tour. 
+Chagrin infernal : Poison ultime. Déstabilisant. Une mixture obsédante qui pénètre la psyché de la victime. Elle fait naître une vague de chagrin et de perte irrationnelle, la victime voyant des visions de ceux qu’elle aime souffrant aux tréfonds des enfers. Les effets sont persistants et une fois que le poison affecte la cible, il est extrêmement difficile à arrêter. La cible est submergée par la douleur psychologique et subit 2d12 dégâts psychiques. Au début de son tour, elle doit réussir saving throw de constitution (20) deux fois consécutivement ou subir 1d12 dégâts psychiques et avoir -3 sur tous ses rolls ce tour ci. Tant qu’elle échoue son saving throw, l’effet persiste au tour suivant.
+Niveau 12
+PV +12.
+Le venox choisit un type de poison (mortel, incapacitant ou déstabilisant) et peut désormais en préparer 1 de plus chaque jour.
+Conquête imaginée : Déstabilisant. 1 charge. Le poison rouge comme le sang fait voir à sa victime des images de conquête hallucinées dans lesquelles la victime se sent comme un héros, massacrant tout sur son passage sans distinction. La cible doit réussir un saving throw de constitution (18). Si elle échoue, durant son prochain tour, elle attaque des cibles au hasard, attaquant même ses alliés. L’effet continue chaque tour tant que la victime ne réussit pas le saving throw.
+Tu peux utiliser Faufilement serpentin une deuxième fois par combat.
+Niveau 13
+PV +12.
+Voile brumeux : Toxine. Une fois par long rest. Action bonus. Tu libères un brouillard toxique qui couvre une petite zone autour de toi pendant 3 tours. La brume pique les yeux et ouvre les pores de la peau, la rendant plus susceptible aux poisons. Les ennemis qui commencent leur tour dans cette zone ou qui y entrent subissent 3d6 dégâts acides. Les ennemis dans cette zone ont -2 AC et les saving throws des poisons sur ces ennemis ont +2 de difficulté.
+Niveau 14
+PV +12.
+Amélioration de spécialisation :
+-	Basilisk : Les attaques avec les dagues font maintenant 5 dégâts perçants de plus.
+-	Venimeux : Ta sueur acide est toujours active.
+-	Miasma : Tu peux faire un nuage empoisonné en action bonus.
+-	Sulfureux : Les saving throws associés à tes poisons ont maintenant +4 de difficulté.
+Invasion cérébrale : Incapacitant. 2 charges. Le poison turquoise entre dans le système nerveux et va perturber l’information qui se rend au cerveau. La victime a l’impression que le temps va au ralentit autour d’elle et n’arrive plus à réfléchir correctement. La cible subit 2d6 dégâts psychiques et doit réussir un saving throw d’intelligence (16) avec désavantage. Si elle échoue, elle a désavantage sur toutes ses actions pendant un tour.
+Niveau 15
+PV +14. Dextérité +1.
+Toxicité adaptative : Une fois par long rest. Action bonus. Tu fais muter un poison que tu n’as pas encore utilisé en un poison d’un autre type qui devient préparé.
+Tu peux utiliser absorption une deuxième fois chaque long rest.
+Le poison ultime ne compte plus par rapport à ta limite de poisons préparés.
+Décomposeur : Mortel. 2 charges. La substance orangée fait rapidement flancher les muscles et les os de la victime qui deviennent mous comme de la graisse. La cible doit réussir un saving throw de constitution (16) ou subir 3d10 dégâts nécrotiques et avoir désavantage sur ses attaques mêlées et ses saving throws de résistance pour un tour.
+Niveau 16
+PV +14.
+Tu peux choisir une amélioration de poison ultime. Cette amélioration s’applique à ton poison ultime en plus de ses effets normaux.
+-	Crocs acérés : Le poison ultime mord dans la peau de la victime, infligeant 2d6 dégâts perçants.
+-	Dévoreur de chair : Le poison ultime fait pourrir les muscles, donnant -2 sur tous ses rolls à la cible pour 1 tour.
+-	Terreur toxique : Le poison ultime fait faire un saving throw d’intelligence (15) à la cible. Si elle l’échoue, elle est terrorisée et essaie de s’enfuir pendant un tour.
+-	Acidité accrue : Le poison ultime ramollit la victime, lui enlevant 2 AC pendant un tour.
+-	Concentration pure : Le poison ultime contient une plus grande quantité de l’agent empoisonnant, donnant une difficulté de +2 aux saving throws associés.
+Niveau 17
+PV +16.
+Maîtrise avec les dagues.
+Malaise incurable : Toxine. Action. Une fois par long rest. Tu sues une substance jaunâtre qui s’évapore dans l’air et entre par les pores de la peau, les yeux et les muqueuses de tous les ennemis dans une petite zone autour de toi. Ils doivent réussir un saving throw de constitution (16) ou subir 2d8 dégâts nécrotiques et être empoisonnés pour 4.
+Niveau 18
+PV +16.
+Haggrin : Mortel. 2 charges. Poison utilisé par la Shaiksa. Lorsqu'il est administré, la peau de la victime prend une teinte orange et ses yeux deviennent une couleur ambrée profondément malsaine. Une douleur insupportable envahit le corps, mais la victime n'a pas le temps de comprendre ce qui se passe avant que ses organes internes ne fondent sous l'effet dévastateur du poison. Elle meurt en quelques secondes sous l'effet de cette agonie extrême. Inflige 6d8 dégâts acides.
+Fleur de l’éternité : Déstabilisant. 1 charge. Ce poison agit sur l’esprit de manière exquise mais cruelle, rendant la victime consciente du passage du temps à une échelle infiniment lente. Chaque seconde semble s'étirer en plusieurs siècles, son esprit se décomposant progressivement comme un pétale qui se flétrit, perdant sa vitalité et sa lucidité. Les hallucinations temporelles perturbent tout raisonnement, et la victime se perd dans l’infinie durée d’un moment. Inflige 1d10 dégâts psychiques. La cible doit réussir un saving throw d’intelligence (18) ou elle devient inconsciente pour 3 tours.
+Niveau 19
+PV +18.
+Mixture pratiquée : Tu peux mettre deux poisons en même temps sur tes dagues, infligeant leurs effets combinés lorsque tu touches.
+Niveau 20
+PV +20.
+Ta maîtrise du poison est telle que tu es capable de concocter un poison ultime alliant les propriétés des trois types de poisons que tu utilises. Si tu décides d’utiliser ce poison ultime, il ne compte pas vers ta limite dans chaque catégorie.
+Le dernier souffle : Poison ultime. Mortel, incapacitant, déstabilisant. Une substance d’un blanc œuf maladif qui s’infiltre dans tous les tissus de la victime, lui faisant voir et entendre des hallucinations si réelles qu’elles l’obnubilent. Les visions sont orgasmiques, sortant tout droit des fantasmes secrets les plus fous de la victime. La victime ne s’en rend pas compte, mais alors qu’elle vit ses rêves, son corps se paralyse et meurt lentement. La victime subit 3d8 dégâts psychiques. Elle doit réussir un saving throw de constitution (22) ou elle est paralysée pour un tour. Si la cible est paralysée, elle doit réussir un autre saving throw de constitition (20) ou elle meurt instantanément.
+Shaman**
+Les shamans sont des conjurateurs mystiques, profondément connectés aux esprits, aux ancêtres et aux forces élémentaires. Maîtres de la magie spirituelle et naturelle, ils invoquent les puissances de la vie et des éléments pour soigner, protéger ou déchaîner des pouvoirs destructeurs. Leur lien sacré les unit à des dieux ou des éléments spécifiques. Ces liens leur confèrent des capacités uniques, allant de la guérison divine à la manipulation des éléments, permettant au shaman de rétablir l'équilibre entre le monde physique et spirituel. Aussi, certains shamans, notamment les shamans orcs, préfèrent maintenir l’équilibre naturel à coup de hache ou de marteau.
+Le shaman utilise de la mana pour jeter des sorts comme un mage, mais il utilise sa foi pour les attack rolls et les dégâts associés. Le shaman utilise également de la mana pour utiliser des miracles, le coût en mana étant équivalent au niveau du miracle à moins d’une indication contraire. Lorsque le shaman a le choix d’apprendre un sort, il peut seulement apprendre des sorts qui font référence aux éléments naturels. Le shaman a aussi des sorts qui lui sont propres qu’il apprend à certains niveaux. Les sorts propres au shaman sont tous considérés comme des sorts niveau 1 par rapport à la compétence, l’expertise ou la maîtrise. Liste des sorts que le shaman peut apprendre :
+Niveau 1 : Boule de feu, décharge électrique, peau de pierre, pique de glace, taillade de vent, armure de glace.
+Niveau 2 : Vortex de flammes, foudre, javelot de glace, lame de vent, représailles calcinées, stalagmites.
+Niveau 3 : Incinération, déflagration électrique, lance de glace, scalpel de vent, bouclier de feu.
+Niveau 4 : Explosion de flammes infernales, chaîne fulgurante, glace tranchante.
+Niveau 5 : Explosion magmatique, chaîne d’éclairs impitoyables, peau de diamant, épieu de givre.
+Niveau 6 : Cauchemar volcanique, tempête d’éclairs cataclysmiques, peau de roc primordial, perçage boréal.
+Compétences : Armure légères et moyennes, armes simples, sorts, miracles.
+Niveau 1
+Mana +3.
+Deux sorts niveau 1. Deux armes simples au choix.
+Choix entre : Robe shamanique (légère AC +1 et dégâts brûlants, froids ou électriques +1) ou armure shamanique (moyenne AC +3).
+Mercie de la nature : Action bonus. Coût 1 mana. Tu fais passer une énergie naturelle paisible qui revigore le corps et l’esprit d’un allié. Rend 1d8 PV à un personnage. Si ce personnage utilise de la mana, de la divinité, des points mélodieux ou du ki, il en regagne également 1.
+Niveau 2
+PV +5. Mana +1.
+Armure totémique : Action bonus. Une fois par long rest. Les esprits des ancêtres t’entourent et te protègent, te conférant +2 AC pendant 3 tours.
+Connexion aux éléments : Action bonus. Tu laisses les éléments te guider, regagnant 1d6 mana. Si tu te trouves en pleine nature, tu peux rerouler le dé une fois et choisir le meilleur résultat.
+Niveau 3
+PV +5. Mana +1.
+Choix d’une spécialisation :
+-	Shaman de la vie : Tu as une connexion particulière au dieu Arivis qui te guide dans ton désir de maintien et de protection de la vie naturelle.
+•	Tu apprends un miracle d’Arivis niveau 1 au choix.
+•	Lorsque tu soignes une créature, elle regagne 2 PV de plus.
+-	Shaman de la lune : Tes pouvoirs sont liés à la déesse de la lune et des océans, Mitulia, qui t’offre sa bénédiction.
+•	Tu apprends un miracle de Mitulia niveau 1 au choix.
+•	Quand tu fais des dégâts avec un sort ou un miracle, tu récupères 2 PV.
+-	Shaman combattant : Tout comme tes ancêtres, tu es un combattant né. Ils t’inspirent de leur force brute et leur mémoire te guide à travers tes combats.
+•	Compétence avec les haches, les masses et les marteaux.
+•	PV +10.
+•	Force +2.
+-	Shaman de la tempête : Tu as une connexion particulière avec les orages, les vents forts et les éclairs.
+•	Mana +1.
+•	Tes sorts qui font des dégâts électriques font 1d4 de plus et les saving throws leur étant associés ont +1 de difficulté.
+Niveau 4
+PV +6. Mana +1.
+Tu apprends deux sorts niveau 2.
+Furie des vents : Action bonus. Coût 1 mana. Une tempête semble se former autour de ton arme ou de celle d’un allié de ton choix, la rendant extrêmement rapide et lui permettant de donner des coups dévastateurs. Cette arme a +2 à son attack roll pour 1 tour et ses attaques font 1d4 dégâts de force supplémentaires.
+La mercie de la nature rend maintenant 2d8 PV et 2 mana / divinité / points mélodieux / ki.
+Niveau 5
+PV +6. Mana +1.
+Tu apprends un sort niveau 2 et un sort niveau 3.
+Une fois par long rest, tu peux utiliser le sort Perception élémentaire sans coût de mana. Tu ne peux pas utiliser de mana pour réutiliser ce sort comme si tu l’avais appris régulièrement.
+Niveau 6
+PV +8. Mana +2
+Appel des esprits ancestraux : Action. Coût 3 mana. Le shaman appelle un esprit ancestral pour l’assister dans son combat. L’esprit fournit une aide spirituelle et peut effectuer une des actions suivantes pendant 3 tours :
+-	Soutien spirituel : L’esprit donne à un allié de ton choix un bonus de +2 AC et +1 à ses saving throws jusqu’à ton prochain tour.
+-	Ravage de l’âme: L’esprit attaque un ennemi dans un rayon autour du shaman. L'ennemi subit 3d6 dégâts psychiques et doit réussir un saving throw de foi (14) ou avoir désavantage sur ses attack rolls pendant son prochain tour.
+Niveau 7
+PV +8.
+Totem de rage : Action bonus. Une fois par long rest. Un esprit rageur apparait dans l’air près de toi, électrisant l’atmosphère et renforçant tes attaques et celles de tes alliés jusqu’à ton prochain tour. Tes alliés et toi gagnez +2 à vos attack rolls et vos attaques font 1d4 dégâts électriques de plus.
+Niveau 8
+PV +8. Mana +1. Foi +1.
+Tu apprends un sort niveau 3.
+Expertise avec les sorts niveau 1 et 2 et expertise avec les miracles niveau 1.
+La mercie de la nature rend maintenant 3d8 PV et 3 mana / divinité / points mélodieux / ki.
+Niveau 9
+PV +8.
+Amélioration de spécialisation :
+-	Shaman de la vie : Tu apprends un miracle d’Arivis niveau 2 au choix.
+-	Shaman de la lune : Tu apprends un miracle de Mitulia niveau 2 au choix.
+-	Shaman combattant : Expertise avec les haches, les masses et les marteaux. PV +6. Force +1. Tu peux attaquer 2 fois en une action avec ton arme.
+-	Shaman de la tempête : Mana +1. Une fois par long rest, tu peux utiliser une action bonus pour jeter un sort qui requiert normalement une action si celui-ci fait des dégâts électriques.
+Niveau 10
+PV +10. Mana +1.
+Tu apprends un sort niveau 3.
+Une fois par long rest, tu peux utiliser le sort Garde spirituelle sans coût de mana. Tu ne peux pas utiliser de mana pour réutiliser ce sort comme si tu l’avais appris régulièrement.
+Niveau 11
+PV +12.
+Connexion aux éléments améliorée : Tu peux utiliser connexion aux éléments sans utiliser ton action bonus.
+Totem de soins: Action bonus. Coût 2 mana. L’esprit d’un ancêtre bienveillant apparait à tes côtés, prodiguant une aura de protection à tes alliés et toi. Le shaman et ses alliés dans une zone rapprochée gagnent +1 AC et ils récupèrent 1d6 PV au début de leur tour. Dure 3 tours.
+Niveau 12
+PV +12. Mana +1.
+Tu apprends deux sorts niveau 4.
+Expertise avec les sorts de niveau 3. Maîtrise avec les sorts de niveau 1 et 2. Expertise avec les miracles niveau 2.
+Les attaques augmentées par la furie des vents font maintenant 1d8 de plus au lieu de 1d4.
+Niveau 13
+PV +12. Foi +1.
+La mercie de la nature rend maintenant 4d8 PV et 4 mana / divinité / points mélodieux / ki.
+Totem de l’orage : Action. Coût 5 mana. Un esprit des vents répond à ton appel. Le ciel se déchire d’éclairs et une pluie cataclysmique s’abat sur la zone pendant quelques secondes. Tous les ennemis subissent 3d6 dégâts électriques et doivent réussir un saving throw de résistance (12) ou être sonnés. Cette habileté ne peut être utilisée qu’à l’extérieur.
+Niveau 14
+PV +10.
+Amélioration de spécialisation :
+-	Shaman de la vie : Tu apprends un miracle d’Arivis niveau 3 au choix.
+-	Shaman de la lune : Tu apprends un miracle de Mitulia niveau 3 au choix.
+-	Shaman combattant : Maîtrise avec les haches, les masses et les marteaux. PV +8. Force +1.
+-	Shaman de la tempête : Mana +2. Tes sorts qui font des dégâts électriques font maintenant 1d8 de plus au lieu de 1d4 et les saving throws associés ont +2 de difficulté au lieu de +1.
+Niveau 15
+PV +12. Mana +2.
+Tu apprends un sort niveau 4 et un sort niveau 5.
+Expertise avec les miracles niveau 3.
+Totem de sérénité : Action bonus. Coût 4 mana. Un esprit de paix vient te porter son aide. Tu entres dans un état de calme profond, presque méditatif. Jusqu’à ton prochain tour, tant que tu ne fais pas de dégâts à un ennemi, tu ne peux pas être ciblé par des ennemis.
+Niveau 16
+PV +14.
+Tu apprends un sort niveau 5.
+Expertise avec les sorts niveau 4. Maîtrise avec les sorts niveau 3.
+Une fois par long rest, tu peux utiliser le sort Mots de communication élémentaires sans coût de mana. Tu ne peux pas utiliser de mana pour réutiliser ce sort comme si tu l’avais appris régulièrement.
+Niveau 17
+PV +15. Mana +1.
+Amélioration de spécialisation :
+-	Shaman de la vie : Tu apprends le miracle suprême d’Arivis.
+-	Shaman de la lune : Tu apprends le miracle suprême de Mitulia.
+-	Shaman combattant: Tu peux maintenant attaquer avec ton arme 3 fois par action. PV +10. Force +1.
+-	Shaman de la tempête : Mana +2. Une fois par long rest, quand tu lances un sort qui fait des dégâts électriques, tu peux immédiatement repayer son coût en mana pour le dédoubler. Tu peux choisir de nouvelles cibles pour le doublon.
+Niveau 18
+PV +15.
+Tu apprends un sort de niveau 5 et deux sorts de niveau 6.
+Expertise avec tous les miracles et les sorts de niveau 5.
+Maîtrise avec les sorts de niveau 4.
+La mercie de la nature rend maintenant 5d8 PV et 5 mana / divinité / points mélodieux / ki.
+Niveau 19
+PV +18. Foi +1.
+Tu apprends un sort de niveau 6.
+Totem de pouvoir : Action bonus. Coût 3 mana. Un esprit apparait autour de toi pour augmenter ton pouvoir spirituel ainsi que celui de tes alliés. Pour 3 tours, les sorts et miracles que tes alliés et toi utilisez ont +3 à leur attack roll et infligent 1d12 dégâts magiques supplémentaires.
+Niveau 20
+PV +22. Mana +2.
+Expertise avec les sorts niveau 6.
+Volonté des ancêtres : Une fois par long rest. Au début de ton tour, tu laisses les esprits de tes ancêtres s’emparer de ton corps pour te guider. L’accumulation immense de tous leurs savoirs fait de toi une force inarrêtable. Tu as 20 dans toutes tes stats (à moins que tu aies plus déjà) ce tour ci et tu as maîtrise avec tous les sorts, miracles ou armes que tu utilises. Tes sorts et miracles ne coutent pas de mana pour ce tour. Tu as une action supplémentaire pendant ce tour.
+Fléau*****
+Les fléaux sont les instruments vivants des volontés obscures de Sugriok. Ces êtres portent en eux la souffrance éternelle et l'angoisse des tourments infernaux. Soumis à l’enfer, les fléaux agissent dans le but de créer le plus de malheur possible autour d’eux. Leurs outils principaux sont les malédictions, mais ils utilisent également des armes physiques pour semer la souffrance. Chaque fléau est une incarnation du malheur et du désespoir, plongé dans une agonie sans fin qu’il ne comprend pas complètement, mais dont il devient le héraut. Les fléaux naissent dans des moments de perte d’espoir totale, lorsqu’une personne se retrouve au bord du gouffre. Sugriok reconnait ces personnes comme des ascendants potentiels et vient à eux, brisant le temps et l’espace pour se projeter momentanément hors des enfers. À ce moment, les enfers se présentent comme une salvation, offrant des pouvoirs inespérés dans une langue oubliée en échange d’un sacrifice (souvent sous la forme de la personne que l’ascendant aime le plus) et d’une servitude totale. L’ascendant potentiel qui refuse se voit pris dans les griffes de Sugriok et trainé jusqu’au fin fond des enfers où il passe l’éternité gelé dans les larmes du dieu. Ceux qui acceptent deviennent des fléaux. Les fléaux incarnent ainsi les forces les plus profondes et destructrices des enfers, sacrifiant leur humanité, leur compassion, leur cœur, leur liberté et leur âme.
+Dans l’Histoire de Midian, les fléaux qui ont gagné trop de pouvoir ont souvent été la cause de cataclysmes apocalyptiques. La 11ème ère, par exemple, a commencé lorsque le sorcier Sigrid s’est autoproclamé Souverain de tout Midian et permis au dieu Sugriok de tourmenter les mortels du monde pendant près de 2000 ans. Sigrid et son maître ont été bannis par Moiifhb lui-même lors de la Révélation, ce qui a engendré la 12ème ère, dans laquelle nous sommes toujours près de 13 siècles plus tard. Certains chuchotent cependant que le sorcier Sigrid serait toujours en vie, caché dans sa tour d’onyx. La 7ème ère s’est terminée, quant à elle, quand un monarque dont l’Histoire se rappelle seulement comme ‘’Le Roi Corrompu’’ a ouvert un portail vers les enfers, libérant une souffrance immense sur le monde. Même s’il est depuis longtemps mort, il est dit que la tombe du Roi Corrompu est empreinte d’une horreur telle qu’elle fait pourrir la terre autour et infecte tout ce qui s’en approche.
+Les fléaux utilisent des sorts leur étant uniques appelés les malédictions. Ils utilisent une ressource s’appelant la malice qui a un minimum de 0 et un maximum de 30. La malice détermine à la fois les ressources que le fléau possède pour jeter ses malédictions et agit en même temps comme ‘’spellcasting ability’’ du fléau. Ainsi, le bonus d’attack roll et de dégâts du fléau sur ses malédictions est variable, augmenté lorsqu’il accumule de la malice et diminué lorsqu’il en perd. Cela veut aussi dire que si un fléau tombe en dessous de 10 malice, il commence à voir des effets négatifs. Il existe également des effets faisant en sorte que le fléau utilise son bonus de malice pour augmenter ses attaques physiques.
+Lorsqu’un fléau dépense de la malice pour jeter une malédiction, cette malédiction considère sur son dégât le total de malice que le fléau avait en la lançant. Par exemple, si le fléau a 14 malice (donc +2) et qu’il jette une malédiction en utilisant 3 (donc il tombe à 11, ce qui donne +1), il utilisera le 14 (donc le +2) qu’il avait avant de payer sa malice pour déterminer l’efficacité de sa malédiction. Comme les malédictions comportent des saving throws, elles ne ratent jamais.
+Voici comment le fléau peut accumuler de la malice :
+-	Tuer un serviteur de Moiifhb : 8 malice.
+-	Détruire un objet sacré de Moiifhb : 6 malice.
+-	Tuer une créature : 4 malice.
+-	Détruire un objet sacré d’un autre dieu: 2 malice.
+-	Infliger des dégâts avec autre chose qu’une malédiction : 1 malice.
+Toutes les actions considérées comme pernicieuses comme le mensonge, la trahison, la torture, etc. peuvent être discutées par le joueur à la discrétion du DM pour redonner de la malice.
+Compétences : Épées, armure légère et moyenne, malédictions.
+Niveau 1
+Épée longue (1d8), cotte de mailles (moyenne, AC +3).
+Malédiction simple : Action. Le fléau murmure une malédiction dans une voix qui n’est pas la sienne, dans une langue qu’il ne comprend pas lui-même. La cible est envahie d’une terreur sans source discernable. Le fléau peut payer 1, 2 ou 3 malice pour cette malédiction. Chaque niveau de la malédiction ajoute des effets tout en conservant ceux des niveaux prédécents.
+-	1 malice : La cible doit réussir un saving throw foi (14) ou subir 2d8 dégâts psychiques. Si elle réussit le saving throw, elle subit 1d8.
+-	2 malice : La cible a désavantage sur le saving throw associé à cette malédiction.
+-	3 malice : Le saving throw associé à cette malédition devient 18.
+La marques des enfers : Sur son corps, le fléau porte la marque de Sugriok, une cicatrise froide et douloureuse laissé par le regard du dieu lorsque le fléau est devenu son serviteur. Plus le fléau accumule de malice, plus cette marque est brillante et douloureuse. Chaque fois que le fléau dort, il revoit les images de son éveil infernal, revivant le sacrifice qu’il a fait. Lorsqu’il se réveille, le fléau gagne 5 malice. Si, dans la journée précédent le sommeil, le fléau n’a commis aucune action mauvaise, il ne regagne pas 5 malice et il perd au lieu 1d8 PV dû à son mauvais sommeil.
+Le prix à payer : Si le fléau atteint 0 malice, il subit 5d10 dégâts psychiques.
+Niveau 2
+PV +6.
+Mal insaisissable : Action bonus. Une fois par long rest. Le fléau peut échanger jusqu’à 3 points de malice pour regagner 1d6 PV par point utilisé.
+Lame de Vindessia : Aucun coût d’action. Une fois par long rest. La diablesse Vindessia, la maîtresse du trône du chaos, un cercle cruel et violent des enfers, enflamme l’épée du fléau d’une braise infernale, à la recherche de chair innocente à sculpter. La prochaine attaque avec une épée utilise le bonus de malice pour son attack roll et ses dégâts et fait 1d6 dégâts brûlants supplémentaires.
+Niveau 3
+-	Légionnaire infernal : La place t’étant dédiée aux enfers est dans les rivières de sang bouillonnant et de flammes capricieuses dans lesquelles se battent éternellement les disciples de Vindessia, ton âme en proie à une soif de violence impossible à satisfaire.
+•	Force +2.
+•	PV +4.
+•	Tu peux utiliser Lame de Vindessia jusqu’à 3 fois par long rest.
+•	Flammes infernales : Lorsqu’une de tes attaques inflige des dégâts brûlants, la cible ne peut pas récupérer de PV jusqu’à ton prochain tour.
+-	Vicier de l’excès : La place qui t’est réservée aux enfers est comme tortionnaire dans le palais des plaisirs du diable Axel, ton âme étant vouée éternellement à une recherche des extrêmes les plus inimaginables.
+•	Charisme +2.
+•	Débauche d’extase : Action bonus. 1 malice. Tu marques un ennemi d’une malédiction qui accentue sa souffrance, t’apportant un plaisir malin. Chaque fois que cet ennemi subit des dégâts jusqu’à ton prochain tour, il subit 1d6 dégâts psychiques de plus et tu récupères l’équivalent de ce 1d6 en PV.
+-	Maléficier des lamentations : Ta place aux enfers est au côté de Sugriok lui-même, pleurant avec lui pour l’éternité l’absence du dieu Moiifhb, tes larmes glaciales gelant sur ton visage. La plus grande souffrance est le regret qui habite ton âme déchue.
+•	Cœur de glace : Résistance aux dégâts froids.
+•	Larmes de Sugriok : Action bonus. 3 malice. Une malédiction fait sentir à la victime une fraction minuscule de la peine du dieu des enfers. Alors qu’elle se sent coupé de l’amour de Moiifhb, la victime pleure incontrôlablement des larmes froides qui gèlent sur sa peau, laissant des cristaux salés. Elle subit 3d8 dégâts froids et doit réussir un saving throw de foi (12) ou être vulnérable aux autres attaques du fléau jusqu’à la fin du tour. Si la cible vénère Moiifhb, le saving throw est de 20.
+-	Syphon : Ton âme est vouée au néant primordial, la vaste masse intangible contenant toutes les terreurs, les haines et les désespoirs de l’humanité, autour de laquelle gravitent les neufs cercles des enfers.
+•	Source du mal : Les saving throws associés à tes malédictions ont +2 de difficulté.
+•	Collecte éthérée : Lorsqu’une créature meure dans ta vicinité, tu gagnes 1 malice, jusqu’à une limite de 10 malice générée par long rest.
+Niveau 4
+PV +8.
+Griffes de Sugriok : Action bonus. 2 malice. Une malédiction douloureuse s’abat sur la cible, lui raclant la peau du dos, lui donnant l’impression que des griffes froides lui déchirent la chair. Inflige immédiatement 2d8 dégâts tranchants. La cible doit réussir un saving throw de constitution (14). Si elle échoue, elle subit 2d10 dégâts froids additionnels et ne peut pas utiliser son mouvement durant son prochain tour.
+Niveau 5
+PV +8.
+Chimère de malice : Une fois par combat, lorsque tu utilises une malédiction, tu peux choisir de faire monter l'intensité de cette malédiction de manière aléatoire. Après avoir payé le coût en malice, lance un dé à 6 faces. Selon le résultat, la malédiction subit un effet supplémentaire :
+-	1-2 : Aucun effet supplémentaire.
+-	3-4 : Augmente les dégâts de la malédiction de 1d6 nécrotiques.
+-	5-6 : Augmente les dégâts de la malédiction de 2d6 nécrotiques et les saving throws lui étant associés ont difficulté +2.
+Niveau 6
+PV +10.
+Horreur calcinante : Action. Le fléau qui utilise cette malédiction cicatrise la chair de sa victime d’une marque brûlante, semblant avoir été laissée par un fer chaud. Le fléau peut payer 3, 5 ou 7 malice pour utiliser cette malédiction, ajoutant des effets pour chaque niveau de la malédiction utilisé.
+-	3 malice : La cible doit réussir un saving throw de résistance (16) ou subir 4d6 dégâts brûlants. Si le saving throw est réussi, la cible subit 2d6.
+-	5 malice : Le saving throw est maintenant de 20.
+-	7 malice : Si la cible échoue le saving throw, elle se tortille de douleur et perd son action bonus à son prochain tour.
+Niveau 7
+PV +10.
+Tu gagnes expertise avec les épées et les malédictions.
+La malédiction simple fait maintenant 3d8 si le saving throw est échoué (au lieu de 2d8) et 2d8 si le saving throw est réussi (au lieu de 1d8).
+Lame de Vindessia fait maintenant 2d6 dégâts brûlants (au lieu de 1d6).
+Niveau 8
+PV +8.
+Plongeon dans l’extase : Action. Le fléau murmure une malédiction d’une voix séduisante et étrange, envahissant l’esprit de sa cible avec l’idée que la douleur qu'elle ressent est une forme de plaisir. Le fléau peut payer 4, 6 ou 8 malice pour utiliser cette malédiction, ajoutant des effets pour chaque niveau de la malédiction utilisé.
+-	4 malice : La cible fait une attaque avec son arme principale contre elle-même. Cette attaque ne peut pas rater.
+-	6 malice : Le fléau regagne des PV équivalents aux dégâts que la cible se fait jusqu’à un maximum de 20 PV.
+-	8 malice : La cible doit réussir un saving throw de foi (16) ou le coup qu’elle se porte elle-même est automatiquement un coup critique.
+Niveau 9
+PV +10.
+Chaîne des maléfices : Une fois par tour, lorsqu’un ennemi échoue le saving throw associé à une malédiction que tu lui affliges, tu peux immédiatement le cibler d’une autre malédiction sans payer d’action ou action bonus.
+Niveau 10
+PV +12.
+Déchéance : Aucun coût d’action. Une fois par long rest. Tes malédictions dévorent la cible corps et âme. Jusqu’à la fin du tour, les saving throws associés à tes malédictions ont +4 de difficulté et chaque fois qu’un ennemi échoue un saving throw lié à une de tes malédictions, il a -2 sur tous ses rolls jusqu’à ton prochain tour.
+Niveau 11
+PV +12.
+Transfert malicieux : Action bonus. Une fois par long rest. Le fléau peut transférer jusqu’à 5 points de malice à un personnage allié. Celui-ci récupère 1d6 PV pour chaque point ainsi transféré.
+Niveau 12
+PV +14. +1 dans une stat au choix.
+Murmure de souffrance: Action. 8 malice. La voix du fléau se dédouble momentanément de la voix terrifiante du dieu des enfers pour jeter une malédiction insoutenable, donnant l’espace d’un instant à la cible l’impression de s’enfoncer dans le néant infini sur lequel tourbillonnent les cercles infernaux. La cible doit réussir un saving throw de foi (16). Si elle réussit, elle subit 2d8 dégâts psychiques et 3d8 dégâts froids. Si elle échoue, ses PV deviennent automatiquement 1 et elle est paralysée par la terreur pour un tour.
+Niveau 13
+PV +14.
+13 chandelles : Action. Une fois par long rest. Il est dit que Moiifhb possède 13 vertus, et donc que Sugriok souffre constamment de 13 blasphèmes. Ton âme s’enflamme de la misère du maître des enfers et ton ombre prend momentanément sa forme émaciée, maladive. Pendant 3 tours, l’ombre de Sugriok peut effectuer un des 13 blasphèmes suivants deux fois par tour :
+-	La haine : Tous les ennemis autour de toi perdent 4 PV.
+-	L’hérésie : Un ennemi de ton choix ne peut pas utiliser de miracles jusqu’à ton prochain tour à moins de réussir un saving throw de foi (14).
+-	La déformité : Un ennemi de ton choix a désavantage sur ses saving throws jusqu’à ton prochain tour à moins de réussir un saving throw de foi (14).
+-	La cruauté : Les ennemis autour de toi ne peuvent pas regagner de PV jusqu’à ton prochain tour.
+-	L’injustice : Un ennemi de ton choix a -2 à tous ses attack rolls jusqu’à ton prochain tour à moins de réussir un saving throw de foi (14).
+-	La tromperie : Tu peux interchanger tes actions et actions bonus ce tour ci.
+-	La folie : Une cible de ton choix perd la tête et attaque des cibles au hasard jusqu’à ton prochain tour à moins de réussir un saving throw de foi (14).
+-	L’inégalité : Un ennemi de ton choix passe son prochain tour à moins de réussir un saving throw de foi (14).
+-	L’orgueil : Tu gagnes +2 AC jusqu’à ton prochain tour.
+-	L’avarice : Un ennemi de ton choix devient vulnérable à un type de dégâts de ton choix jusqu’à ton prochain tour à moins de réussir un saving throw de foi (14).
+-	L’impulsivité : Un ennemi de ton choix est obligé d’attaquer à mains nues durant son prochain tour à moins de réussir un saving throw de foi (14).
+-	La trahison : Un ennemi de ton choix fait une attaque contre un allié avec son arme principale à moins de réussir un saving throw de foi (14).
+Niveau 14
+PV +12.
+Amélioration de spécialisation :
+-	Légionnaire infernal :
+•	Force +2.
+•	PV +8.
+•	Tu peux maintenant utiliser Lame de Vindessia jusqu’à 5 fois par long rest.
+-	Vicier de l’excès :
+•	Charisme +2.
+•	Lorsqu’un ennemi échoue un saving throw lié à une de tes malédictions, tu récupères 2 PV.
+-	Maléficier des lamentations :
+•	Cœur de glace : Immunité aux dégâts froids.
+•	Résistance +1, constitution +1.
+-	Syphon : 
+•	Source du mal : Les saving throws associés à tes malédictions ont maintenant +4 difficulté de plus.
+•	La collecte éthérée te rend maintenant 2 malice par créature qui meure jusqu’à un maximum de 14 par long rest.
+Niveau 15
+PV +14.
+Tu peux maintenant activer Chaîne des maléfices deux fois par tour.
+Maîtrise avec les épées et les malédictions.
+La malédiction simple fait maintenant 4d8 si le saving throw est échoué (au lieu de 3d8) et 3d8 si le saving throw est réussi (au lieu de 2d8).
+Lame de Vindessia fait maintenant 3d6 dégâts brûlants (au lieu de 2d6).
+Niveau 16
+PV +16.
+Sublimation de la souffrance : Réaction à une attaque qui touche. Tu acceptes la douleur avec une résiliation presque jouissive. Lorsque tu subis des dégâts physiques, tu peux payer de 1 à 5 malice. Pour chaque malice ainsi utilisée, tu ignores 1d6 dégâts et tu récupères des PV équivalents aux dégâts ignorés.
+Niveau 17
+PV +18.
+L’enfer de l’âme : Action. Une fois par long rest. Tu invoques l'essence même des enfers dans ton être, fusionnant avec l'énergie maléfique de Sugriok. Pour les 3 prochains tours, tu es résistant aux dégâts non physiques et tes malédictions infligent 2d6 dégâts nécrotiques de plus. Tu regagnes 1 malice à chaque fois qu'un ennemi échoue un saving throw contre tes malédictions pendant ce temps.
+Niveau 18
+PV +18.
+Poids de la condamnation : Action bonus. L’horreur de tes actions et de ta destination éternelle inflige une douleur extrême sur ton âme que tu ne souhaites que propager autour de toi. Tu peux dépenser de 2 à 10 malice pour donner à un ennemi de ton choix -1 sur son prochain roll pour chaque tranche de 2 malice dépensée.
+Niveau 19
+PV +20.
+Amélioration de spécialisation :
+-	Légionnaire infernal : Lame de Vindessia est toujours active.
+-	Vicier de l’excès : Lorsqu’un ennemi échoue un saving throw lié à une de tes malédictions, tu récupères maintenant 4 PV et 1 malice.
+-	Maléficier des lamentations : Résistance aux dégâts nécrotiques. Constitution +1.
+-	Syphon : Il n’y a plus de limite par long rest à la collecte éthérée.
+Niveau 20
+PV +22.
+Tu es l’être le plus vil de Midian. Ainsi, le dieu Sugriok t’offre son assistance. Une fois par campagne, tu peux faire appel au maître des enfers.
+La bouche des enfers : Action. 12 malice. Une déchirure entre les plans d’existence ouvre une brèche vers les tréfonds infernaux, où le froid est si intense qu’il fait geler les larmes en quelques secondes. Tous les ennemis dans un grand rayon autour de toi doivent réussir un saving throw de foi (20) ou subir 8d10 dégâts froids. Les ennemis qui réussissent le saving throw prennent 4d10. Les ennemis qui ont subit 8d10 doivent aussi réussir un saving throw de constitution (20) ou être gelés sur place pour 1 tour.
+Inquisiteur*
+L'inquisiteur est un guerrier sacré, dévoué au service de la Chantrie de Moiifhb, le dieu soleil, créateur de l'univers. Armé de foi et de lumière divine, l'inquisiteur chasse sans relâche les ennemis de la lumière : sorciers, fléaux et toute créature qui s'oppose aux idéaux sacrés du seigneur. Guidé par les 13 vertus de Moiifhb, il incarne l’idéal du bien commun et de l'ordre. Sa formation rigoureuse, pour laquelle il est né et ayant occupé l’entièreté de ses 16 premières années de vie, l'a aussi préparé à contrer la magie, usant de sa volonté inébranlable pour désarmer les sortilèges et dissiper les maléfices. L'inquisiteur est un défenseur de la justice, prêt à tout pour éradiquer le mal et faire triompher la lumière divine. D'une loyauté sans faille, il est l'instrument de la volonté de Moiifhb, apportant la lumière et le bien là où règnent les ténèbres et le mal.
+Les inquisiteurs utilisent de la divinité et leur stat foi pour utiliser des miracles de Moiifhb. Ils ont également des habiletés uniques ont une limite d’utilisation par long rest.
+Compétences : Armures moyennes et lourdes, épées, haches, masses et marteaux, boucliers, miracles de Moiifhb.
+Niveau 1
+Armure de l’inquisition (moyenne, résistance aux dégâts divins, AC +3).
+Choix entre : Épée large (1d8 tranchants) / hache de guerre (1d8 tranchants) / masse (1d8 contondants) + bouclier d’inquisiteur (AC +2) OU hache de combat (1d12 tranchants) OU marteau de guerre (1d12 contondants) OU épée à deux mains (1d12 tranchants).
+Commence avec le feat Paladin : Foi +1. Donne accès à Coup Divin.
+Coup divin : Action bonus. Une fois par long rest. La prochaine attaque avec une arme a +2 au attack roll et fait 1d8 dégâts divins supplémentaires par niveau (jusqu’à 6 max).
+Niveau 2
+PV +6. Divinité +3.
+Apprend les miracles Terre consacrée, Bouclier de foi et Miséricorde.
+La parole de Moiifhb : Réaction. Une fois par long rest. L’inquisiteur répond à un sort ou miracle utilisé par un ennemi en récitant une prière à Moiifhb. Les deux personnages font un jet de Foi. Si le jet de l’inquisiteur est plus élevé que celui de l’autre personnage, le sort / miracle est contré.
+Niveau 3
+PV +8.
+Les inquisiteurs promettent devant Moiifhb lui-même de vivre selon ses 13 vertus. Leurs promesses leur donnent accès à plus de pouvoir, tant qu’ils ne les brisent pas. Un inquisiteur qui brise une promesse est automatiquement excommunié et abandonné de Moiifhb.
+Choix d’une première promesse :
+-	L’Amour : L’inquisiteur jure d’aimer tous ceux rendent hommage à Moiifhb de manière inconditionnelle. Son cœur s’allège.
+•	PV +8.
+-	La piété : L’inquisiteur jure de toujours penser à Moiifhb en premier dans toutes situations.
+•	Foi +1.
+-	La beauté : L’inquisiteur jure d’honorer la beauté du monde, qu’elle soit naturelle ou non, se rappelant que toute beauté revient à Moiifhb.
+•	Divinité +1.
+-	La compassion : L’inquisiteur jure de faire preuve de la bonté de Moiifhb même devant ceux qui ne la méritent pas.
+•	Soins divins : Action bonus. Une fois par long rest. Rend 2d4 PV.
+-	La justice : L’inquisiteur jure d’amener tous ceux qui s’opposent à la volonté du seigneur Moiifhb à leur jugement dernier.
+•	Les attack rolls contre les créatures vénérant un des trois dieux sombres ainsi que contre les monstres, vampires et abominations ont avantage.
+-	L’honnêteté : L’inquisiteur jure d’honorer le seigneur Moiifhb en ne mentant jamais peu importe la raison.
+•	Charisme +2.
+-	La sagesse : L’inquisiteur jure d’agir de manière réfléchie, prenant le temps de bien analyser la volonté de Moiifhb avant de prendre une décision.
+•	Sagesse de Moiifhb : Une fois par combat. Aucun coût d’action. L’inquisiteur ajoute son bonus d’intelligence à son attack roll et à ses dégâts pour sa prochaine attaque.
+-	L’égalité : L’inquisiteur jure de traiter tous ceux qui l’entourent de manière égale, leur devant dignité et respect.
+•	Répartition des pouvoirs : Action bonus. Une fois par combat. L’inquisiteur donne avantage à un personnage allié sur toutes ses actions pendant son prochain tour.
+-	L’humilité : L’inquisiteur jure de toujours reconnaitre que Moiifhb est son maître et son seigneur en toutes choses, que son pouvoir est indiscutable. L’inquisiteur se rappelle toujours qu’il n’est rien sans Moiifhb.
+•	Reconnaissance : Réaction à un attack roll ou saving throw qui échoue. Une fois par combat. La prochaine action de l’inquisiteur a avantage.
+-	Le courage : L’inquisiteur jure de ne jamais reculer devant les forces du mal, prêt à amener la lumière de Moiifhb jusqu’aux tréfonds des enfers s’il le faut.
+•	Immunité aux effets de paralysie et de peur.
+-	La générosité : L’inquisiteur jure d’aider son prochain, de venir en aide à ceux qui sont moins fortunés que lui au nom du seigneur Moiifhb.
+•	Une fois par long rest, lorsque l’inquisiteur donne de l’or ou un objet à quelqu’un sans demander rien en retour, il gagne 1 divinité qui peut excéder son maximum pour la journée et il a +1 foi pour la journée.
+-	La patience : L’inquisiteur jure de faire preuve d’une patience à toute épreuve, prouvant sa foi inébranlable en Moiifhb.
+•	Au début d’un combat, l’inquisiteur peut choisir de ne pas rouler son initiative et d’automatiquement jouer en dernier. S’il le fait, il a +3 AC, +2 foi et +2 force jusqu’à la fin de son premier tour de combat.
+-	La loyauté : L’inquisiteur jure de ne jamais trahir ses amis, ses alliés, ses principes et sa dévotion envers Moiifhb.
+•	Les alliés dans un rayon de quelques mètres autour de l’inquisiteur ont +1 à leurs attack rolls et saving throws.
+Niveau 4
+PV +8. Divinité +3.
+Apprend le miracle Silence.
+Le coup divin peut être utilisé une deuxième fois par long rest.
+Niveau 5
+PV +10. Divinité +1.
+Expertise avec épées, haches, masses et marteaux.
+Choix d’une deuxième promesse.
+Niveau 6
+PV +10. Divinité +1.
+Expertise avec les miracles de Moiifhb.
+Apprend le miracle Châtiment.
+Soins divins (la compassion) rend maintenant 3d4 PV.
+Niveau 7
+PV +12.
+Tu peux maintenant attaquer deux fois par action avec ton arme.
+Cœur de lumière : Les dégâts divins que tu infliges sont augmentés de 2. Chaque fois que tu infliges des dégâts divins, toi et un allié de ton choix récupérez 1d6 PV.
+Niveau 8
+PV +10. Divinité +2.
+Tu apprends le miracle Faveur divine.
+Ma foi est mon bouclier : Tu ajoutes maintenant ton bonus de foi à ton AC jusqu’à un maximum de +3.
+Ma foi est mon arme : Tu ajoutes maintenant ton bonus de foi à tes attack rolls et tes dégâts avec tes armes rapprochées jusqu’à un maximum de +3.
+Niveau 9
+PV +10. Divinité +2.
+Choix d’une troisième promesse.
+Soins divins (la compassion) rend maintenant 4d4 PV.
+La parole divine peut être utilisée une deuxième fois par long rest.
+Niveau 10
+PV +12.
+Tu apprends le miracle Excommunication.
+Soumis à Moiifhb : Réaction à une habileté ennemie qui te fait faire un saving throw. Une fois par combat. Tu remets ton sort entre les mains du seigneur. La stat testée par le saving throw devient Foi.
+Niveau 11
+PV +10.
+Colère de Moiifhb : Action bonus. Une fois par long rest. Moiifhb guide ton arme de sa fureur divine. Tu frappes avec la force du seigneur, ton coup résonnant comme le tonnerre. La prochaine attaque avec ton arme rapprochée a +4 au attack roll et fait 3d10 dégâts divins et 2d10 dégâts de force supplémentaires. La cible doit réussir un saving throw de résistance (16) ou être projetée au sol, subissant 1d10 dégâts de force de plus.
+Niveau 12
+PV +10. Divinité +2.
+Choix d’une quatrième promesse.
+Foi inébranlable : Tu as avantage contre les saving throws qui testent ta Foi.
+Le coup divin peut être utilisé une troisième fois chaque long rest.
+Niveau 13
+PV +14.
+Aura de l’inquisition : Action bonus. Une fois par long rest. Jusqu’à ton prochain tour, les ennemis dans un rayon autour de toi doivent faire un saving throw de Foi (14) quand ils utilisent un sort ou un miracle. S’ils échouent, le sort ou miracle est contré.
+Maîtrise avec épées, haches, masses et marteaux.
+Niveau 14
+PV +15. Divinité +1.
+Tu peux maintenant attaquer trois fois par action avec ton arme rapprochée.
+Soins divins (la compassion) rend maintenant 5d4 PV.
+Niveau 15
+PV +15.
+Tu apprends le miracle suprême de Moiifhb, L’Apocalypse Solaire.
+Choix d’une cinquième promesse.
+Colère de Moiifhb peut être utilisée une deuxième fois par long rest.
+Niveau 16
+PV +16.
+Ma foi est mon bouclier et Ma foi est mon arme (niveau 8) n’ont plus de limite de +3.
+Maîtrise avec les miracles de Moiifhb.
+Niveau 17
+PV +18. Divinité +1.
+La parole divine peut être utilisée une troisième fois par long rest.
+Soins divins (la compassion) rend maintenant 6d4 PV.
+Niveau 18
+PV +18.
+Le coup divin peut être utilisé une quatrième fois par long rest.
+Choix d’une sixième promesse.
+Niveau 19
+PV +20.
+Tu apprends le miracle ultime de Moiifhb, Le Jugement Final.
+Niveau 20
+PV +22.
+Choix d’une septième promesse.
+Valkyrie**
+Les légendes veulent que les valkyries, envoyées d’Erkanos, guident les âmes des guerriers tombés au combat jusqu’au hall céleste du dieu. Aujourd’hui, les femmes qui s’appellent valkyries sont un ordre de guerrières suivant un code de conduite stricte, valorisant l’honneur par-dessus tout. Les valkyries, qui vénèrent l’art de la guerre, font preuve d’une force dévastatrice et d’une adresse surprenante. Les valkyries manient lances, haches longues et hallebardes en l’honneur des armes de choix du dieu de la guerre.
+Compétences : Armures légères et moyennes, boucliers, lances, hallebardes et haches.
+Le personnage est obligatoirement une femme et vénère le dieu Erkanos.
+Niveau 1
+Cotte de mailles (Moyenne, AC +2, résistance aux dégâts tranchants), casque ailé (initiative +1), lance (1d8 perçants) + bouclier (AC +2) OU hache barbue (1d10 tranchants) + buckler (AC +1) OU hallebarde (2 mains, 1d12 tranchants).
+Ailes divines : Aucun coût d’action. Une fois par long rest. Des ailes de lumière divine, semblables à celles d’un ange, apparaissent dans le dos de la valkyrie. Jusqu’à son prochain tour, elle peut voler.
+Rage d’Erkanos : Action. Une fois par long rest. La valkyrie concentre la rage divine du dieu de la guerre dans son arme et frappe le sol avec une force dévastatrice. Une cible à un maximum de quelques mètres doit réussir un saving throw de dextérité (14) ou subir 2d10 dégâts de force et être projetée au sol.
+Niveau 2
+PV +6.
+Coup de grâce : Action bonus. Une fois par long rest. La valkyrie porte un coup dévastateur à un ennemi qui est à 10 PV ou moins. Il doit réussir un saving throw de résistance (16) ou subir 2d10 dégâts de force.
+Niveau 3
+PV +8.
+Choix d’une spécialisation :
+-	Céleste : La valkyrie céleste incarne la rapidité du vent et la fureur du ciel. Ses attaques sont chargées de la puissance divine de la foudre, et elle se déplace avec la grâce d'un ange, frappant ses ennemis avec des assauts rapides et dévastateurs.
+•	Ailes divines peut être utilisé 3 fois par long rest.
+•	Vitesse +1.
+•	Coup de foudre : Action bonus. Une fois par long rest. Une foudre divine entoure l’arme de la valkyrie. Sa prochaine attaque avec son arme fait 1d8 dégâts électriques de plus et sonne l’ennemi à moins qu’il ne réussisse un saving throw de résistance (10).
+-	Gardienne : Les valkyries gardiennes sont des figures mythologiques protectrices guidant âmes des guerriers tombés au combat vers le hall d’Erkanos. Ces valkyries puisent dans la force des défunts pour soigner.
+•	Résistance +1.
+•	Réconfort : Action bonus. Deux fois par long rest. La valkyrie réconforte elle-même ou un allié avec une vision du hall d’Erkanos. Plus l’allié est un vaillant guerrier, plus la vision est efficace. Rend 1d6 PV + le modificateur de force ou dextérité (le plus élevé des deux) de la cible, s’il est positif.
+•	Protection des âmes : Réaction à un saving throw provoqué. Une fois par long rest. La valkyrie appelle l’aide des guerriers morts pour protéger elle-même ou un allié, lui accordant +2 sur son saving throw.
+-	Triomphante : La valkyrie triomphante est une guerrière implacable qui se bat avec une puissance brutale et une technique imparable. Elle préfère les combats rapprochés où elle peut exercer sa maîtrise totale de la guerre, frappant avec une férocité inouïe.
+•	Force ou dextérité +2.
+•	Bénédiction militaire : Les attaques avec arme font 1d4 dégâts divins supplémentaires.
+Niveau 4
+PV +8.
+Supériorité martiale : Chaque fois que tu infliges des dégâts à un ennemi, tu gagnes un point de supériorité (jusqu’à un maximum de 3 accumulés en même temps). À tout moment, tu peux dépenser un point de supériorité pour te donner avantage sur un attack roll ou saving throw ou pour infliger 1d6 dégâts divins supplémentaires sur une attaque. Si tu utilises un point de supériorité pour une action et que cette action inflige du dégât, tu ne gagnes pas de point de supériorité pour ce dégât.
+Niveau 5
+PV +10. +2 distribué au choix parmi les stats force, dextérité et constitution.
+Tu peux utiliser Rage d’Erkanos une deuxième fois par long rest.
+Coup de grâce touche maintenant les ennemis à 20 PV ou moins et inflige maintenant 3d10 au lieu de 2d10.
+Tu apprends le miracle d’Erkanos Défoulement que tu peux utiliser une fois par long rest sans payer de divinité.
+Niveau 6
+PV +12.
+Ferveur du ciel : Réaction à une attaque ennemie qui te touche. Une fois par long rest. Jusqu’à la fin de ton prochain tour, tu as +3 sur tes attack rolls et saving throws et tu à résistance aux dégâts physiques.
+Niveau 7
+PV +12.
+Éclair vengeur : Réaction à un allié qui subit des dégâts. Une fois par long rest. Utilise foi. La valkyrie fait apparaître dans sa main un éclair de lumière divine qui frappe la créature ayant fait des dégâts à un allié. Pour chaque tranche de 10 PV que l’allié a perdu, l’éclair fait 1d10 dégâts divins. L’allié récupère des PV égaux à la moitié (arrondie à la hausse) des dégâts faits à l’ennemi.
+Ailes divines peut être utilisé une fois de plus par long rest.
+Niveau 8
+PV +10.
+Amélioration de spécialisation :
+-	Céleste : Le coup de foudre fait maintenant 2d8 dégâts électriques et le saving throw associé devient 14.
+-	Gardienne : Réconfort rend maintenant 2d6 et le bonus au saving throw de protection des âmes devient +3.
+-	Triomphante : Les dégâts divins de bénédiction militaire deviennent 1d6.
+Niveau 9
+PV +12.
+Expertise avec lances, hallebardes et haches.
+Le miracle d’Erkanos Coups dévastateurs devient actif en permanence.
+Tu peux utiliser Défoulement deux fois par long rest.
+Niveau 10
+PV +10.
+Coup fatal : Aucun coup d’action. Dépense 3 points de supériorité. La prochaine attaque a +4 au attack roll et inflige 3d10 dégâts divins supplémentaires. Tu ne récupères pas de point de supériorité pour cette attaque.
+Niveau 11
+PV +10.
+La limite de points de supériorité devient 5.
+Coup de grâce touche maintenant les ennemis à 30 PV ou moins et inflige maintenant 4d10 au lieu de 3d10.
+Une fois par combat, tu peux utiliser Rage d’Erkanos en action bonus et non pas en action.
+Niveau 12
+PV +10.
+Ragnarok : Action bonus. Coût 4 points de supériorité. Une fois par long rest. La valkyrie entre dans une transe guerrière et invoque une tempête dévastatrice. Pendant les trois prochains tours, son AC est augmenté de 2, ses attaques avec armes font 1d6 dégâts électriques de plus et elle peut attaquer une deuxième fois sur chaque action. Au début de son tour, la valkyrie fait frapper un éclair vengeur sur un ennemi au choix qui doit réussir un saving throw de vitesse (18) ou subir 2d10 dégâts électriques et la valkyrie récupère des PV égaux aux dégâts subis.
+Ailes divines peut être utilisé une fois de plus par long rest.
+Niveau 13
+PV +12.
+Marque vengeresse : Action bonus. Une fois par long rest. La valkyrie met une marque lumineuse sur 1 à 4 cibles. La prochaine fois que la valkyrie ou un allié inflige des dégâts à cette cible, la marque explose, infligeant 1d10 dégâts divins + le modificateur de foi, s’il est positif, de la personne ayant activé la marque. La personne récupère en PV l’équivalent des dégâts divins faits par la marque.
+Niveau 14
+PV +12.
+Amélioration de spécialisation :
+-	Céleste : Le coup de foudre fait maintenant 3d8 dégâts électriques et le saving throw associé devient 16.
+•	Tempête argentée : Chaque fois que tu te déplaces en volant, tu peux utiliser ton action bonus pour lancer un éclair argenté qui utilise ta foi, infligeant 1d10 dégâts électriques et 1d10 dégâts divins et te redonnant des PV égaux aux dégâts.
+-	Gardienne : Réconfort rend maintenant 3d6 et le bonus au saving throw de protection des âmes devient +4.
+•	Aura de soins : Action bonus. Une fois par long rest. Immédiatement et au début de tes 2 prochains tours, chaque allié dans une grande zone autour de toi répère 2d4 PV + son modificateur de foi s’il est positif.
+-	Triomphante : Les dégâts divins de bénédiction militaire deviennent 1d8.
+•	Coup de maître : Une fois par long rest. Utiliser en réaction à ton attaque mêlée qui touche. Cette attaque est automatiquement un coup critique.
+Niveau 15
+PV +15.
+Vengeance ailée : Quand tu attaques alors que tu voles, tu ignore les résistances de la cible.
+La limite de points de supériorité devient 7.
+Maîtrise avec lances, hallebardes et haches.
+Niveau 16
+PV +15.
+Tu peux distribuer +2 au choix parmi les stats force, vitesse et dextérité.
+Coup de grâce touche maintenant les ennemis à 40 PV ou moins et inflige maintenant 5d10 au lieu de 4d10.
+Tu peux utiliser défoulement une troisième fois par long rest.
+Niveau 17
+PV +18.
+Pendant Ragnarok, ton AC augmente de 4 au lieu de 2, tes attaques font 2d6 dégâts électriques au lieu de 1d6 et tes éclairs vengeurs font 4d10 au lieu de 2d10. Pendant Ragnarok, tu as une troisième attaque sur chaque action.
+Niveau 18
+PV +18.
+Onde de choc : Action. Une fois par long rest. Tu frappes le sol du pommeau de ton arme, envoyant une onde de choc divine qui inflige 4d10 dégâts divins à tous les ennemis autour de toi. Chaque ennemi doit réussir un saving throw de résistance (16) ou subir un autre 3d10 dégâts de force et être projeté au sol. Toi et tes alliés qui sont dans la zone de l’onde de choc regagnez 1d10 PV pour chaque ennemi touché.
+Niveau 19
+PV +20.
+Domination martiale : Pendant ton tour, si tu n’as pas subi de dégâts depuis ton dernier tour, tu as avantage sur toutes tes attaques.
+Niveau 20
+PV +22.
+Tu es une force implacable de la guerre, détruisant tes ennemis avec une rage terrifiante : Ragnarok dure maintenant 5 tours.
+Scorpion**
+Le scorpion est un combattant agile et rusé, maîtrisant une arme unique avec une grande habileté. L'aiguillon, une lame pointue semblable à une tête de lance attachée à une corde, est l’arme de choix du scorpion. Il excelle dans les attaques rapides et perçantes, frappant ses ennemis à distance avec son aiguillon et se faufilant au cœur du combat pour faucher plusieurs ennemis d’un coup. En complément de son aiguillon, le scorpion utilise des aiguilles, de fines lames aussi tranchantes que des rasoirs, qu’il lance pour harceler ses cibles. Grâce à sa précision exceptionnelle, il frappe là où l’ennemi est vulnérable, capable de paralyser ou de faire saigner sa victime avec une précision létale. Les meilleurs scorpions de Midian sont des membres du Kinkou, un groupe d’assassins légendaires dont le prix d’embauche est aussi réputé que l’efficacité.
+Compétences : Aiguillons, aiguilles, armes simples, armures légères et moyennes.
+Niveau 1
+Aiguillon (peut attaquer à distance jusqu’à trois mètres, 1d8 perçants), 10 aiguilles préparées (1d4 perçants), veste de cuir bouilli (légère, AC +2), sac de retailles.
+Fines lames : Les aiguilles sont si minces et discrètes qu’elles ne peuvent pas être récupérées. Ainsi, le scorpion garde sur lui un sac de retailles de métal qu’il aiguise dans son temps libre pour former ses aiguilles douloureuses. À chaque short rest, le scorpion récupère 2 aiguilles. À chaque long rest, il en récupère 5. Le scorpion peut avoir un maximum de 10 aiguilles préparées en même temps.
+Niveau 2
+PV +5.
+Tourbillon de lames : Action bonus. Le scorpion tourne rapidement sur lui-même, lançant jusqu’à 5 aiguilles sur des cibles différentes.
+Coup au foie : Action. Une fois par long rest. Le scorpion attaque avec son aiguillon, visant le foie de l’adversaire avec une minutie choquante. L’attaque a +2 au attack roll. Si elle touche, la cible doit réussir un saving throw de constitution (12) ou c’est automatiquement un coup critique.
+Niveau 3
+PV +5.
+Choix d’une spécialisation :
+-	Perceur d’organes : Tu es entraîné à viser les points vitaux de l’ennemi afin de porter des coups dévastateurs.
+•	L’aiguillon porte des coups critiques sur un attack roll de 18 ou plus.
+•	Tu peux utiliser coup au foie une deuxième fois par long rest.
+•	Dextérité +2.
+-	Constrictor : Tu aimes utiliser la corde de ton aiguillon comme une arme, utilisant ta force physique pour piéger et tuer tes ennemis.
+•	Force +2.
+•	Cordage : Action bonus. Tu tends la corde de ton aiguillon pour piéger les pieds d’un ennemi qui doit réussir un saving throw de dextérité (14) ou tomber au sol.
+•	Étranglement : Action. Fonctionne seulement sur un ennemi qui est au sol, paralysé, endormi ou sonné. Tu enroules la corde de ton aiguillon autour du cou d’un ennemi qui subit 1d10 dégâts de force. Ensuite, l’ennemi et toi faites un check de force. Si tu gagnes, l’ennemi prend 1d10 dégâts de force. Si l’ennemi gagne, il se libère. L’effet continue jusqu’à ce que l’ennemi tombe à 0 PV ou se déprenne.
+-	Acupuncteur : Tu as une connaissance terrifiante de l’anatomie, te permettant de placer des aiguilles aux bons endroits pour soulager ou accenteur une douleur.
+•	Tu prépares 1 aiguille de plus par short rest et 2 de plus par long rest.
+•	Soulagement musculaire : Action bonus. Coût 1 aiguille. Tu lances une aiguille sur un allié, précisément au bon endroit pour détendre ses muscles. Il récupère 1d4 PV + ton modificateur de dextérité.
+•	Accentuation douloureuse : Action bonus. Coût 1 aiguille. Une fois par combat. Tu lances une aiguille sur un ennemi qui a déjà subi des dégâts pendant ton tour, précisément au bon endroit pour faire cingler ses muscles de douleur. Pour chaque tranche de 4 PV que la cible a perdu pendant ton tour, elle subit 1d4 dégâts perçants.
+Niveau 4
+PV +5.
+Aiguille paralysante : Action bonus. Coût 1 aiguille. Une fois par combat. Tu lances une aiguille vers un nerf de la cible, visant à l’immobiliser temporairement. Si l’attaque touche, la cible doit réussir un saving throw de constitution (14) ou être paralysée pendant 1 tour.
+Expertise avec les aiguilles.
+Niveau 5
+PV +5.
+Précision mortelle : Lorsque tu réussis un attack roll de 5 ou plus avec ton aiguillon, tu infliges 1d10 dégâts perçants supplémentaires.
+Expertise avec l’aiguillon.
+Niveau 6
+PV +6.
+Dard du scorpion : Action. Une fois par long rest. Tu enduis la lame de ton aiguillon d’une mixture métallique corrosive, puis tu attaques entre deux joints osseux de la cible, la perçant de ton aiguillon avec une précision létale et l’infectant d’un poison. L’attaque a +2 au attack roll. Si l’attaque touche, la cible est paralysée pendant 1 tour et est empoisonnée pour 4 dégâts par tour.
+Niveau 7
+PV +8.
+Choix de dextérité, force, ou vitesse +1.
+Criblage : Action. Coût 5 aiguilles. Tu mitrailles une cible, lui lançant 5 aiguilles en succession rapide.
+Le attack roll nécessaire pour porter une coup critique avec l’aiguillon ou une aiguille est réduit de 1.
+Niveau 8
+PV +8.
+Perçage pulmonaire : Action. Une fois par long rest. Tu attaques l’ennemi avec ton aiguillon, visant entre les côtes de la cage thoracique pour percer un poumon. L’attaque a +2 au attack roll et inflige 1d4 dégâts perçants supplémentaires. Si l’attaque touche, la cible doit réussir un saving throw de résistance (12) ou perdre son action bonus pour 3 tours en raison de l’essoufflement colossal qu’il ressent.
+La limite d’aiguilles pouvant être préparées devient 12.
+Le saving throw de Coup au foie devient 14.
+Niveau 9
+PV +10.
+Ouverture carotide : Action. Une fois par long rest. Tu attaques avec ton aiguillon, visant à trancher un artère majeur dans le cou de l’ennemi. L’attaque a +2 à son attack roll. Si elle touche, l’ennemi doit réussir un saving throw de résistance (14) ou il reçoit un saignement de 6 dégâts par tour.
+Niveau 10
+PV +8.
+Tu peux attaquer une deuxième fois par action avec ton aiguillon. Cela comprend tes habiletés qui sont des attaques avec l’aiguillon comme Coup au foie.
+Niveau 11
+PV +10.
+Champ de rasoirs : Action + action bonus. Une fois par long rest. Coût 7 aiguilles. Tu deviens invisible et tu lances partout autour de toi des aiguilles que tu attaches à des fils si minuscules qu’ils sont imperceptibles. Tu te déplaces extrêmement rapidement, te positionnant d’une manière avantageuse, puis tu réapparais, tirant tes aiguilles vers toi pour qu’elles tranchent les ennemis dans leur passage. Tous les ennemis entre tes aiguilles et toi doivent réussir un saving throw de dextérité (14) ou subissent 7d4 dégâts perçants. Ceux qui réussissent subissent 3d4 dégâts perçants. Les ennemis qui ont subis 7d4 doivent aussi réussir un test de résistance (14) ou saigner de 2 dégâts par tour.
+Niveau 12
+PV +12.
+Danse mortelle : Aucun coût d’action. Une fois par long rest. Tu entres dans une sorte de transe combattante où tout autour de toi semble bouger au ralenti. Tes attaques ont +4 au attack roll jusqu’à la fin de ton tour et tu ne peux pas recevoir d’attaques d’opportunité.
+Niveau 13
+PV +12.
+Aveuglement : Action. Une fois par long rest. Tu attaques avec ton aiguillon, visant à percer un œil de la cible. Si l’attaque touche, la cible a désavantage sur ses attaques pour 3 tours.
+Le saving throw de Coup au foie devient 16.
+Niveau 14
+PV +12.
+Amélioration de spécialisation :
+-	Perceur d’organes : Dextérité +1. L’aiguillon porte maintenant des coups critiques sur 17 et moins.
+-	Constrictor : Force +2. Le saving throw de cordage devient 16. L’étranglement fait maintenant 2d10 dégâts de force initialement et chaque fois que la cible échoue à se déprendre.
+-	Acupuncteur : Soulagement musculaire rend maintenant 1d6. Accentuation douloureuse fait maintenant 1d6 par tranche de 4 PV perdus par la cible.
+Niveau 15
+PV +14.
+Dérobade : Réaction à une attaque mêlée qui te cible. Une fois par combat. Tu ajoutes ton bonus de dextérité à ton AC pour esquiver l’attaque. Si tu réussis, tu fais immédiatement une riposte (qui peut être une de tes attaques spéciales requérant normalement une action complète) avec ton aiguillon avec avantage.
+Esquive piquante : 3 fois par combat. Lorsqu’une attaque mêlée te rate, tu peux lancer une aiguille à l’ennemi qui t’attaquait.
+La limite d’aiguilles préparées devient 15.
+Niveau 16
+PV +15.
+Fauchage: Action. Une fois par long rest. Tu fais tourner ton aiguillon au-dessus de ta tête de manière à toucher tous les ennemis dans un petit rayon autour de toi. Tu fais une attaque avec ton aiguillon contre chacun de ces ennemis.
+Maîtrise avec les aiguilles et l’aiguillon.
+Tu peux maintenant attaquer 3 fois par action avec ton aiguillon.
+Niveau 17
+PV +15.
+Pince du scorpion : Action. Tu fais une attaque avec ton aiguillon qui vise à écraser la cible entre le plat de la lame et la corde pour fracasser des os. Cette attaque a +2 au attack roll et les dégâts perçants qu’elle infligerait normalement sont contondants. Si elle touche, la cible doit réussir un saving throw de résistance (16) ou subir 1d12 dégâts de force supplémentaires et avoir -2 à ses attack rolls jusqu’à la fin de son prochain tour.
+Niveau 18
+PV +16.
+Tourniquet tranchant : Action. Une fois par long rest. Tu fais tourner rapidement la lame au bout de ton aiguillon à l’aide de la corde, tranchant la cible à 3 reprises consécutives. Tu attaques donc 3 fois avec ton aiguillon. Ces attaques infligent des dégâts tranchants et non perçants. Chaque attaque qui touche inflige un saignement de 2.
+Niveau 19
+PV +18.
+Le attack roll nécessaire pour porter une coup critique avec l’aiguillon ou une aiguille est réduit de 1.
+Pique paralysante : Lorsque tu touches un ennemi d’un coup critique, il doit réussir un saving throw de constitution (15) ou être paralysé pour un tour.
+Niveau 20
+PV +18.
+Tu es désormais un des maîtres des aiguillons les plus redoutables de Midian, rivalisant avec les experts du Kinkou.
+Les coups critiques avec l’aiguillon font 4 fois les dégâts au lieu de 2.
+Maraudeur*
+Le maraudeur est un guerrier redoutable, forgé dans les rigueurs des terres froides et impitoyables de Gloisil, un royaume ancien tout au nord-est du monde de Midian, où des traditions païennes sont suivies depuis des millénaires. Portant des tatouages runiques sacrés sur sa peau, il canalise une magie ancestrale qui puise dans la force de son corps et de son esprit. Plus le maraudeur est respecté, plus les shamans de Gloisil décorent sa peau de nouveaux dessins. Ces symboles puissants lui confèrent une force surhumaine et une résilience hors du commun, sa prouesse déjà impressionnante étant augmentée par les runes magiques qui marquent sa peau. Chaque coup qu’il porte est empreint d’une puissance brute et d’une magie primale.
+Compétences : Haches, épées, boucliers, armures légères et moyennes, runes.
+Les runes utilisent la constitution pour déterminer leur efficacité. Les effets des runes qui utilisent des dés sont donc augmentés du bonus de constitution du maraudeur.
+Niveau 1
+Armure de maraudeur (Moyenne, AC +3), Bottes de marin (+2 aux saving throws de dextérité ou constitution), Choix entre épée de maraudeur (1d8 tranchants) + bouclier de bois renforcé (AC +2) OU hache danoise (1d12 tranchants, deux mains).
+Rune du tonnerre : Action bonus. Une fois par long rest. Un tatouage représentant la foudre scintille dans ta paume d’un bleu éclatant. De ta main jaillit un éclair azur qui inflige 1d6 dégâts électriques.
+Rune de la rage : Aucun coût d’action. Une fois par long rest. Un tatouage abstrait, représentant une colère incandescente, s’allume d’un rouge vif sur la peau de ton bras. Le prochain coup que tu portes avec ton arme mêlée ce tour ci a +3 au attack roll et inflige 1d10 dégâts de force supplémentaires. L’effort est tel que tu perds 1d6 PV.
+Niveau 2
+PV +10.
+Rune de la mère : Action bonus. Une fois par long rest. Un tatouage représentant une femme corpulente et fertile brille d’une lumière douce dans ton cou. Tu récupères 2d4 PV.
+Niveau 3
+PV +8.
+Choix d’une spécialisation :
+-	Rune de l’ours : Tu portes sur ton cœur un tatouage représentant un ours enragé. Il brille d’une lueur orangée, t’apportant force et résilience.
+•	Force +2.
+•	Résistance +1.
+•	Rage ursine : Action bonus. Une fois par long rest. Tu grognes, tu grondes, tu rages. Jusqu’à la fin de ton prochain tour, tu as résistance aux dégâts physiques et tes attaques avec arme utilises deux fois ton bonus de force pour le attack roll et les dégâts plutôt qu’une.
+-	Rune du loup : Tu portes sur ton cœur un tatouage représentant un énorme loup, rusé et puissant, qui brille d’un mauve profond.
+•	Intelligence +3.
+•	Tactiques de meute : Action bonus. Une fois par long rest. Tu laisses échapper un hurlement primal. Jusqu’à ton prochain tour, tes alliés et toi ajoutez ton bonus d’intelligence à vos attack rolls et vos dégâts et le roll à atteindre pour que vous scoriez des coups critiques est réduit de 1.
+-	Rune de l’aigle : Tu portes sur ton cœur un tatouage représentant un aigle magistral, ouvrant ses ailes immenses, brillant d’un blanc crème.
+•	Vitesse +2.
+•	Dextérité +2.
+•	Serre aveuglante : Action bonus. Tu donnes un coup non armé, utilisant tes ongles comme des serres, qui utilise à la fois ta force et ta dextérité et qui fait 1d4 dégâts tranchants supplémentaires. Si tu touches, l’ennemi doit réussir un saving throw de constitution (12) ou avoir désavantage sur ses attaques pour 2 tours.
+-	Rune du caribou : Tu portes sur ton cœur un tatouage représentant un caribou gigantesque, portant sur sa tête des cornes royales, qui brille d’un vert forêt serein.
+•	Constitution +2.
+•	Force +1.
+•	Ruée écrasante : Action. Tu fonces sur un ennemi tête première comme un caribou qui charge. Il doit réussir un saving throw de résistance (14) ou subir 2d10 dégâts de force et être projeté au sol. S’il réussit le saving throw, il subit 1d10 seulement.
+Niveau 4
+PV +8.
+Rune de la guerre : Aucun coût d’action. Une fois par long rest. Un tatouage représentant un casque en fer, marqué par les batailles, brille sur ta cuisse. Jusqu’à ton prochain tour, tu as avantage sur tes attaques avec arme et tu ajoutes ton bonus de constitution à ton AC.
+Niveau 5
+PV +10.
+Rune du vautour : Un tatouage représentant un oiseau charognard brille d’un noir luisant sur la peau de ton bras. Chaque fois que tu tues un ennemi, tu récupères ton bonus de constitution en PV.
+Niveau 6
+PV +12.
+Rune de la lune : Une fois par long rest. Tu dois annoncer que tu actives cette rune au début de ton tour. Coût 4 PV. Une pleine lune brille sur tes côtes gauches d’un bleu glacial. Tes attaques avec ton arme font 1d6 dégâts de froid supplémentaires ce tour ci. Tu as résistance au froid jusqu’à ton prochain tour.
+Rune du soleil : Une fois par long rest. Tu dois annoncer que tu actives cette rune au début de ton tour. Coût 4 PV. Un soleil magnifique brille d’un jaune incandescent sur tes côtes droites. Tes attaques avec ton arme font 1d6 dégâts brûlants supplémentaires ce tour ci. Tu as résistance au feu jusqu’à ton prochain tour.
+Niveau 7
+PV +14.
+Tu peux attaquer une deuxième fois avec ton arme pour chaque action.
+Tu peux utiliser Rune du tonnerre une deuxième fois par long rest. Le dégât de Rune du tonnerre devient 3d6.
+Rune de la mère rend maintenant 4d4 PV.
+Niveau 8
+PV +12.
+Rune du héros : Action bonus. Une fois par long rest. Un tatouage représentant une armure d'or étincelante brille sur ton mollet. Jusqu’à la fin de ton prochain tour, tu es immunisé aux statuts et tes attaques avec arme utilisent ton bonus de constitution en dégâts magiques supplémentaires.
+Niveau 9
+PV +12.
+Rune d’immortalité : Action bonus. Une fois par long rest. Un tatouage représentant une colonne vertébrale imposante brille sur ta peau d’un beige osseux, longeant ta propre colonne. Jusqu’à ton prochain tour, tu es résistant à tous les types de dégâts et tes PV ne peuvent pas tomber en dessous de 1.
+Niveau 10
+PV +12.
+Tu peux activer deux runes en utilisant une seule action bonus.
+Tu gagnes expertise avec les épées, les haches et les runes.
+Niveau 11
+PV +10.
+Rune du dragon : Action. Une fois par long rest. Un tatouage immense représentant un dragon de bronze déploie ses ailes sur le haut de ton dos et tes omoplates. Tu craches une gerbe de flammes dorées qui touchent tous les ennemis dans une ligne devant toi. Ils doivent réussir un saving throw de dextérité (14) ou subir 5d6 dégâts brûlants. Ceux qui réussissent le saving throw sautent juste à temps hors de la portée des flammes.
+Niveau 12
+PV +12.
+Rune du corbeau à trois yeux : Action bonus. Une fois par long rest. Un corbeau à trois yeux est perché sur ta nuque, brillant d’un noir argenté. Jusqu’à la fin de ton tour, les ennemis ne peuvent pas utiliser de réactions, tu ajoutes ton bonus d’intelligence à tes attack rolls et tes attaques avec armes font 1d10 dégâts magiques supplémentaires.
+Niveau 13
+PV +14.
+Rune du serpent de mer : Action bonus. Une fois par long rest. Un serpent de mer gigantesque est tatoué d’un turquoise marin sur ton corps, partant de ton pied et serpentant le long de ton tronc, passant par une joue pour finir sur le dessus de ta tête, langue fourchue pointant vers ton front. Jusqu’à la fin du tour, lorsque tu touches un ennemi avec ton arme, il doit réussir un saving throw de résistance (20) ou être projeté au sol et subir 3d10 dégâts de force supplémentaires.
+Rune de la mère rend maintenant 4d6 PV.
+Niveau 14
+PV + 15.
+Amélioration de spécialisation :
+-	Rune de l’ours : Force +2. Résistance +1.
+-	Rune du loup : Intelligence +2.
+-	Rune de l’aigle : Dextérité +2. Vitesse +2. Serres aveuglantes fait maintenant 2d4 supplémentaire au lieu de 1d4 et le saving throw associé devient 14.
+-	Rune du caribou : Constitution +1. Force +1. Ruée écrasante fait maintenant 4d10 lorsque le saving throw est échoué et 2d10 lorsqu’il est réussi. Le saving throw associé devient 16.
+Niveau 15
+PV +15.
+Rune du géant : Action bonus. Une fois par long rest. Sur ton triceps se trouve un tatouage représentant un géant recourbé brandissant une énorme hache, fendant une montagne en deux. Jusqu’à la fin du tour, double ton bonus de force.
+Niveau 16
+PV +18.
+Maîtrise avec les épées, les haches et les runes.
+Tu peux maintenant activer jusqu’à trois runes avec ton action bonus.
+Niveau 17
+PV +18.
+Rune d’invincibilité : Action bonus. Une fois par long rest. Un tatouage symbolisant un bouclier argenté brille sur ton ventre. Jusqu’à ton prochain tour, ton AC augmente de 5 et chaque fois qu’un ennemi rate une attaque mêlée contre toi, il subit 1d10 dégâts de force.
+Niveau 18
+PV +20.
+Rune du blizzard: Action bonus. Une fois par long rest. Un tatouage représentant une vague de glace géante aux teintes bleues brille sur ton torse. Tu crées une onde de choc de glace dans un grand rayon autour de toi. Les ennemis touchés doivent réussir un saving throw de constitution (16) ou subir 6d6 dégâts froids et ne pas pouvoir utiliser leur mouvement à leur prochain tour. Les ennemis qui réussissent le saving throw subissent 2d6.
+Rune de la mère rend maintenant 6d6 PV.
+Niveau 19
+PV +22.
+Rune du kraken : Action. Une fois par long rest. Un kraken colossal est tatoué sur le devant de l’une de tes jambes, l’enroulant de ses tentacules mauves et noirs. Tu attaques avec ton arme, mais à distance, frappant semblablement l’air, mais atteignant ta cible comme si tu avais les longs bras d’un kraken. Tu frappes avec ton arme 8 fois de suite. L’effort est si immense que pour chaque coup que tu rates, tu perds 1d12 PV.
+Niveau 20
+PV +24.
+Rune du maraudeur céleste : Action. Une fois par long rest. Cette rune unique, accordée seulement aux maraudeurs les plus puissants, est tatouées sur le dessus de ta main. Elle brille d’une lumière sans couleur, représentant les étoiles du cosmos. Tu sautes haut dans le ciel, puis tu retombes au sol avec une force telle qu’un cratère se crée autour de toi. Tous les ennemis autour doivent réussir un saving throw de dextérité (18) ou subir 6d10 dégâts de force et être projetés au sol. Les ennemis qui réussissent le saving throw subissent 3d10.
+Artificier***
+L'artificier est expert des objets magiques, un ingénieur habile qui utilise des armes arcano-mécaniques et des fioles explosives pour manipuler le champ de bataille. Plutôt que de se fier à une force brute, il se concentre sur le renforcement de ses armes ainsi que sur la perturbation des ennemis avec ses fioles qui explosent au contact du sol comme des grenades, déchaînant des énergies dévastatrices. L’artificier est également capable de s’octroyer des améliorations biomécaniques qui renforcent son corps, l’amenant plus loin dans le processus de la complétion. En effet, l’ordre des arcanistes croit que le chemin vers l’évolution est de devenir complètement mécanisé par la magie arcanique. Les plus puissants artificiers du monde sont les maîtres pandais qui confectionnent les meilleures armes arcano-mécaniques ainsi que des gadgets d’augmentation corporelle biomécaniques surpassant l’entendement.
+Les fioles explosives de l’artificier utilisent des charges qui se rechargent à chaque long rest. Elles utilisent l’intelligence pour leurs dégâts.
+Compétences : Armes arcano-mécaniques, armures légères.
+Niveau 1
+Une arme arcano-mécanique au choix entre :
+-	Arbalètes automatisées : Deux arbalètes à main avec un mécanisme magique qui se recharge tout seul. L’arme est si stable qu’elle pallie aux difficultés du porteur, lui permettant d’utiliser son intelligence plutôt que sa dextérité pour ses attaques. 
+•	1d6 dégâts perçants. 
+•	Peut tirer deux fois par action et une fois par action bonus avec la main secondaire.
+-	Marteau explosif : Un marteau immense qui, incroyablement, ne pèse rien, permettant au porteur d’ignorer sa force et d’utiliser son intelligence pour ses attaques. Au bout, une chambre à air peut être activée pour créer une mini-explosion lorsque le marteau touche sa cible. 
+•	1d10 dégâts contondants. 
+•	Frappe explosive : Une fois par long rest. Quand l’attaque touche, tu peux dépenser ton action bonus pour activer le marteau et infliger 1d8 dégâts brûlants supplémentaires.
+-	Rapière rétractable : Une épée fine qui se ferme à l’aide d’un mécanisme dans la garde pour révéler une ouverture qui crache des billes métalliques. L’épée est enchantée pour que l’usager puisse utiliser son intelligence pour ses attaques. 
+•	1d6 dégâts perçants.
+•	Tir métallisé : Action bonus. Une fois par long rest. Tire une salve de 3 billes métalliques à une vitesse phénoménale. Chaque bille fait 1d4 dégâts perçants.
+-	Fléau électrifié : Un fléau de fer léger comprenant un mécanisme dans la chaine qui fait charger de l’électricité dans la tête d’étoile. Le matériau permet au porteur d'utiliser son intelligence pour ses attaques. 
+•	1d8 dégâts contondants. 
+•	Au début de ton tour, le fléau gagne une charge. 
+•	Électrification : Dépense 3 charges. La prochaine attaque a +2 au attack roll et inflige 2d6 dégâts électriques supplémentaires.
+-	Gants à pistons : Deux gants faits de métal auxquels sont affixés des pistons mécano magiques. Les gants semblent répondre aux commandes de l’esprit de la personne les portant, lui permettant d’utiliser son intelligence pour ses attaques.
+•	Main principale : 1d6 dégâts contondants.
+•	Main secondaire : 1d4 dégâts contondants.
+•	Frappe pulvérisante : Lorsque tu fais tomber les PV d’un ennemi à 0 avec une attaque de tes gants, une onde de choc est libérée et va frapper un ennemi qui se trouve près autour, lui infligeant 1d10 dégâts de force.
+-	Carabine arcanique : Un objet étrange, long et fin, qui comporte un levier permettant de libérer des tirs magiques.
+•	Tir arcanique : Action. Tu libère l’énergie de la carabine pour tirer une salve de magie pure, infligeant 1d10 dégâts magiques.
+•	Décharge paralysante : Action bonus. 2 charges. Tu tires une décharge électrique qui fait 1d6 dégâts électriques et paralyse la cible pour 1 tour à moins qu’elle ne réussisse un saving throw résistance (10).
+•	Balles de glace : Action. 2 charges. Tu tires un projectile glacé qui transperce les défenses de la cible. Inflige 1d8 dégâts de froid et réduit le AC de la cible de 1 jusqu’à ton prochain tour.
+Robes d’artificier rembourrées de cuir (légère, AC +1).
+Niveau 2
+PV +4.
+Fiole infernale: Action bonus. 2 charges. Tu lances au sol une fiole qui laisse échapper un vortex de flammes orangées. Les ennemis près de l’explosion subissent 1d8 dégâts brûlants. Ils doivent réussir un saving throw de constitution (12) ou les dégâts sont doublés.
+Niveau 3
+PV +4.
+Fiole de vulnérabilité: Action bonus. 1 charge. Tu lances une fiole sur un ennemi. Lorsqu’elle explose, elle l’enduit d’une substance visqueuse qui le rend vulnérable à un type de dégâts non-physiques de ton choix jusqu’à ton prochain tour.
+Fiole débilitante : Action bonus. 1 charge. Tu lances une fiole sur en ennemi. En explosant, elle libère des spores qui lui donnent mal à la tête. Il a -2 sur ses attack rolls et saving throws jusqu’à ton prochain tour.
+Niveau 4
+PV +4.
+Fiole glacée : Action bonus. 3 charges. Tu lances une fiole de laquelle s’échappe des cristaux de glace frigorifiée. Les ennemis près de l’explosion subissent 2d8 dégâts de froid et doivent réussir un saving throw de constitution (14) ou ils ne peuvent pas utiliser leur mouvement pendant leur prochain tour.
+Niveau 5
+PV +5.
+Système rodé : Aucun coût d’action. Une fois par long rest. Tu regagnes une charge d’une fiole au choix.
+Batterie vivante : Au début de ton tour, tu gagnes 1 énergie. Tu peux dépenser l’énergie que tu accumules pour activer des habiletés sans coût d’action:
+-	1 énergie : Ta magie te soigne. Tu récupères 1d8 PV.
+-	2 énergie : Ta magie t’accélère. Tu gagnes une action bonus ce tour ci.
+-	3 énergie : Tu tires un rayon arcanique sur une cible, infligeant 1d10 dégâts magiques.
+-	4 énergie : Ta magie émane de toi et va aider tes alliés. Tes alliés et toi récupérez chacun 1d10 PV.
+-	5 énergie : Ta magie t’accélère considérablement. Tu gagnes une action ce tour ci.
+Niveau 6
+PV +5.
+Alors que tu évolues dans ton art, tu arrives à apporter une première modification à ton corps, remplaçant la chair imparfaite par le métal.
+Choix d’une augmentation biomécanique :
+-	Implant cervical : Intelligence +1.
+-	Tubes de respiration : Constitution +2. Tu peux respirer sous l’eau et dans la poussière / cendre.
+-	Chevilles renforcées d’acier : Vitesse +2. Saving throws +1.
+-	Bras mécanisé sur épaule : Une action bonus de plus par tour.
+-	Attelle électrique au coude : Tu peux attaquer une fois de plus par action avec ton arme principale.
+-	Plaque d’acier au cœur : AC +2.
+Niveau 7
+PV +6.
+Accélération électromagique : Action bonus. Une fois par long rest. Tu gagnes 3 charges de Batterie vivante.
+Les armes arcano-mécaniques infligent 1d4 dégâts magiques supplémentaires.
+Niveau 8
+PV +6.
+Fiole d’arcane pure : 1 charge. Action. La fiole que tu lances explose au sol, frappant tous les ennemis autour d’un flash bleu. Ils doivent réussir un saving throw d’intelligence (16) ou subir xd10 dégâts magiques, où x est ton bonus d’intelligence.
+Tu gagnes compétence avec les armures moyennes et lourdes.
+Armure arcano-mécanique : Tu fais une amélioration technique à tes robes d’artificier en les enrichissant de barres de métal qui passent sous le cuir renforcé. Les robes d’artificier deviennent armure arcano-mécanique. L’armure devient moyenne au lieu de légère. Elle a maintenant AC +3, résistance aux dégâts électriques.
+Niveau 9
+PV +6.
+Fiole réflective : 2 charges. Réaction à un projectile qui touche un personnage allié. Tu lances une fiole au sol près de toi ou un allié. La fiole crée un champ électromagnétique autour de la personne pour arrêter et refléter un projectile. Le personnage ciblé gagne +x à son AC contre ce projectile, où x est ton bonus d’intelligence. Si le projectile est contré, il est renvoyé à son lanceur qui doit réussir un saving throw de vitesse (14) pour l’éviter.
+Niveau 10
+PV +8.
+Choix d’un implant d’optimisation biomécanique avancée :
+-	Prothèse d’armement au poignet : +2 au attack roll avec armes arcano-mécaniques.
+-	Filet d’arcanes sur la peau : Activation sans coût d’action pendant ton tour. Une fois par long rest. Jusqu’à ton prochain tour, tu as résistance aux dégâts non physiques.
+-	Système de régénération intraveineuse : Au début de ton tour, tu récupères 1d4 PV + ton bonus d’intelligence.
+-	Métallisation du système nerveux : Initiative +3. Dextérité +1.
+-	Réacteur arcanique intégré à la nuque : Tu gagnes 1 énergie supplémentaire pour ta batterie vivante au début de chaque tour.
+-	Filtrage lymphatique : PV +16. Résistance aux poisons.
+Niveau 11
+PV +8.
+Fiole de résistance : Action bonus. 3 charges. Jusqu’à ton prochain tour, tu as résistance aux dégâts physiques.
+Expertise avec les armes arcano-mécaniques.
+Les armes arcano-mécaniques infligent 1d8 magiques supplémenaires au lieu de 1d4 comme au niveau 7.
+Batterie vivante améliorée :
+-	1 énergie : Le soin devient 2d8.
+-	3 énergie : Les dégâts du rayon arcanique deviennent 2d10.
+-	4 énergie : Le soin devient 2d10.
+Niveau 12
+PV +8.
+Choix d’une augmentation biomécanique qui n’a pas été choisie au niveau 6.
+Grenadier : Une fois par long rest. Tu peux sacrifier ton mouvement sur ton tour pour utiliser une de tes fioles.
+Niveau 13
+PV +10.
+Bouclier arcanique : Réaction à une attaque qui touche. Coute 1 énergie de la Batterie vivante. Une bulle bleue apparait autour de toi, t’offrant une protection magique. Tu ignores 2d10 dégâts.
+Dédoublement instantané : Aucun coût d’action. Utilise 3 énergies de la Batterie vivante. La prochaine fiole que tu lances ce tour ci se dédouble magiquement dans les airs et éclate deux fois de manière successive.
+Niveau 14
+PV +12.
+Amélioration de l’armure arcano-mécanique :
+-	Plaques d’acier : AC +2, l’armure devient lourde.
+-	Rembourrage de fourrure : Résistance au froid.
+-	Conduites d’eau pour refroidissement : Résistance au feu.
+-	Absorption magique : Au début de ton tour, si un sort a été lancé près de toi depuis ton dernier tour, tu reçois 1 énergie pour ta Batterie vivante.
+-	Joints électrifiés : L’armure donne maintenant +1 à l’initiative.
+Niveau 15
+PV +10.
+Choix d’un implant biomécanique qui n’a pas été choisi au niveau 10.
+Maîtrise avec les armes arcano-mécaniques.
+Les armes arcano-mécaniques infligent 1d12 dégâts magiques supplémentaires au lieu de 1d8 comme au niveau 11.
+Niveau 16
+PV +12.
+Fiole cataclysmique : 1 charge. Action. Tu lances une fiole qui explose avec une violence si intense qu’elle frappe tous les ennemis dans une petite zone. Les ennemis touchés subissent 5d6 dégâts brûlants et doivent réussir un saving throw de résistance (18) ou subir un autre 5d6 dégâts de force et être projetés au sol.
+Niveau 17
+PV +15.
+Batterie vivante avancée :
+-	1 énergie : Le soin devient 3d8.
+-	3 énergie : Les dégâts du rayon arcanique deviennent 3d10.
+-	4 énergie : Le soin devient 3d10.
+Niveau 18
+PV +15.
+Choix d’une augmentation biomécanique qui n’a pas été choisie aux niveaux 6 ou 12.
+Niveau 19
+PV +16.
+Choix d’une amélioration de l’armure arcano-mécanique qui n’a pas été choisie au niveau 14.
+Niveau 20
+PV +16.
+Choix d’un implant biomécanique qui n’a pas été choisi aux niveaux 10 ou 15.
+Ravageur*
+Le ravageur est une force brutale sur le champ de bataille, une machine de guerre nourrie par la rage qui le consume. Sa colère se transforme en une énergie sauvage qui lui permet d'ignorer la douleur et d'attaquer sans relâche. Contrairement aux guerriers disciplinés et aux tacticiens, le ravageur se jette dans la mêlée, frappant sans retenue pour commettre des actes d’une violence inouïe. Chaque blessure qu’il subit alimente sa fureur et renforce sa soif de destruction. Le ravageur est souvent un guerrier solitaire, comme son style de combat l’expose à un grand danger. Le ravageur n’a aucune considération pour sa propre sécurité. Son seul objectif est la destruction de ses ennemis.
+Compétences : Toutes armes rapprochées.
+Niveau 1
+Vêtements de fourrure. Une arme rapprochée au choix.
+Accumulation de fureur : Chaque fois que le ravageur subit des dégâts, il gagne 1 point de fureur pour chaque tranche de 2 PV perdue. La fureur disparait à chaque long rest. 
+Exaltation : Coût 3 fureur. Aucun coût d’action. Tu entres dans un état de colère profonde. Tant que tu infliges ou subis des dégâts, tu restes en exaltation chaque tour. Tes attaques avec ton arme rapprochée ont +2 au attack roll et infligent 1d4 dégâts supplémentaires. Tant qu’Exaltation est actif, tu es immunisé à la peur.
+Endurance : Tant que tu ne portes pas d’armure, tu ajoutes ton bonus de constitution à ton AC.
+Niveau 2
+PV +8.
+Coup furieux : Peut seulement être utilisé quand Exaltation est actif. Action bonus. Coût 2 fureur. Tu fais une attaque avec ton arme.
+Gagne deux dés de violence. Utiliser un dé de violence ne coûte jamais d’action ou d’action bonus. Les dés de violence sont régénérés chaque long rest. Il est possible d’utiliser plusieurs dés de violence d’un seul coup. Les dés de violence sont des dés 1d4 qui peuvent être utilisés pour plusieurs effets :
+-	Ajouter un dé de violence à un attack roll.
+-	Ajouter un dé de violence aux dégâts.
+-	Ajouter un dé de violence à un saving throw.
+-	Ajouter un dé de violence à l’initiative.
+-	Récupérer un dé de violence en PV.
+Niveau 3
+PV +8.
+Choix d’une spécialisation :
+-	Colérique : Te battre te fait entrer dans une transe de colère.
+•	Tu génères 1 point de fureur au début de ton tour.
+-	Massacreur : Tu es un adepte de la violence, adorant voir la vie quitter les yeux de tes ennemis.
+•	+1 dé de violence.
+-	Indestructible : Rien ne te fait peur, rien ne t’arrête.
+•	PV +8.
+•	Constitution +2.
+Niveau 4
+PV +10. +1 dé de violence.
+Ténacité : Action bonus. Coût 1 fureur. Tu te prépares à subir un coup douloureux. Jusqu’à ton prochain tour, tu as résistance aux dégâts physiques.
+Niveau 5
+PV +10.
+Les dés de violence deviennent 1d6.
+Ancrage : Réaction à un effet qui te force à faire un saving throw autre que constitution. Coût 1 fureur. Tu ajoutes ton bonus de constitution à ton saving throw.
+Niveau 6
+PV +10. +1 dé de violence.
+Déchainement : Peut seulement être utilisé quand Exaltation est actif. Action. Coût 5 fureur. Tu attaques avec ton arme à trois reprises sur la même cible.
+Cycle de violence : Chaque fois que tu utilises un dé de violence, tu gagnes 1 point de fureur.
+Les dégâts supplémentaires d’Exaltation deviennent 1d6.
+Niveau 7
+PV +12.
+Odieuse rétribution : Action. Peut seulement être utilisé quand Exaltation est actif. Tu dépenses tous tes points de fureur pour libérer une onde de choc. Tous les ennemis autour de toi subissent 1d4 dégâts de force pour chaque point de fureur dépensé. Les ennemis doivent réussir un saving throw de résistance (14) ou être jetés au sol.
+Niveau 8
+PV +12.
+Réponse d’acier : Peut seulement être utilisé quand Exaltation est actif. En réaction à une attaque mêlée qui te touche. Coût 5 points de fureur. Tu ripostes immédiatement avec ton arme, bénéficiant de +4 à ton attack roll. Tu fais un coup critique sur 18 ou moins pour cette attaque.
+Niveau 9
+PV +12. +1 dé de violence.
++2 distribué au choix dans force et / ou constitution.
+Les dégâts supplémentaires d’Exaltation deviennent 1d8.
+Niveau 10
+PV +14.
+Tu gagnes une deuxième attaque par action avec ton arme.
+Expertise avec les armes rapprochées.
+Niveau 11
+PV +14.
+Les dés de violence deviennent 1d8.
+Régénération furieuse : Action bonus. Peut seulement être utilisé quand Exaltation est actif. Tu dépenses jusqu’à 5 points de fureur. Pour chaque point dépensé, tu récupères 1d6 PV.
+Niveau 12
+PV +14.
+Création de dé de violence : Tu peux dépenser 5 fureur pour générer un dé de violence sans coût d’action ou action bonus.
+Création de fureur : Tu peux lancer un dé de violence et ajouter son résultat à ta fureur sans coût d’action ou action bonus.
+Niveau 13
+PV +15. +1 dé de violence.
+Volonté inébranlable : En réaction a un dégât subit. Coût 2 points de fureur. Tu lances un dé de violence et tu ignores des dégâts égaux au résultat.
+Les dégâts supplémentaires d’Exaltation deviennent 1d10.
+Niveau 14
+PV +15.
+Amélioration de spécialisation
+-	Colérique : Tu génères maintenant 2 points de fureur au début de chaque tour.
+-	Massacreur : +1 dé de violence.
+-	Indestructible : Constitution +1. PV +6.
+Niveau 15
+PV +16.
+Les dés de violence deviennent 1d10.
+Niveau 16
+PV +16.
+Maîtrise avec les armes rapprochées.
+Niveau 17
+PV +18. +1 dé de violence.
+Les dégâts supplémentaires d’Exaltation deviennent 1d12.
+Niveau 18
+PV +20.
+Les dés de violence deviennent 1d12.
+Niveau 19
+PV +22.
++2 distribué au choix dans force et / ou constitution.
+Niveau 20
+PV +24.
+Exaltation est actif en permanence.
+Bastion
+Le bastion est un guerrier forgé pour la défense et la protection, un rempart vivant sur le champ de bataille. Imposant et résistant, il se tient comme un mur entre ses alliés et la menace, attirant les attaques ennemies grâce à sa présence imposante. Le bastion riposte aux coups qu’il reçoit, infligeant une vengeance implacable à ceux qui osent l’attaquer. Il est également adepte du contrôle du champ de bataille, capable de déstabiliser ses adversaires et de les forcer à concentrer leurs assauts sur lui, laissant ses alliés libres de mener leurs attaques.
+Compétences : Épées, masses et haches, attaques non armées, boucliers, toutes armures.
+Niveau 1
+Choix d’une épée large (1d6 tranchant), hache de guerre (1d6 tranchant) ou masse flangée (1d6 contondant), bouclier tour (AC +3), cotte de mailles (dégâts tranchants subis -2), plaque d’acier complète (AC+5, lourde), grand heaume (saving throws de résistance ou constitution +2), gants d’acier (saving throws de force +1), bottes d’acier (saving throws de dextérité +1).
+Provocation : Action bonus. Cinq fois par long rest. Tu cries une injure à un ennemi qui doit réussir un saving throw d’intelligence (14). S’il échoue, il n’attaque que toi à son prochain tour.
+Réplique fracassante : Réaction à un ennemi qui rate une attaque mêlée contre toi. Deux fois par long rest. Tu donnes un coup avec ton bouclier, infligeant 1d8 dégâts de force. La cible doit réussir un saving throw de constitution (12) ou être projetée au sol.
+Poing de golem : Réaction à un ennemi qui réussit une attaque mêlée contre toi. Deux fois par long rest. Attaque non armée. Tu reprends tes esprits rapidement, puis tu donnes un coup de poing dans les dents de la cible en utilisant les jointures de ton gant d’armes. Inflige des dégâts contondants égaux à ton bonus de force.
+Niveau 2
+PV +8.
+Poussée du buffle : Action. Une fois par long rest. Tu fonces dans une cible avec ton bouclier. Elle subit immédiatement 1d8 dégâts de force. Ensuite, la cible et toi faites tous deux un saving throw de force. Si tu obtiens un résultat égal ou supérieur à celui de la cible, tu la jettes au sol et lui infliges 1d8 dégâts de force supplémentaires.
+Sans merci : Une fois par long rest, tu peux utiliser une action bonus pour faire une attaque avec ton arme sur une cible au sol. Cette attaque porte un coup critique sur 18 et plus.
+Armure dévastatrice : Pour chaque point de AC au-dessus de 16 que tu as, tes attaques non armées font +1 dégât.
+Niveau 3
+PV +8.
+Choix d’une spécialisation :
+-	Le titan : Tu sembles avoir été forgé dans le magma primordial tant tes défenses sont impénétrables.
+•	Résistance +1.
+-	Le taureau : Tu aimes foncer sur tes ennemis et les écraser sous le poids de tes armements.
+•	Les coups portés avec le bouclier font 1d4 supplémentaires.
+-	Le porc-épic : Te frapper requiert de se faire mal en se fracassant contre tes défenses.
+•	Chaque fois qu’un ennemi fait une attaque mêlée contre toi, il subit 1d4 dégâts perçants.
+Niveau 4
+PV +10.
+Duel forcé : Action bonus. Une fois par long rest. Tu désignes un ennemi qui semble ne voire plus que toi. Tant que personne d’autre ne lui fait du dégâts, il ne peut attaquer que toi.
+Intervention héroïque : Réaction à une attaque qui toucherait un allié. Une fois par long rest. Tu sautes devant l’attaque, puis couvres ton allié de ton bouclier. Il a +2 AC contre l’attaque.
+Tu peux utiliser Réplique fracassante et Poing de golem une troisième fois chaque long rest.
+Niveau 5
+PV +10.
+Main d’acier : Action bonus. Une fois par long rest. Attaque non armée. Tu donnes une grosse baffe avec ton gant d’armes en plein dans le visage de la cible. Le coup inflige 2d10 dégâts contondants et la cible est sonnée à moins qu’elle ne réussisse un saving throw de constitution (14).
+Interception : Réaction à un projectile qui toucherait un allié à portée mêlée de toi. Une fois par long rest. Tu lève ton bouclier pour arrêter le projectile. L’attaque te frappe toi et non pas ton allié.
+Niveau 6
+PV +12.
+Tu deviens résistant à un type de dégâts de ton choix entre tranchant, perçant et contondant.
+Tu deviens résistant à un type de dégâts de ton choix entre brûlant, froid et électrique.
+Le saving throw de Provocation devient 16.
+Niveau 7
+PV +12.
+Couverture d’acier : Action. Une fois par long rest. Tu étends ta volonté implacable de manière magique pour conférer ta force à tes alliés. Jusqu’à ton prochain tour, tes alliés ont +3 AC.
+Niveau 8
+PV +12.
+Lien de protection : Action bonus. Une fois par long rest. Tu désignes un allié pour le protéger de ta vie. Jusqu’à ton prochain tour, ton allié utilise ton AC pour toutes les attaques qui le ciblent, mais si une attaque le touche, elle te touche aussi.
+Botte de géant : Réaction à un ennemi qui touche un de tes alliés à distance proche d’une attaque mêlée. Attaque non armée. Avant que l’attaque ne passe, tu donnes un coup de bottes derrière le genou de l’ennemi. Il doit réussir un saving throw de dextérité (14) pour éviter le coup ou subir 1d6 dégâts de force et être jeté au sol, son attaque annulée.
+Niveau 9
+PV +14.
+Tu peux utiliser Poussée du buffle et Sans merci une deuxième fois chaque long rest.
+Tu peux utiliser Réplique fracassante et Poing de golem une quatrième fois chaque long rest.
+Niveau 10
+PV +12.
+Le bonus de dégâts à tes attaques non armées venant d’Armure dévastatrice devient +2 pour chaque point de AC au-dessus de 16 que tu as.
+Le saving throw de Provocation devient 18.
+Tu gagnes expertise avec les épées, masses, haches, attaques non armées et boucliers.
+Niveau 11
+PV +14.
+Inarrêtable : Action. Utilise ton mouvement. Une fois par long rest. Tu cours sur une ligne droite, écrasant tous les ennemis que tu percutes de ton bouclier. Ils subissent 1d10 dégâts de force et son jetés au sol. Jusqu’à ton prochain tour, tu as +5 sur tes saving throws.
+Niveau 12
+PV +14.
+Défi du bastion : Action. Une fois par long rest. Tu hurles si fort que tous les ennemis autour portent leur attention sur toi. Jusqu’à ton prochain tour, ils ne peuvent attaquer que toi.
+Niveau 13
+PV +15.
+Tu peux utiliser Poussée du buffle et Sans merci une troisième fois chaque long rest.
+Tu peux utiliser Réplique fracassante et Poing de golem une cinquième fois chaque long rest.
+Tu deviens résistant à un type de dégâts au choix entre magique, nécrotique et divin.
+Niveau 14
+PV +15.
+Amélioration de spécialisation :
+-	Le titan : Résistance +1.
+-	Le taureau : Les coups portés avec le bouclier font maintenant 1d6 supplémentaires.
+-	Le porc-épic : Chaque fois qu’un ennemi réussit une attaque mêlée contre toi, il subit maintenant 1d6 dégâts perçants.
+Niveau 15
+PV +16.
+Tu gagnes maîtrise avec les épées, masses, haches, attaques non armées et boucliers.
+Le saving throw de Provocation devient 20.
+Niveau 16
+PV +18.
+Forteresse vivante : Lorsque tu portes une armure lourde, tu as +1 AC et +5 à tes saving throws.
+Renversement : Action. Une fois par long rest. Attaque non armée. Tu fais un saving throw de force. Si le résultat est supérieur au AC de la cible moins X, où X est le nombre de AC que tu as au-dessus de 16, tu la jettes au sol avec une brutalité incroyable, lui infligeant 3d12 dégâts de force et la sonnant pour un tour.
+Le bonus de dégâts à tes attaques non armées venant d’Armure dévastatrice devient +3 pour chaque point de AC au-dessus de 16 que tu as.
+Niveau 17
+PV +20.
+Tu gagnes résistance aux dégâts physiques.
+Niveau 18
+PV +22.
+Mêlée chaotique : Action bonus. Tu hurles, attirant tous les ennemis qui t’entendent. Tous les ennemis concernés font une attaque mêlée contre toi. Tous ceux qui manquent leur attaque subissent 1d10 dégâts de force et son projetés au sol.
+Niveau 19
+PV +24.
+Étendard de résilience : Action bonus. Une fois par long rest. Tu plantes un drapeau divin dans le sol qui brille d’une lumière aveuglante. Dans une petite zone autour du standard, tes alliés et toi récupérez 1d10 PV au début de votre tour et avez AC +1. Les ennemis dans la zone ont désavantage sur leurs attaques.
+Niveau 20
+PV +24.
+Frappe de la muraille : Action. Une fois par long rest. Tu frappes l’air de ton bouclier pour envoyer une vague de force fracassante. Tous les ennemis devant toi sont projetés au sol et doivent réussir un saving throw de résistance d’une difficulté égale à ton AC. S’ils échouent, ils subissent 5d10 dégâts de force.
+Vigilant
+Le vigilant est un prêtre d’Arivis spécialisé dans la traque, le catalogage et la destruction des entités maléfiques. Un chasseur d'ombres et un exorciste, le vigilant est consacré à la protection des innocents contre les créatures surnaturelles et les forces obscures. Armé de sa foi, de son armement et de rituels anciens, il lutte sans relâche contre les entités malfaisantes. Vivant en exil, il mène une existence d'ermite, loin des autres, afin de mieux se consacrer à la détection et à l'éradication des mauvais esprits. En tant que solitaire, il trouve sa force dans ses études et ses connaissances occultes, bannissant ceux qui cherchent à faire sombrer le monde dans l'obscurité.
+Compétences : Miracles d’Arivis, armes simples, armures légères et moyennes.
+Niveau 1
+Bâton en bois de sorbier avec lame rétractable (1d8 perçants, utilise dextérité), arbalète lourde (1d10 perçants, dextérité) capuche de vigilant rembourrée de fer (moyenne, AC +3, saving throws +2), chaîne d’argent (utilise dextérité), bestiaire.
+Consultation du bestiaire : Au début d’un combat, tu peux sacrifier 3 sur ton initiative (jusqu’à un minimum de 1 initiative) autant de fois que tu le veux. Pour chaque tranche de 3 initiative sacrifiée, tu peux poser une question qui se répond par oui ou non au DM par rapport aux ennemis. La question peut être autant précise ou large que tu le veux. Par exemple : Est-ce que cet ennemi est vulnérable au feu? Ou plus large : Est-ce que cet ennemi est vulnérable à un type de dégâts? Ou encore : Est-ce que cet ennemi à accès à des actions légendaires?
+Chavirement : Action bonus. Une fois par combat. Tu utilises ton bâton pour porter un coup qui fauche les jambes d’un ennemi. Si cette attaque réussit, elle fait 1d4 dégâts contondants et la cible est projetée au sol.
+Lancer de chaîne : Action bonus. Tu lances ta chaîne d’argent pour entraver une créature. Si tu réussis ton attaque, la cible subit 1d4 dégâts divins, ne peut pas utiliser son mouvement à son prochain tour et tes attaques ont avantage contre elle ce tour ci. Tu ne peux pas réutiliser cette action tant que tu ne récupères pas ta chaîne.
+Sel et limaille : Action bonus. 3 fois par long rest. Tu lances un mélange de sel et de limaille de fer dans les yeux de la cible pour la bruler et la désorienter. Elle doit réussir un saving throw de constitution (12) ou subir 1d8 dégâts brûlants et avoir désavantage sur ses actions pendant son prochain tour.
+Niveau 2
+PV +6. Divinité +2.
+Tu apprends un miracle d’Arivis niveau 1 au choix.
+Carreau béni : 3 charges. Tu bénis un carreau de ton arbalète, lui conférant des qualités exceptionnelles. La prochaine attaque avec ton arbalète a +2 au attack roll et fait 1d4 dégâts divins supplémentaires.
+Guide lumineux : Une fois par long rest, tu peux faire communion avec un mort, à condition qu’il s’agisse d’un innocent. Tu peux lui poser autant de questions que tu veux, mais plus tu le gardes longtemps, plus il sera difficile de le guider vers la lumière. Si tu échoues à le guider, tu subis 1d10 dégâts psychiques.
+Niveau 3
+PV +6.
+Choix d’une spécialisation :
+-	Consécrateur : Ta foi te permet d’offrir une protection divine à tes alliés alors que tu te bats.
+•	Tu apprends Protection d’Arivis. C’est un miracle que tu peux utiliser une fois par long rest sans coût d’action. Il confère +2 AC et +3 aux saving throws à un allié au choix jusqu’à ton prochain tour.
+-	Exorciste : Tu es bien versé dans les faiblesses et les vulnérabilités des créatures du mal.
+•	Les attaques contre les créatures malignes ont +2 au attack roll et font 1d4 dégâts divins supplémentaires.
+-	Revigorant : Tu as une grande expérience à guider des esprits vers la lumière, ce qui te permet de prodiguer réconfort à tes alliés.
+•	Lorsque tu soignes un allié avec un miracle, il récupère 2 PV supplémentaires et il a avantage sur ses actions pendant son prochain tour.
+Niveau 4
+PV +8. Divinité +2.
+Tu apprends un miracle d’Arivis niveau 1 et un niveau 2.
+Niveau 5
+PV +8.
+Purification : Action bonus. Tu bénis toi-même ou un allié, mettant fin à un effet qui l’afflige (paralysie, sonné, gelé, poison, saignement).
+Le saving throw de sel et limaille devient 14 et le dégât devient 2d8.
+Les carreaux bénis font maintenant 1d6 dégâts divins supplémentaires au lieu de 1d4.
+Niveau 6
+PV +10.
+Entraves divines : Action bonus. Une fois par long rest. Tu désignes une créature qui doit réussir un saving throw de foi (14). Si elle échoue, elle est arrêtée par le pouvoir d’Arivis. Elle subit 1d10 dégâts divins, elle passe son prochain tour et les attaques contre elle ont avantage jusqu’à ton prochain tour.
+Niveau 7
+PV +10. Divinité +2.
+Tu apprends un miracle d’Arivis niveau 2.
+Tu as une attaque de plus par action avec une arme simple.
+Niveau 8
+PV +10. Divinité +1.
+Visée d’un point faible : Lorsque tu utilises un carreau béni, tu peux dépenser un point de divinité avant de rouler ton attack roll pour que le carreau béni donne un critique sur 16 et moins.
+Consulter ton bestiaire coûte maintenant 2 initiative par question, comme tu es devenu plus rapide pour le feuilleter avec l’expérience.
+Niveau 9
+PV +10. Divinité +1.
+Protection contre le mal : Action. Une fois par long rest. Jusqu’à ton prochain tour, tes alliés et toi gagnez immunité aux dégâts nécrotiques et froids.
+Lorsque tu attaques avec ton bâton de sorbier, tu ajoutes deux fois plutôt qu’une ton bonus de dextérité à tes dégâts.
+Niveau 10
+PV +12.
+Tu apprends un miracle d’Arivis niveau 3.
+Tu gagnes expertise avec les miracles d’Arivis et les armes simples.
+Le saving throw de sel et limaille devient 16 et le dégât devient 3d8.
+Niveau 11
+PV +12. Divinité +1.
+Les carreaux bénis font maintenant 1d8 dégâts divins supplémentaires au lieu de 1d6.
+Intervention d’Arivis : Une fois par campagne. Tu implores Arivis de rendre la vie à un personnage de ton choix. Il revient à la vie avec tous ses PV et ses actions comme s’il venait de terminer un long rest.
+Niveau 12
+PV +12.
+Confession : Action. Une fois par long rest. Tu entres en connexion avec l’esprit d’une créature du mal, la forçant à te révéler ses péchés. Tu les acceptes en toi, sapant la créature de sa puissance maligne. Elle doit réussir un saving throw de foi (16). Si elle réussit, elle subit 2d10 dégâts divins et tu récupères des PV égaux aux dégâts. Si elle échoue, elle subit 4d10 dégâts divins, tu récupères des PV égaux aux dégâts et la créature a désavantage sur toutes ses actions pendant son prochain tour.
+Niveau 13
+PV +14.
+Puits de lumière : Action bonus. Une fois par long rest. Une bénédiction d’Arivis émane de toi, produisant une lumière divine. Pour les trois prochains tours, au début de ton tour, tes alliés et toi récupérez 1d10 PV et les créatures malignes autour de toi subissent 1d10 dégâts divins.
+Niveau 14
+PV +14.
+-	Consécrateur : Protection d’Arivis donne maintenant +4 AC et +5 aux saving throws.
+-	Exorciste : Les attaques contre les créatures malignes ont maintenant +3 au attack roll et font 1d6 dégâts divins supplémentaires.
+-	Revigorant : Lorsque tu soignes un allié avec un miracle, il récupère maintenant 5 PV supplémentaires.
+Niveau 15
+PV +15.
+Tu gagnes maîtrise avec les miracles d’Arivis et les armes simples.
+Le saving throw de sel et limaille devient 18 et le dégât devient 4d8.
+Niveau 16
+PV +15. Divinité +3.
+Tu apprends le miracle suprême d’Arivis.
+Niveau 17
+PV +18.
+Les carreaux bénis font maintenant 1d10 dégâts divins supplémentaires au lieu de 1d8.
+Niveau 18
+PV +20. Divinité +2.
+Tu as une troisième attaque par action avec tes armes simples.
+Lorsque tu attaques avec ton bâton de sorbier, tu ajoutes trois fois plutôt qu’une ton bonus de dextérité à tes dégâts.
+Niveau 19
+PV +22.
+Sanctuaire : Action. Une fois par long rest. Tu désignes une créature qui ne peut pas être ciblée par des attaques ou des effets néfastes tant qu’elle ne fait pas de dégâts à une créature hostile.
+Niveau 20
+PV +24. Divinité +2.
+Tu peux demander l’intervention d’Arivis une deuxième fois.
+Rapacier
+Les rapaciers sont des maîtres de la stratégie et de la mobilité, combinant la finesse du combat à l'épée et la précision de l'armement à distance avec une touche d'ingéniosité. Ils se battent avec la rapière, le sabre et l’arbalète à main, tout en guidant leur fidèle oiseau de guerre, un compagnon ailé qui leur sert de yeux et d'armes dans les cieux. Rapacier et oiseau de proie partagent une seule âme, pouvant voir l’un à travers les yeux de l’autre et partageant leurs points de vie. Le rapacier est une silhouette agile sur le champ de bataille, toujours en mouvement, frappant là où l'ennemi s'y attend le moins. Utilisant des tactiques de harcèlement et de diversion, il frappe avec une précision dévastatrice avant de disparaître dans l’ombre. Le rapacier allie ruse, rapidité et un sens du combat tactique qui fait de lui un allié redoutable et un adversaire insaisissable.
+Compétences : Sabres, rapières, armes simples, armures légères.
+Niveau 1
+Choix d’une rapière (1d8 perçants) ou d’un sabre (1d8 tranchants), arbalète à main (attaque en action bonus, 1d4 perçants), veste de cuir (légère, AC +1).
+Valse du duelliste : Tant que tu n’as qu’une rapière ou un sabre et pas de deuxième arme rapprochée ou de bouclier équipé, tu ajoutes ton bonus de dextérité à ton AC.
+Choix d’un oiseau de proie :
+Peu importe l’oiseau choisi, il a la capacité Attaque de serres (+5 au attack roll, 1d4 +4 dégâts tranchants). Tous les oiseaux de proie ont à la base les statistiques suivantes : PV partagés avec rapacier (si le rapacier et l’oiseau sont tous deux touchés par la même attaque, ils subissent les dégâts une seule fois), AC 15, Intelligence 14, Foi 8, Charisme 8, Force 8, Dextérité 18, Constitution 8, Résistance 8, Vitesse 20. Le choix de l’oiseau vient s’ajouter à ces caractéristiques.
+-	Perroquet : Le perroquet peut apprendre une formule magique qu’il entend et la répéter une fois, utilisant le sort. Il a intelligence 18 et compétence avec les sorts.
+-	Corbeau : Lorsque le corbeau fait des dégâts, le rapacier et lui récupèrent 2 PV.
+-	Harfang : Le harfang et le rapacier ont résistance au froid.
+-	Aigle : Les dégâts des serres sont de 1d6 +4 au lieu de 1d4 +4.
+-	Hibou : Récupère l’entièreté de ses PV durant un short rest. Le rapacier et lui sont immunisés aux effets de sommeil.
+-	Faucon : Si l’initiative du faucon est plus haute que celle du rapacier, le rapacier gange +5 à son initiative.
+Niveau 2
+PV +5.
+Riposte préventive : Une fois par long rest. Réaction à un ennemi qui fait une attaque mêlée sur le rapacier. Tu donnes un coup de pied à l’ennemi, le repoussant et lui infligeant 1d4 dégâts (+ bonus dextérité). Il doit réussir un saving throw de résistance (12) pour terminer son attaque. S’il échoue, il est déstabilisé et tu as le temps de lui tirer un carreau de ton arbalète à main.
+Niveau 3
+PV +5.
+Choix d’une spécialisation :
+-	Œil de rapace : Tu es particulièrement doué pour tirer des cibles avec ton arbalète à main.
+•	Dextérité +1.
+•	Au début du combat, tu choisis une cible prioritaire. Tes attaques avec ton arbalète contre celle cible ont avantage. Quand la cible meurt, tu peux en choisir une nouvelle.
+-	Lame volante: Tu préfères découper tes ennemis avec ton arme rapprochée, travaillant de consort avec ton oiseau anéantir tes adversaires.
+•	Dextérité +1.
+•	Lorsque tu touches un ennemi avec ton sabre ou ta rapière, ton oiseau fait immédiatement une attaque de serres contre cet ennemi.
+-	Tempête d’ailes : Ton oiseau est le centre de ton style de combat. Tu te fies à lui pour préparer tes cibles.
+•	L’oiseau peut attaquer deux fois par action.
+•	Lorsque ton oiseau réussit une attaque de serres contre une cible, tu peux immédiatement tirer cette cible avec ton arbalète sans coût d’action. Cette attaque a avantage.
+Niveau 4
+PV +6.
+Aveuglement : Une fois par long rest. Réaction à une attaque qui vise le rapacier ou son oiseau. L’oiseau fond vers la cible pour l’aveugler de ses serres. Elle a désavantage sur son attaque.
+Niveau 5
+PV +6.
+Vol plané : Action. Utilise ton mouvement. Une fois par long rest. Tu agrippes les pattes de ton oiseau qui te porte sur une courte distance. Tu tires deux carreaux de ton arbalète à main sur une cible. Ces attaques ont avantage.
+Niveau 6
+PV +6.
+Interruption : Une fois par long rest. Réaction à un ennemi qui utilise un sort ou un miracle. L’oiseau fonce sur la cible pour briser sa concentration. La cible doit réussir un saving throw de constitution (14) ou son sort / miracle est contrecarré.
+Niveau 7
+PV +8.
+Tu peux attaquer une deuxième fois par action avec ton sabre ou ta rapière.
+Expertise avec les sabres, les rapières et les armes simples.
+Niveau 8
+PV +8.
+Ailes tempétueuses : Action de l’oiseau. Remplace son attaque. Une fois par combat. L’oiseau fait battre ses ailes vers une cible, créant un courant de vent magique. La cible doit réussir un saving throw de résistance (16) ou subir 2d10 dégâts de force et être jetée au sol.
+Niveau 9
+PV +10.
+Détection : Action bonus. Une fois par combat. Tu vois à travers les yeux de ton oiseau pendant un instant, t’offrant un avantage tactique. Tu révèles les ennemis cachés. Ta prochaine attaque ce tour ci a avantage.
+Niveau 10
+PV +10.
+Une action bonus supplémentaire par tour.
+Niveau 11
+PV +12.
+Bec perçant : Action de l’oiseau. Remplace son attaque. Ne rate jamais. Une fois par combat. L’oiseau fonce sur une proie comme un missile, fendant l’air rapidement. Il inflige 3d6 dégâts perçants et la cible voit son AC réduit de 3 pendant un tour.
+Niveau 12
+PV +12.
+Courants de la tempête : Aucun coût d’action. Une fois par combat. L’oiseau bat des ailes dans ta direction, créant une bourrasque magique qui te soulève et te permet de voler pour 3 tours.
+Niveau 13
+PV +12.
+Enchaînement de coupes : Action. 2 fois par combat. Tu attaques 3 fois de suite avec ton sabre ou ta rapière. Le premier coup fait 1d4 supplémentaire. Le deuxième coup fait 1d6 supplémentaire. Le troisième coup fait 1d8 supplémentaire et jette la cible au sol s’il touche.
+Niveau 14
+PV +14.
+Remise : Aucun coût d’action. Une fois par combat. Après que tu rates une attaque avec ton sabre ou ta rapière, tu remets l’attaque en te fendant vers l’avant rapidement. Tu attaques avec avantage.
+Niveau 15
+PV +14.
+Frappe supersonique : Action de l’oiseau. Remplace son attaque. Une fois par combat. L’oiseau semble se laisser tomber vers sa cible, puis donne un coup d’ailes vers l’arrière, le propulsant à une vitesse si incroyable qu’il brise le mur du son. Cette attaque a +10 au attack roll et inflige 4d10 dégâts perçants. L’oiseau est blessé par le recul et le rapacier perd 1d10 PV.
+Niveau 16
+PV +15.
+Tu peux attaquer une troisième fois par action avec ton sabre ou ta rapière.
+Maîtrise avec les sabres, les rapières et les armes simples.
+Niveau 17
+PV +15.
+Synergie symbiotique : Action de l’oiseau. Remplace son attaque. Une fois par combat. L’oiseau agrippe une cible à distance mêlée du rapacier et lui fait perdre équilibre. La cible subit 1d10 dégâts tranchants et le rapacier fait une attaque avec son sabre ou sa rapière contre elle avec avantage.
+Niveau 18
+PV +16.
+Désarmement : Action bonus. Une fois par combat. Tu fais un mouvement expert du poignet, tentant de désarmer ton adversaire. Il doit réussir un saving throw de dextérité (20) ou il échappe son arme et subit 1d8 dégâts tranchants.
+Saignée : Réaction à une attaque mêlée qui te cible. Une fois par combat. Tu places la pointe de ton arme dans la saignée de l’adversaire alors qu’il lève son bras pour attaquer. Il subit 1d10 dégâts perçants et il doit réussir un saving throw de constitution (16) ou il reçoit un saignement de 4 par tour.
+Niveau 19
+PV +18.
+Ailes d’acier : Action de l’oiseau. Remplace son attaque. 3 fois par combat. L’oiseau attaque avec ses ailes qui deviennent tranchantes comme les lames d’un sabre. Cette attaque a +8 au attack roll et inflige 2d8 +4 dégâts tranchants.
+Niveau 20
+PV +20.
+Dextérité +2, vitesse +2.
+Mystique
+Les mystiques sont des guerriers spirituels qui maîtrisent l’Essence, une force magique leur permettant d'accomplir des exploits surnaturels. À travers la maîtrise du ki, ils imprègnent leur épée ou toute autre arme de mêlée d'énergie magique, augmentant leur puissance au combat. Leur entraînement spirituel et physique les rend incroyablement agiles, capables de repousser les limites de leur corps. Grâce à leur lien avec l'Essence, les mystiques peuvent non seulement renforcer leurs capacités physiques, mais aussi projeter leur volonté pour influencer le monde autour d'eux. Ils incarnent une combinaison de puissance, de sagesse et de stratégie.
+Compétences : Armes rapprochées, pouvoirs mystiques.
+Au niveau 1, le mystique choisit une de deux voies : la lumière ou le néant. Cette voie influence ses pouvoirs mystiques et sa philosophie. Les pouvoirs étant uniques à une voie sont toujours identifiés. Si rien n’est écrit, cela veut dire que tous les mystiques peuvent l’utiliser. Les pouvoirs mystiques utilisent tous intelligence pour leurs attack rolls et dégâts.
+Niveau 1
+Épée longue (1d8 tranchants), robes de mystique. Ki +2.
+Choix d’une philosophie :
+-	La lumière : Tu es le gardien de la paix. Tu viens en aide à ceux qui sont dans le besoin. Tu puises ta force d’un désir de toujours faire passer l’autre avant toi. Le calme est ta plus grande vertu. Tu ne crains pas la douleur, la mort ou la perte, les voyant plutôt comme des forces naturelles que tu acceptes sans émotion. Lorsque tu médites, tu es en paix. Tes robes sont brunes, bleues ou blanches.
+-	Le néant : Tu es l’incarnation de la domination. Tu vois le monde comme une échelle que les individus doivent gravir. La puissance est pour toi à la fois un outil et un but. Tu tires ta puissance de ta passion, faisant passer tes désirs devant ceux des autres sans hésitation. Lorsque tu médites, tu imagines des scènes de conquête et de violence. Tes robes sont noires, mauves ou rouges.
+Arme magique : Pouvoir mystique. Permanent. Peut seulement affecter une arme à la fois. L’arme est enchantée et liée à ta main. Son attack roll utilise maintenant à la fois dextérité et intelligence et les dégâts de l’arme deviennent 1d8 dégâts magiques, utilisant intelligence.
+Tu peux payer 1 ki pour utiliser télékinésie en action bonus.
+Réflexes mystiques : Tant que tu ne portes pas d’armure, tu ajoutes ton bonus d’intelligence à ton AC.
+Niveau 2
+PV +8. Ki +2.
+Essence accrue : Pouvoir mystique. Une fois par tour. Aucun coût d’action. Coût 1 ki. Tu augmentes ta connexion à l’Essence qui t’entoure, gagnant +4 à tes saving throws jusqu’à ton prochain tour.
+Pas spectral : Pouvoir mystique. Utilise le mouvement. Coût 1 ki. Tu deviens spectral jusqu’à la fin du tour, pouvant te déplacer à travers les objets et ne subissant pas d’attaques d’opportunités ou effets du terrain.
+Méditation mystique : Action bonus. Une fois par combat. Tu te concentres sur ta philosophie mystique, récupérant 1d4 ki.
+Niveau 3
+PV +8. Ki +1.
+Onde mystique: Pouvoir mystique. Action. Tu peux dépenser jusqu’à 5 ki. Une vague de force magique frappe les ennemis autour de toi. Ils doivent réussir un saving throw d’intelligence (10). Pour chaque ki dépensé, le saving throw a +2 de difficulté. Les ennemis qui échouent le saving throw subissent 1d8 dégâts magiques pour chaque point de ki dépensé.
+Niveau 4
+PV +8.
+Essence revitalisante : Pouvoir mystique. Lumière. Coût 2 ki. Action bonus. Tu rends 2d10 PV à un personnage que tu peux toucher.
+Drain d’Essence : Pouvoir mystique. Néant. Coût 2 ki. Aucun coût d’action. Ta prochaine attaque a +2 au attack roll. Si elle touche, tu draines l’Essence du corps de la victime, te rendant 1d4 PV pour chaque tranche de 5 dégâts infligés.
+Niveau 5
+PV +10. Ki +2.
+Rapidité surnaturelle : Pouvoir mystique. Coût 4 ki. Tu gagnes une action ce tour ci.
+Niveau 6
+PV +10.
+Bouclier d’Essence : Pouvoir mystique. Lumière. Coût 1 ki. Réaction à une attaque qui cible toi ou un allié. Un bouclier d’Essence pure enveloppe la cible, la protégeant. La cible a +2 à son AC contre l’attaque.
+Foudre maligne : Pouvoir mystique. Néant. Coût 2 ki. Action bonus. Tu manifestes de l’Essence sous la forme d’une foudre bleue magique. Inflige 2d6 dégâts magiques. Tu récupères de PV égaux aux dégâts.
+Niveau 7
+PV +10.
+Déviation de projectile : Pouvoir mystique. Coût 1 ki. Réaction à un projectile qui te vise. Tu utilises ton arme pour bloquer et dévier un projectile physique ou magique. Tu réduis les dégâts de 2d8. Si tu réduis les dégâts à 0, tu peux utiliser 1 ki supplémentaire pour renvoyer le projectile à son lanceur.
+Niveau 8
+PV +12. Ki +1. +2 distribué au choix dans dextérité, constitution, résistance et intelligence.
+Tu as une deuxième attaque par action avec ton arme.
+Expertise avec les armes rapprochées et les pouvoirs mystiques.
+Niveau 9
+PV +12.
+L’arme magique fait maintenant 1d8 dégâts magiques supplémentaires et ignore les résistances à la magie.
+Niveau 10
+PV +14. Ki +1.
+Riposte surnaturelle : Réaction à une attaque mêlée qui te rate. Coût 2 ki. Tu ripostes avec ton arme, infligeant 1d8 dégâts magiques supplémentaires.
+Niveau 11
+PV +14.
+Flamme purifiante : Pouvoir mystique. Lumière. Coût 4 ki. Action. Une flamme mystique émerge de ton épée frappant tous les ennemis sur un cône devant toi. Ils doivent réussir un saving throw de constitution (16) ou suvir 4d6 dégâts brûlants. S’ils réussissent, ils subissent la moitié.
+Ombre engloutissante : Pouvoir mystique. Néant. Coût 3 ki. Action. Tu projettes une vague d’énergie noire, affectant un ennemi que tu peux voir. Cet ennemi doit effectuer un jet de sauvegarde d’intelligence (16). En cas d’échec, il subit 4d8 dégâts magiques et perd son action bonus sur son prochain tour. S’il réussit, il subit 2d8.
+Niveau 12
+PV +14.
+Maîtrise de l'Essence : Pouvoir mystique. Une fois par long rest. Aucun coût d’action. Coût 6 ki. Tu libères toute la puissance de ton ki, augmentant temporairement tes capacités. Pendant 3 tours, tu as un avantage sur tous tes attack rolls et saving throws.
+Transcendance : Action et action bonus. Une fois par long rest. Tu accèdes à un état de méditation pure pendant ton tour, te régénérant. Tu restaures tous tes points de ki.
+Niveau 13
+PV +14.
+Équilibre rétabli : Pouvoir mystique. Lumière. Coût 5 ki. Réaction à subir des dégâts. Une énergie de paix te protège, annulant 2d12 dégâts. Les dégâts que tu sauves sont renvoyés à leur source sous forme de dégâts magiques.
+Désir d’immortalité : Pouvoir mystique. Néant. Coût 5 ki. Quand tu subis des dégâts qui te réduirais à 0 PV ou moins, tu prends une forme spectrale, te permettant de te déplacer. Tes PV deviennent 2d10.
+Niveau 14
+PV +14.
+Esprit impitoyable : Une fois par long rest. Action bonus. Tu touches une créature et la forces à s’arrêter, faisant voyager ton ki à travers son corps pour la clouer au sol. Elle doit réussir un saving throw d’intelligence (14) ou être immobilisée pendant 1 tour.
+Niveau 15
+PV +15. Ki +1.
+Projection astrale : Pouvoir mystique. Lumière. Coût 1 ki. Action bonus. Ne rate jamais. Tu projettes ton âme pour distraire un ennemi et tromper ses sens. Il a désavantage sur ses actions pendant son prochain tour.
+Sape d’Essence: Pouvoir mystique. Néant. Coût 1 ki. Action bonus. Ne rate jamais. Tu projettes ton âme pour saper la force vitale d’un ennemi, comme un vampire d’Essence. Il subit 1d10 dégâts magiques et tu récupères des PV égaux aux dégâts.
+Niveau 16
+PV +15. +2 distribué au choix dans dextérité, vitesse, intelligence ou constitution.
+Maîtrise avec les armes rapprochées et les pouvoirs mystiques.
+Tu as une troisième attaque par action avec ton arme.
+L’arme magique fait maintenant 2d8 supplémentaire et ignore même l’immunité à la magie.
+Niveau 17
+PV +16.
+Calme total : Pouvoir mystique. Lumière. Coût 3 ki. Réaction à un saving throw qui t’est imposé. Tu es calme, en paix, en contrôle de tes émotions. Tu réussis automatiquement le saving throw.
+Domination totale : Pouvoir mystique. Néant. Coût 6 ki. Action. Tu imposes une domination mentale totale sur une créature de ton choix, la contraignant à effectuer une action de ton choix. Elle doit réussir un saving throw d’intelligence (18) ou subir ta commande.
+Niveau 18
+PV +18. Ki +2.
+Essence primordiale : Pouvoir mystique. Coût 8 ki. Aucun coût d’action. Tu entres en fusion avec l’Essence elle-même. Jusqu’à ton prochain tour, tu es invulnérable.
+Niveau 19
+PV +20.
+Un seul coup : Pouvoir mystique. Lumière. Une fois par long rest. Action + action bonus. Tu fais une attaque si précise avec ton arme magique, bougeant si rapidement, que la cible succombe sans douleur si tu touches, peu importe combien de PV il lui reste.
+Écrasement des faibles : Pouvoir mystique. Néant. Une fois par long rest. Action + action bonus. Tu utilises ton pouvoir pour faire immédiatement mourir une cible dans d’atroces souffrances. La cible doit réussir un saving throw de constitution (22) pour résister à cet effet.
+Niveau 20
+PV +22.
+Ascension finale : Tu atteins la perfection. Toutes tes capacités mystiques sont amplifiées à leur maximum. Intelligence +2. Dextérité +2. Tes attaques avec ton arme magique font toujours le maximum de dégâts possibles.

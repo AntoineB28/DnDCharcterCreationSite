@@ -1,0 +1,212 @@
+Feats (lvl 2-5-8-12-15-18-20)
+	Dévotion : Ta croyance en la suprématie de Moiifhb est le centre de ta vie. Le Seigneur sourie en regardant vers toi de son trône doré dans le ciel et t’octroie sa bénédiction.
+-	Foi +1. Un miracle de Moiifhb niveau 1 au choix qui peut être utilisé une fois par long rest sans utiliser de ressources.
+	Communion lunaire : La lumière de la Lune te revigore et guide ton chemin. Tu sens une connexion aux marées et à l’océan.
+-	PV +5. Un miracle de Mitulia niveau 1 au choix qui peut être utilisé une fois par long rest sans utiliser de ressources.
+	Défenseur de la vie : Tu crois que préserver la vie est une valeur noble pour laquelle il faut se battre. Tu ressens une connexion à tous les autres êtres vivants qui t’entourent, animés ou non.
+-	Résistance +1. Un miracle d’Arivis niveau 1 au choix qui peut être utilisé une fois par long rest sans utiliser de ressources.
+	Ombre de la mort : Ton passage est comme celui d’une envolée de corbeaux, un présage de mort. Rien ne te satisfait plus que d’enlever la vie.
+-	Les miracles de Laeth qui affectent des créatures hostiles font 1d4 dégâts nécrotiques en plus de leurs autres effets.
+	Érudit : Tu es un être particulièrement intelligent qui écoute la balance de l’univers. Tes méditations et tes lectures t’ont amené à une compréhension plus profonde de ta connexion à la magie. 
+-	Intelligence +1. Un miracle de Katong niveau 1 au choix qui peut être utilisé une fois par long rest sans utiliser de ressources.
+	Influence cosmique : Des visions inexplicables et horrifiantes s’emparent de ton esprit. Tu vois des dimensions, des formes et des couleurs qui sont inaccessibles à la psyché d’une mortel. Le voile se déchire autour de toi et les mots qui pourraient exprimer ta terreur n’existent simplement pas.
+-	Le joueur reçoit un trauma permanent sous forme de cauchemars lui montrant des visions de Kadath. 
+-	Un miracle de Kadath niveau 2 au choix qui peut être utilisé une fois par long rest sans utiliser de ressources. Chaque fois que ce miracle est utilisé, le joueur se prend la tête et subit 1d6 dégâts psychiques.
+	Touché de l’enfer : Tu vois le domaine de Sugriok momentanément. Le dieu sombre t’appelle vers un vide infini. Ton esprit ne peut que remplir ce vide avec une souffrance absolue en l’absence de Moiifhb. Tu pleures et tes larmes se gèlent immédiatement sur ton visage, t’emprisonnant. Lorsque tu ouvres les yeux, une marque gelée couvre ta joue.
+-	Le joueur reçoit la marque de Sugriok sur sa joue, qui le destine aux enfers.
+-	Foi +2. Miracle de Sugriok niveau 1 au choix qui peut être utilisé une fois par long rest sans utiliser de ressources.
+	Faveur d’Akasha : La cause t’échappe, mais le résultat te plait. Que ce soit grâce à ta cruauté, ton sens du luxe ou ton égocentrisme, la déesse Akasha s’est amourachée de toi. Si tu n’es pas déjà un vampire, tu n’en deviens pas un, mais quelque chose change dans ton sang. Si tu es déjà un vampire, tu sens ta connexion au mal qui t’habite s’approfondir.
+-	Un pouvoir vampirique au choix qui peut être utilisé une fois par long rest sans utiliser de ressources.
+	Écraseur de crânes : Ta force physique hors du commun te permet de livrer des coups dévastateurs qui fracassent les os de tes adversaires.
+-	Force +1.
+-	Lorsque tu attaques avec un marteau, une masse ou un fléau, tu ajoutes deux fois (plutôt qu’une) ton bonus de force à ton attack roll et à tes dégâts.
+	Bourreau : Tu manie une hache comme un bourreau manie un couperet, séparant la chair des os avec une brutalité et une précision hors pairs.
+-	Force +1.
+-	Les attaques avec des haches font 1d10 de plus aux cibles qui sont à moins de la moitié de leurs PV.
+	Chevalier : L’épée, noble et efficace, est ton arme de choix. Tu la manies comme une extension de ton corps, fauchant tes ennemis avec aise.
+-	Force ou dextérité +1.
+-	Lorsque tu touches avec une épée, tu roules les dégâts deux fois et tu choisis le résultat le plus élevé.
+	Sabreur : Le sabre, rapide et affilé, a ta faveur. Tu l’utilises pour causer des coupures douloureuses dans la chair de tes adversaires.
+-	Dextérité +1.
+-	Lorsque tu touches avec un sabre, roule 1d4. La cible subit le résultat en saignement.
+	Escrimeur : Un entraînement acharné t’a mené à une grande connaissance des armes d’estoc, élégantes et précises, que tu utilises pour perforer les défenses de tes adversaires avec subtilité.
+-	Dextérité +1.
+-	Les rapières te donnent des coups critiques sur un jet de 18 ou plus.
+	Paladin : Prêtre ou guerrier uniquement. Tu combines ta prouesse au combat avec ta croyance pour une divinité. Cela te permet de donner des propriétés mystiques à ton arme.
+-	Foi +1.
+-	Coup divin : Action bonus. Peut être utilisé une fois par long rest. La prochaine attaque a +2 au attack roll et fait 1d8 dégâts divins de plus par niveau.
+	Soigneur : Prêtre, sorcier, druide, moine, mage, astromancien, mystique, shaman ou barde. Ton esprit entre en relation avec la nature ou le monde divin pour te permettre de prodiguer des soins magiques avec un simple geste de la main.
+-	Foi ou constitution +1.
+-	Soins magiques : Action bonus. Utiliser une fois par long rest. Soigne de 1d6 par niveau. Peut être utilisé à distance.
+	Blindé : Ton corps est habitué à subir les douleurs les plus intenses. Tu as développé une résistance naturelle qui rend difficile de t’ébranler.
+-	Résistance +1.
+-	PV +8.
+	Héritier sanguin : Vampire seulement. Ta force vampirique s’accroit. Ton héritage te donne des pouvoirs que tu n’imaginais pas posséder.
+-	Un pouvoir vampirique au choix.
+-	Charges vampiriques +1.
+	Choisi de Laeth : Nécromancien seulement. Ta déesse t’octroie sa faveur et te guide dans ton contrôle sur le royaume des morts.
+-	Points de nécromancie +1.
+-	Un miracle de Laeth niveau 1 qui peut être utiliser gratuitement une fois par long rest.
+	Criminel : Rogue ou chasseur. Ton passé de malfrat t’a permis de développer une grande compétence à te trouver dans des endroits interdits sans te faire détecter.
+-	+3 au saving throw pour se cacher.
+-	Vitesse +1.
+	Alerte : Tu guettes constamment tes environs, prêt à affronter n’importe quel danger qui se pointe. Il devient difficile de te surprendre.
+-	+5 au jet d’initiative.
+	Tir de précision : Ton arme de choix est l’arc ou l’arbalète. Tu as une grande facilité à attaquer une cible à distance.
+-	+2 au attack roll avec un arc ou une arbalète.
+-	Les arcs et les arbalètes font 1d4 dégâts perçants de plus.
+	Dévoué au mal : Sorcier seulement. Ta connexion à ton dieu sombre est la base de ta personnalité. Tu adores les pouvoirs destructeurs auxquels tu as accès.
+-	Foi +1.
+-	Un miracle niveau 1 du dieu choisi qui peut être utilisé une fois par long rest sans payer de points de vie.
+	Précision arcanique : Mage, astromancien, sorcier, barde ou nécromancien. Jeter des sorts est comme une seconde nature pour toi. Il est plutôt rare que tu rates une cible lorsque tu te concentres.
+-	Intelligence +1.
+-	+2 aux attack rolls avec des sorts.
+	Sorts jumeaux : Mage, astromancien ou sorcier. Tu es capable de manipuler le voile de manière à produire deux sortilèges avec une seule incantation.
+-	Une fois par long rest, un sort qui ne touche qu’une cible peut être dédoublé sans coût additionnel. La même cible peut être choisie une seconde fois ou une autre cible peut être choisie.
+	Métamagie : Mage seulement. Les fondations de la magie n’ont pas de secrets pour toi. Tu as une capacité incroyable à puiser dans les forces mystiques à travers le voile.
+-	Intelligence +1.
+-	Mana +2.
+	Performeur : Barde seulement. Tu es un entertainer dans l’âme. Tu es capable de livrer performance après performance sans t’épuiser.
+-	Vitesse ou dextérité +1.
+-	Points mélodieux +1.
+	Fervent : Prêtre seulement. Tu es soumis à ton dieu. Tu tentes continuellement de trouver des signes de sa présence dans le monde qui t’entoure et dans tout ce que tu entreprends.
+-	Foi +1.
+-	Divinité +2.
+	Présence d’esprit : Moine ou mystique seulement. Tu es en paix avec la vie, la nature et les énergies qui flottent autour de toi. Ton corps devient plus fort, plus efficace.
+-	Force, dextérité, constitution, résistance ou vitesse +1.
+-	Ki +1.
+	Duelliste défenseur : Tu as développé une défense efficace utilisant ton arme. Tu peux performer des parades spectaculaires qui te protègent des attaques adverses.
+-	Si le joueur a une rapière, un sabre, une épée ou une dague dans sa main principale et n’a pas d’autre arme ou bouclier dans sa deuxième main, il ajoute son bonus de dextérité à son AC.
+	Ambidextrie : Tu aimes avoir une arme dans chaque main et te laisser emporter dans un tourbillon de furie lorsque tu es en combat.
+-	Force ou dextérité +1.
+-	Si le joueur a une arme du même type dans chaque main, AC +1.
+	Héritage draconique: Tu es naturellement résilient. Ta peau développe une dureté, une robustesse. Des écailles colorées apparaissent sur ton corps. Clairement, ton sang renferme quelque chose que tu ne soupçonnais pas.
+-	Lorsque le joueur ne porte pas d’armure, son AC de base est de 13 au lieu de 10.
+-	Résistance à un élément au choix.
+
+	Durable : Tu es habité d’une grande vitalité qui t’aide à résister aux difficultés que tu rencontres.
+-	Constitution +1.
+-	Second souffle : Tu relaxes les muscles de ton corps pour un moment, te donnant un regain d’énergie. Une fois par combat. Action bonus. Récupère 1d8 par niveau PV.
+	Adepte élémentaire : Mage, sorcier ou druide. Tu as une connexion approfondie avec la magie élémentaire.
+-	Tu apprends ton choix de Boule de feu, Décharge électrique ou Pique de glace.
+-	Mana +1.
+-	Tes sorts de feu, glace et électricité ignorent les résistances.
+	Armure légère : Ton entraînement te permet de porter des armures légères de manière efficace.
+-	Compétence avec les armures légères.
+	Armure moyenne : Doit avoir compétence avec les armures légères. Ton entraînement te permet de porter des armures moyennes de manière efficace.
+-	Compétence avec les armures moyennes.
+	Armure lourde : Doit avoir compétence avec les armures moyennes. Ton entraînement te permet de porter des armures lourdes de manière efficace.
+-	Compétence avec les armures lourdes.
+	Maîtrise de l’armure légère : Nécessite compétence avec armures légères. Tu portes l’armure légère comme une seconde peau, bougeant sans être encombré, ce qui te permet de mieux te défendre.
+-	Lorsque tu portes une armure légère, ajoute ton bonus de dextérité à ton AC.
+	Maîtrise de l’armure moyenne : Nécessite compétence avec armures moyennes. Favorisant une bonne balance entre la mobilité et la défense, tu es devenu un expert des armures moyennes.
+-	Les armures moyennes te donnent 1 AC de plus que leur valeur de base.
+-	Vitesse +1.
+	Maîtrise de l’armure lourde : Nécessite compétence avec armures lourdes. Tu crois qu’une défense solide est le meilleur moyen de s’assurer d’une victoire. Porter une armure lourde est pour toi une seconde nature, le poids ne te restreignant en rien.
+-	Force +1.
+-	Lorsque tu portes une armure lourde, tous les dégâts physiques sont réduits de 3.
+	Leader inspirant : Tu es une personne charismatique, appréciée et admirée par ses pairs. Tes mots suffisent à inspirer le courage à tes alliés et à les revigorer.
+-	Charisme +1.
+-	Discours passionné : Une fois par combat. Lors de ton tour, tu peux, sans utiliser d’action ou d’action bonus, prononcer un discours inspirant. Il peut avoir trois effets différents : 1- Les alliés heal de 1d4 par niveau du joueur faisant le discours. 2- Les alliés ont avantage sur leur prochaine attaque. 3- Les alliés crit sur 18 ou moins pour leur prochaine attaque.
+	Atronach : Tu te sens lié à l’énergie magique qui habite le monde. Le voile, qui terrifie la plupart, t’apparait doux et chaleureux. Tu accueilles la magie avec paix.
+-	Résistance aux dégâts magiques.
+	Maîtrise du bouclier : Le maniement du bouclier n’a pas de secrets pour toi. Tu peux l’utiliser à son plein potentiel.
+-	Les boucliers fournissent 1 AC de plus.
+	Rempart : Nécessite Maîtrise du bouclier. Tu es comme un mur infranchissable. Rares sont les personnes qui sont capables de passer tes défenses calculées et précises.
+-	Lorsque tu as un bouclier, tu as résistance à tous les dégâts physiques.
+	Heurt de bouclier : Nécessite Maîtrise du bouclier. Ton expertise avec le bouclier t’a permis de constater que bien que le bouclier soit certes un outil défensif, il peut également servir d’arme.
+-	En action bonus, une fois par combat, peut frapper avec le bouclier, ce qui fait 1d8 + force. La cible doit réussir un saving throw résistance (10) ou être sonnée pour un tour.
+	Colère destructrice : Lorsque tu te bats, il arrive que tes émotions t’emportent totalement et que tu t’abandonnes à une colère violente qui t’envahit.
+-	Rage : Tu te laisses emporter par la colère qui t’habite et tu pousses un cri de guerre retentissant. Peut seulement être utilisé s’il te manque au moins 10 PV. Action bonus. La prochaine attaque avec une arme fait 1d8 de plus.
+	Artiste martial : À la manière d’un moine, tu as passé beaucoup de temps à t’entrainer à utiliser tes mains et tes pieds comme des armes.
+-	Lorsque tu attaques sans arme (1d4), tu ajoutes à la fois son bonus de dextérité et de force au attack roll et aux dégâts.
+	Bagarreur : Tout le temps que tu as passé à te battre avec d’autres enfants, puis à la taverne lorsque tu es devenu plus vieux, commence finalement à porter fruit.
+-	Force ou dextérité +1.
+-	Les attaques non armées font 1d4 de plus.
+-	PV +6.
+	Attaques sauvages : Tu attaques sans soucie pour ta propre sécurité ou celle de tes alliés. Tu ne réfléchis pas. Tout ce qui compte est que ton adversaire soit détruit.
+-	Une fois par long rest, tu peux faire une attaque supplémentaire qui n’utilise ni action ou action bonus.
+	Musicien : Tu t’es pratiqué à jouer d’un instrument de musique. Tu es maintenant capable de captiver l’attention des autres par tes performances.
+-	Compétence avec instruments de musique.
+-	Points mélodieux +1.
+-	Tu apprends une mélodie de base de la classe barde de ton choix (Inspiration, Berceuse ou Distortion, p.21 du guide du joueur).
+	Forgeron : Tu as appris à travailler le métal et autres matériaux pour forger des objets, des armes et des armures.
+-	Peut forger objets simples, armes simples et armures de base.
+	Maître de la forge : Nécessite Forgeron. Ton expérience dans la forge t’a amené au sommet de ton art.
+-	Peut forger tous types d’arme et peut forger des armures avancées.
+	Concocteur : Tu as appris, un peu n’importe comment, à mixer des ingrédients pour obtenir des fioles avec des propriétés intéressantes.
+-	Peut mixer des ingrédients pour faire potions et des poisons de base.
+	Alchimiste : Nécessite Concocteur : Tu as développé tes talents d’alchimiste, atteignant un niveau élevé de compréhension de tes ingrédients et de leurs interactions.
+-	Peut mixer des ingrédients pour faire potions et poisons avancés.
+	Vipère : Tel un serpent, tu profites de la vulnérabilité biologique de tes cibles pour anéantir leurs capacités et les tuer subtilement.
+-	Les saving throws des poisons que tu utilises ont +4 de difficulté.
+-	Les effets des poisons que tu utilises sont doublés.
+	Initié enchanteur : Tu n’es pas encore assez avancé pour comprendre l’ensemble du mécanisme, mais tu as développé une capacité incroyable à donner des propriétés magiques à certains objets. Bien entendu, ce travail nécessite quelques ressources.
+-	Peut faire des enchantements de base sur des objets, des armes et des armures.
+	Maître des arcanes : Nécessite Initié enchanteur. Tu as poussé ta compréhension des propriétés magiques que tu es capable d’insuffler à certains objets, augmentant la force et la diversité des effets que tu es en mesure de créer.
+-	Peut faire des enchantements avancés sur des objets, des armes et des armures.
+	Prévot d’arme : En utilisant ton arme de choix, tu es devenu de meilleur en meilleur, de manière qu’on puisse te considérer un maître pour le maniement de cet outil spécifique.
+-	Tu gagnes expertise avec un type d’arme au choix.
+	Arme maudite : Tu forges un pacte avec un dieu sombre. En échange d’un peu de ta vitalité (-6 PV), cette arme devient maudite.
+-	Une arme au choix devient légendaire et inflige, en plus de son dégât normal, 1d6 dégâts nécrotiques pour Laeth, froids pour Sugriok ou acides pour Talkus par niveau du joueur.
+-	Foi +1.
+	Frappe d'acier : Tu as maîtrisé l'art de renforcer tes coups avec une puissance brutale, transformant chaque impact en un assaut écrasant.
+-	Force +1
+-	Lorsque tu utilises une arme à une main, tu peux dépenser une action bonus pour augmenter les dégâts de la prochaine attaque de 1d6 de dégâts contondants.
+	Lien mystique : Ton esprit est connecté à une force mystique au-delà du monde physique. Tu peux puiser dans cette énergie pour protéger tes alliés.
+-	Intelligence ou charisme +1
+-	Une fois par long rest, tu peux, en action bonus, accorder un bouclier magique qui donne une résistance à un type de dégâts à un allié jusqu’à la fin de ton prochain tour.
+	Inébranlable : Ta concentration et ta maîtrise de soi sont hors du commun. Rien ne peut te déstabiliser, même face aux plus grands dangers.
+-	Constitution +1
+-	Avantage sur les saving throws qui te jetteraient au sol ou te rendraient stun.
+	Prémonition : Ton esprit capte les flux du temps avant qu'ils ne se réalisent. Tu sais anticiper les actions ennemies et réagir avec une rapidité surnaturelle.
+-	Foi ou intelligence +1.
+-	Une fois par combat, tu peux te donner +2 à un saving throw après avoir roulé.
+	Vitesse spectrale : Lorsque tu te concentres, ton corps devient presque intangible, te permettant de glisser dans l'ombre avec une rapidité fantomatique.
+-	Vitesse +1.
+-	Une fois par long rest, tu peux désengager un ennemi puis bouger sans subir d’attaque d’opportunité.
+	Aura de dévastation : Ta seule présence est suffisante pour déstabiliser les adversaires. Ta volonté impose le respect et la peur.
+-	Charisme +1.
+-	Les saving throws que tu fais subir à des ennemis ont +2 de difficulté.
+	Ailes de la nuit : Tu peux invoquer des ailes d'ombre, te permettant de voler sur de courtes distances.
+-	Dextérité +1.
+-	Une fois par combat, tu peux utiliser une action bonus pour voler pendant un tour, ce qui te permet de te déplacer sans provoquer d'attaques d'opportunité et te donne avantage contre les cibles que tu atteints avec des projectiles.
+	Volonté de fer : Tu possèdes une force mentale à toute épreuve, et aucun charme ou manipulation psychologique ne parvient à t'atteindre.
+-	Intelligence +1
+-	Avantage contre les effets magiques qui tentent de manipuler ton esprit ou de te charmer.
+	Sang-froid : Tu as appris à tuer sans pitié, sans l'ombre d'un doute ni hésitation. Ta précision devient mortelle.
+-	Dextérité +1
+-	Une fois par long rest. Au coût de ton action et action bonus, tu fais une attaque avec arme. Si elle touche, c’est un coup critique. Tu dois l’annoncer avant de rouler ton attaque.
+	Sentinelle de la nature : Tu te sens lié aux forces primordiales de la nature. Le monde naturel te protège et te guide.
+-	Constitution +1
+-	Une fois par long rest. Action bonus. Tu invoques un esprit bienfaisant de la nature (arbre ou animal) pour te prêter main-forte, augmentant ton AC de 2 jusqu’à ton prochain tour.
+	Cercle de protection : Ton énergie divine forme un bouclier autour de toi et de tes alliés.
+-	Foi +1
+-	Une fois par long rest. Action bonus. Tu crées une zone de protection autour de toi. Tous les alliés qui sont proches de toi reçoivent -2 dégâts de toutes les sources qui les touchent jusqu’à ton prochain tour.
+	Cercle de douleur : Ton énergie divine s’acharne sur les ennemis qui t’entourent et les rend susceptibles à être plus gravement blessés.
+-	Foi +1
+-	Une fois par long rest. Action bonus. Tu crées une zone de malheur autour de toi. Tous les ennemis qui sont proches de toi reçoivent +2 dégâts de toutes les sources qui les touchent jusqu’à ton prochain tour.
+	Œil de l'aigle : Tu as une acuité visuelle surhumaine, capable de repérer la moindre anomalie à distance.
+-	Tu peux discerner des détails fins à longue distance (jusqu'à 100 mètres).
+-	Perception +4. Lorsque tu réussis un test de perception pour détecter un ennemi caché ou invisible, il est révélé à tous tes alliés.
+	Lien naturel : Tu as une affinité avec un élément particulier de la nature, t'accordant des pouvoirs exceptionnels.
+-	Résistance à un élément au choix (feu, glace, électricité).
+-	Une fois par long rest. Action bonus. Tu libères une décharge élémentaire infligeant 1d6 dégâts de l'élément choisi par niveau (jusqu’à un maximum de 6).
+	Berserk : Tu puises dans une colère irrationnelle, décuplant ta force pendant un court instant.
+-	Une fois par long rest. Aucun coût d’action. +4 force jusqu’à la fin de ton tour.
+	Vieille âme : Tu as déjà vécu de nombreuses vies. Chacune de tes itérations t’habite et te guide.
+-	Intelligence ou foi +1.
+-	À chaque long rest, avant de dormir, tu peux contacter un ancêtre (soit en appeler un que tu connais déjà ou en faire venir un nouveau au hasard) avec qui tu peux avoir une conversation enrichissante.
+	Régénération rapide : Tu sembles capable de récupérer de tes blessures alors que tu te bats, comme si ton corps s’alimentait de l’effort physique.
+-	Au début de ton tour en combat, récupères 2 PV. À la fin d’un combat, récupères automatiquement 10 PV.
+	Nécrologie : Tu as une capacité innée à entrer en contact avec les morts comme s’ils étaient là, devant toi.
+-	Tu peux utiliser communion avec la mort une fois par long rest sans coût.
+	Illusion sonore : Tu as le pouvoir de faire apparaitre des sons à une distance allant jusqu’à une centaine de mètres de toi sans même bouger les lèvres, comme si tu étais un ventriloque magique.
+-	Charisme +1.
+-	Une fois par long rest, tu peux créer un son ou un bruit précis comme un cri, une voix, un claquement de doigts, ou tout autre petit son que tu peux imaginer.
+	Chef cuisinier: Tu as un talent pour concocter des repas nutritifs et réconfortants.
+-	Dextérité +1.
+-	Lorsque tu prépares un repas, tu peux accorder un bonus temporaire de +3 en points de vie maximum à chaque membre du groupe pendant 24 heures. Ce bonus est restauré par chaque repas que tu prépares.
+	Raconteur : Tu es doué pour raconter des histoires qui ravivent les esprits.
+-	Charisme +1.
+-	Une fois par long rest, lorsque tu es en marche ou au camp, tu peux raconter une histoire à tes alliés pour leur octroyer +2 à leur prochain attack roll ou saving throw.
