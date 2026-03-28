@@ -634,6 +634,34 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
             </div>
             <div style={{ fontSize: '12px', color: '#888' }}>Toutes les stats commencent à 8. Maximum +8 par stat.</div>
           </div>
+
+          {/* Presets */}
+          <div style={{ marginBottom: '16px', padding: '12px', background: '#f9f6f0', border: '1px solid #d4a017', borderRadius: '6px' }}>
+            <div style={{ fontWeight: 700, fontSize: '13px', marginBottom: '8px', color: '#8b6914' }}>Presets rapides :</div>
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+              <button onClick={() => {
+                setState(p => ({ ...p, statPoints: { force: 7, dexterite: 6, constitution: 5, resistance: 4, intelligence: 2, foi: 0, charisme: 0, vitesse: 0 } }));
+              }} style={{ padding: '6px 12px', background: '#fff', border: '1px solid #d4a017', borderRadius: '4px', fontSize: '12px', fontWeight: 600, cursor: 'pointer', color: '#8b6914' }}>
+                Standard [15,14,13,12,10,8]
+              </button>
+              <button onClick={() => {
+                setState(p => ({ ...p, statPoints: { force: 6, dexterite: 6, constitution: 5, resistance: 4, intelligence: 3, foi: 2, charisme: 0, vitesse: 0 } }));
+              }} style={{ padding: '6px 12px', background: '#fff', border: '1px solid #d4a017', borderRadius: '4px', fontSize: '12px', fontWeight: 600, cursor: 'pointer', color: '#8b6914' }}>
+                Équilibré [14,14,13,12,11,10]
+              </button>
+              <button onClick={() => {
+                setState(p => ({ ...p, statPoints: { force: 8, dexterite: 7, constitution: 6, resistance: 5, intelligence: 4, foi: 0, charisme: 0, vitesse: 0 } }));
+              }} style={{ padding: '6px 12px', background: '#fff', border: '1px solid #d4a017', borderRadius: '4px', fontSize: '12px', fontWeight: 600, cursor: 'pointer', color: '#8b6914' }}>
+                Élevé [16,15,14,13,12,8]
+              </button>
+              <button onClick={() => {
+                setState(p => ({ ...p, statPoints: { force: 0, dexterite: 0, constitution: 0, resistance: 0, intelligence: 0, foi: 0, charisme: 0, vitesse: 0 } }));
+              }} style={{ padding: '6px 12px', background: '#fff', border: '1px solid #ccc', borderRadius: '4px', fontSize: '12px', fontWeight: 600, cursor: 'pointer', color: '#666' }}>
+                Réinitialiser
+              </button>
+            </div>
+          </div>
+
           <div style={{ maxWidth: '560px' }}>
             {STATS.map(key => (
               <StatRow key={key} label={STAT_LABELS[key]} value={BASE_STAT + (state.statPoints[key] || 0)}
