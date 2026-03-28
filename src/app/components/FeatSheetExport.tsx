@@ -68,7 +68,7 @@ function FeatCard({ name, description, accentColor }: {
 }
 
 export function FeatSheetExport({ selection }: FeatSheetExportProps) {
-  const sheetRef = useRef<HTMLDivElement>(null);
+  const pageRef = useRef<HTMLDivElement>(null);
 
   const selectedFeats = FEATS.filter(f => selection.selectedFeats.includes(f.id));
   const hasFeats = selectedFeats.length > 0;
@@ -81,83 +81,92 @@ export function FeatSheetExport({ selection }: FeatSheetExportProps) {
   const categories = Object.keys(groupedByCategory).sort();
 
   const exportToPDF = async () => {
-    if (!sheetRef.current) return;
-    const root = document.documentElement;
-    const saved: Record<string, string> = {};
-    const overrides: Record<string, string> = {
-      '--foreground': '#111', '--background': '#fff', '--card': '#f9f6f0',
-    };
-    for (const p of Object.keys(overrides)) saved[p] = root.style.getPropertyValue(p);
-    for (const [p, v] of Object.entries(overrides)) root.style.setProperty(p, v);
-
-    const prevScroll = { x: window.scrollX, y: window.scrollY };
-    window.scrollTo(0, 0);
-
-    const el = sheetRef.current;
-    const canvas = await html2canvas(el, { scale: 2, useCORS: true });
+    if (!pageRef.current) return;
+    const canvas = await html2canvas(pageRef.current, {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: '#faf7f2',
+      logging: false,
+    });
     const imgData = canvas.toDataURL('image/png');
-    const pdf = new jsPDF('p', 'mm', 'a4');
-    const w = pdf.internal.pageSize.getWidth();
-    const h = pdf.internal.pageSize.getHeight();
-    pdf.addImage(imgData, 'PNG', 0, 0, w, h);
-    pdf.save(`${selection.nom || 'personnage'}-feats.pdf`);
-
-    window.scrollTo(prevScroll.x, prevScroll.y);
-    for (const [p, v] of Object.entries(saved)) root.style.setProperty(p, v);
+    const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+    const pageW = pdf.internal.pageSize.getWidth();
+    const pageH = pdf.internal.pageSize.getHeight();
+    const imgW = canvas.width;
+    const imgH = canvas.height;
+    const ratio = pageW / imgW;
+    const scaledH = imgH * ratio;
+    let y = 0;
+    while (y < scaledH) {
+      if (y > 0) pdf.addPage();
+      pdf.addImage(imgData, 'PNG', 0, -y, pageW, scaledH);
+      y += pageH;
+    }
+    pdf.save(`fiche-feats-${selection.nom || 'personnage'}.pdf`);
   };
 
   return (
-    <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', gap: '12px' }}>
-        <h2 style={{ margin: 0, fontSize: '18px', fontWeight: 700 }}>Fiche de Feats</h2>
+    <div style={{ maxWidth: '900px', margin: '0 auto', padding: '16px' }}>
+      {/* Controls bar */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <Scroll size={18} style={{ color: ACCENT }} />
+          <span style={{ fontWeight: 700, fontSize: '15px', color: '#1a1208' }}>
+            Fiche de Feats{selection.nom ? ` — ${selection.nom}` : ''}
+          </span>
+          {selection.classe && (
+            <span style={{ fontSize: '12px', color: '#888', background: '#f5f5f0', padding: '2px 8px', borderRadius: '10px', border: '1px solid #ddd' }}>
+              {selection.classe}
+            </span>
+          )}
+        </div>
         <button
           onClick={exportToPDF}
           style={{
-            display: 'flex', alignItems: 'center', gap: '6px',
-            background: '#2c2416', color: '#f5e6c0', border: 'none', borderRadius: '4px',
-            padding: '8px 14px', fontSize: '13px', fontWeight: 700, cursor: 'pointer', fontFamily: 'serif',
+            display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 16px',
+            background: '#1a1208', color: '#fff', border: 'none', borderRadius: '6px',
+            cursor: 'pointer', fontFamily: 'serif', fontSize: '13px', fontWeight: 700,
           }}
         >
-          <Download size={16} />
-          Exporter PDF
+          <Download size={14} /> Exporter PDF
         </button>
       </div>
 
-      <div ref={sheetRef} style={{
-        background: '#fff', color: '#1a1208', padding: '30px', border: B, fontFamily: 'serif',
-      }}>
-        {/* Header */}
-        <div style={{
-          textAlign: 'center', marginBottom: '20px',
-          borderBottom: '2px solid #2c2416', paddingBottom: '14px',
-        }}>
-          <div style={{ fontSize: '22px', fontWeight: 900, letterSpacing: '1px', color: '#1a1208' }}>
-            FICHE DE FEATS
-          </div>
-          <div style={{ fontSize: '13px', color: '#666', marginTop: '4px' }}>
-            {selection.nom || 'Personnage'}
-          </div>
-          {selection.classe && (
-            <div style={{ fontSize: '12px', color: '#888', marginTop: '2px' }}>
-              {selection.classe}
+      {!hasFeats ? (
+        <div style={{ textAlign: 'center', padding: '60px 20px', color: '#888', fontSize: '14px', background: '#faf7f2', border: B, borderRadius: '8px' }}>
+          <Scroll size={32} style={{ opacity: 0.3, marginBottom: '12px', display: 'block', margin: '0 auto 12px' }} />
+          Aucun feat sélectionné dans le wizard.
+          <div style={{ fontSize: '12px', marginTop: '6px' }}>Retournez à l'étape 6 du wizard pour choisir vos feats.</div>
+        </div>
+      ) : (
+        <div
+          ref={pageRef}
+          style={{
+            background: '#faf7f2',
+            padding: '28px 32px',
+            border: B,
+            borderRadius: '4px',
+            fontFamily: 'serif',
+            minHeight: '297mm',
+          }}
+        >
+          {/* Page header */}
+          <div style={{
+            textAlign: 'center', marginBottom: '20px',
+            borderBottom: '2px solid #2c2416', paddingBottom: '14px',
+          }}>
+            <div style={{ fontSize: '22px', fontWeight: 900, letterSpacing: '1px', color: '#1a1208' }}>
+              FICHE DE FEATS
             </div>
-          )}
-          {hasFeats && (
+            <div style={{ fontSize: '13px', color: '#666', marginTop: '4px' }}>
+              {selection.nom || 'Personnage'}{selection.classe ? ` · ${selection.classe}` : ''}
+            </div>
             <div style={{ marginTop: '10px', fontSize: '11px', fontWeight: 700, color: ACCENT }}>
               ✦ {selectedFeats.length} feat{selectedFeats.length > 1 ? 's' : ''}
             </div>
-          )}
-        </div>
-
-        {/* No feats */}
-        {!hasFeats && (
-          <div style={{ textAlign: 'center', color: '#888', fontSize: '13px', padding: '20px' }}>
-            Aucun feat sélectionné
           </div>
-        )}
 
-        {/* Feats by category */}
-        {hasFeats && (
+          {/* Feats by category */}
           <div>
             {categories.map(category => (
               <div key={category}>
@@ -173,16 +182,16 @@ export function FeatSheetExport({ selection }: FeatSheetExportProps) {
               </div>
             ))}
           </div>
-        )}
 
-        {/* Footer */}
-        <div style={{
-          marginTop: '30px', paddingTop: '14px', borderTop: B, fontSize: '10px',
-          textAlign: 'center', color: '#888',
-        }}>
-          Fiche générée automatiquement · D&D Fiche de Feats
+          {/* Footer */}
+          <div style={{
+            marginTop: '30px', paddingTop: '14px', borderTop: B, fontSize: '10px',
+            textAlign: 'center', color: '#888',
+          }}>
+            Fiche générée automatiquement · D&D Fiche de Feats
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
