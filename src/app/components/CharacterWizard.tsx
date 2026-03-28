@@ -467,9 +467,22 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
   // How many feats at this level
   const featCount = FEAT_LEVELS.filter(l => l <= state.niveau).length;
 
-  // Available spells based on class
-  const hasSpells = cls && ['mage', 'druide', 'barde', 'rogue', 'sorcier', 'necromancien'].includes(cls.id);
-  const hasMiracles = cls && ['pretre', 'sorcier', 'necromancien', 'druide', 'guerrier'].includes(cls.id);
+  // Helper: Check if any selected feat grants spells
+  const hasFeatGrantingSpells = (): boolean => {
+    // Feats that grant spells: 'helomancien' grants elemental spells
+    return state.selectedFeats.includes('helomancien');
+  };
+
+  // Helper: Check if any selected feat grants miracles
+  const hasFeatGrantingMiracles = (): boolean => {
+    // Feats that grant miracles: devotion, communion-lunaire, defenseur-vie, erudit, influence-cosmique, touche-enfer, choisi-laeth, devoue-mal
+    const miracleFeatIds = ['devotion', 'communion-lunaire', 'defenseur-vie', 'erudit', 'influence-cosmique', 'touche-enfer', 'choisi-laeth', 'devoue-mal'];
+    return miracleFeatIds.some(id => state.selectedFeats.includes(id));
+  };
+
+  // Available spells based on class or feats
+  const hasSpells = (cls && ['mage', 'druide', 'barde', 'rogue', 'sorcier', 'necromancien'].includes(cls.id)) || hasFeatGrantingSpells();
+  const hasMiracles = (cls && ['pretre', 'sorcier', 'necromancien', 'druide', 'guerrier'].includes(cls.id)) || hasFeatGrantingMiracles();
   const hasVampPowers = cls?.id === 'vampire' || state.selectedFeats.includes('faveur-akasha') || state.selectedFeats.includes('heritier-sanguin');
 
   // Helper: Check if current class meets feat restriction
@@ -575,8 +588,14 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
     setState(p => {
       const cur = p.selectedDeityMiracles;
       if (cur.includes(id)) return { ...p, selectedDeityMiracles: cur.filter(s => s !== id) };
-      const { deitySlots, strictByLevel } = getMiracleLimit(p.classe, p.niveau);
-      if (!canAddMiracle(id, cur, deitySlots, strictByLevel)) return p;
+      const baseLimit = getMiracleLimit(p.classe, p.niveau);
+      
+      // If no miracles from class but feat grants them, allow 1 free miracle
+      const deitySlots = baseLimit.deitySlots && Object.keys(baseLimit.deitySlots).length > 0
+        ? baseLimit.deitySlots
+        : (hasFeatGrantingMiracles() ? { 1: 1 } : {});
+      
+      if (!canAddMiracle(id, cur, deitySlots, baseLimit.strictByLevel)) return p;
       return { ...p, selectedDeityMiracles: [...cur, id] };
     });
   };
@@ -585,8 +604,14 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
     setState(p => {
       const cur = p.selectedFreeMiracles;
       if (cur.includes(id)) return { ...p, selectedFreeMiracles: cur.filter(s => s !== id) };
-      const { freeSlots, strictByLevel } = getMiracleLimit(p.classe, p.niveau);
-      if (!canAddMiracle(id, cur, freeSlots, strictByLevel)) return p;
+      const baseLimit = getMiracleLimit(p.classe, p.niveau);
+      
+      // If no miracles from class but feat grants them, allow 1 free miracle
+      const freeSlots = baseLimit.freeSlots && Object.keys(baseLimit.freeSlots).length > 0
+        ? baseLimit.freeSlots
+        : (hasFeatGrantingMiracles() ? { 1: 1 } : {});
+      
+      if (!canAddMiracle(id, cur, freeSlots, baseLimit.strictByLevel)) return p;
       return { ...p, selectedFreeMiracles: [...cur, id] };
     });
   };
@@ -1203,7 +1228,18 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                 </div>
               )}
               {hasMiracles && (() => {
-                const { deitySlots, freeSlots, maxLevel: miracleMaxLvl, forcedDeity, strictByLevel } = getMiracleLimit(state.classe, state.niveau);
+                const baseLimit = getMiracleLimit(state.classe, state.niveau);
+                
+                // If class has no miracle slots but feat grants them, allow 1 deity slot
+                const deitySlots = baseLimit.deitySlots && Object.keys(baseLimit.deitySlots).length > 0
+                  ? baseLimit.deitySlots
+                  : (hasFeatGrantingMiracles() ? { 1: 1 } : {});
+                
+                const freeSlots = baseLimit.freeSlots && Object.keys(baseLimit.freeSlots).length > 0
+                  ? baseLimit.freeSlots
+                  : {};
+                
+                const { maxLevel: miracleMaxLvl, forcedDeity, strictByLevel } = baseLimit;
                 const deityName = forcedDeity ?? state.deity;
                 const LVL_MAP: Record<string, number> = { 'Niveau 1': 1, 'Niveau 2': 2, 'Niveau 3': 3, 'Suprême': 4, 'Ultime': 5 };
                 const deityTot = slotTotal(deitySlots);
