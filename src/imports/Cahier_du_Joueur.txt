@@ -1,0 +1,250 @@
+CAHIER DU JOUEUR - MIDIAN
+
+=== RÈGLES DE BASE ===
+
+STATISTIQUES:
+- Intelligence: Observation, déduction, sorts
+- Foi: Rituels religieux, miracles
+- Charisme: Persuasion, tromperie, intimidation
+- Dextérité: Armes légères (couteaux, arcs, sabres, lances), discrétion, acrobatie
+- Force: Armes lourdes (masses, marteaux, haches, épées), actions physiques
+- Vitesse: Initiative, course rapide
+- Constitution: PV = 2x constitution, résistance aux poisons/magie
+- Résistance: Résistance saignement/projections/assommage, AC
+
+Bonus/Malus: +1 tous les 2 points au-dessus de 10, -1 tous les 2 points au-dessous
+
+REPOS:
+Long rest = récupération PV + ressources magiques
+
+DÉS:
+- Attack/Saving throws: D20
+- Avantage: Rouler 2d20, prendre le plus haut
+- Désavantage: Rouler 2d20, prendre le plus bas
+- Dégâts: Notation XdY (ex: 2d8 = lancer 2 d8)
+
+TYPES DE DÉGÂTS ARMES:
+- Contondant (masses, marteaux)
+- Tranchant (épées, haches)
+- Perçant (lances, flèches)
+
+TYPES DE DÉGÂTS MAGIQUES:
+- Élémentaires (feu, glace, électricité)
+- Spéciaux (psychique, divin, nécrose)
+
+=== CRÉATION DE PERSONNAGE ===
+
+ATTRIBUTION STATISTIQUES:
+Base: 8 dans chaque stat
+Points disponibles: 28 (max +8 dans une stat)
+
+COMBAT:
+Initiative: D20 + bonus vitesse
+
+TOUR DE COMBAT:
+- 1 Mouvement
+- 1 Action
+- 1 Action bonus
+
+ACTIONS POSSIBLES:
+- Sprint (double mouvement)
+- Attaquer avec arme principale
+- Lancer un sort
+- Invoquer un miracle
+- Lancer quelque chose
+- Utiliser une habileté (action)
+
+ACTIONS BONUS:
+- Attaquer avec arme secondaire
+- Boire une potion
+- Parler/crier
+- Utiliser une habileté (action bonus)
+
+ATTACK ROLL:
+D20 + bonus stat appropriée (force/dextérité/intelligence/foi)
+
+COUP CRITIQUE:
+Attack roll = 20 → Dégâts doublés
+
+DÉGÂTS:
+Rouler dés + bonus stat appropriée
+
+MORT:
+PV = 0 → Down
+Down: Constitution saving throw (difficulté 10) chaque tour
+- Échec: 1 X
+- Succès sans X: Stabilisé (inconscient)
+- Succès avec X: -1 X
+- 3 X: Mort
+
+=== RACES ===
+
+HUMAIN:
+- Compétence: Toutes armes, armures légères/moyennes
+- Constitution +1
+- Équipement bonus niveau 1
+
+ELFE:
+- Compétence: Armes dextérité, sorts
+- Intelligence +2, Vitesse +1
+- Mana +2
+- Sort niveau 1 bonus
+
+ORC:
+- Compétence: Armes force, toutes armures
+- Force +2, Constitution +2
+
+NAIN:
+- Compétence: Armes force, boucliers, toutes armures
+- Résistance +1, Constitution +1
+- Espérance de vie: ~1000 ans
+
+GNOME:
+- Vitesse +2, Charisme +2, Dextérité +1
+- Espérance de vie: ~1000 ans
+
+GOBELIN:
+- Compétence: Armes dextérité
+- Vitesse +2, Dextérité +2, Résistance +1
+- Charisme -2, Intelligence -2
+
+DROW:
+- Compétence: Armes dextérité
+- Foi +2, Constitution +1, Dextérité +1
+- Vision dans le noir
+- Espérance de vie: ~500 ans
+
+KENKU:
+- Peut voler (avantage contre cibles au sol)
+- Vitesse +2, Dextérité +4
+- Constitution -2, Force -2
+- Espérance de vie: ~300 ans
+
+KOBALOS:
+- Résistance au poison
+- Ne peut pas être Vampire
+- Morsure: Action = 1d6 par niveau
+
+Sous-races:
+- Shaiksa: Dextérité +2, Malédiction Shaiksa
+- Haizda: Constitution +2, Mana +2, Sort Souffle acide
+- Triumvirat: Intelligence +2, Mana +2, Sort Taillade de vent
+
+GORGONE:
+- Charisme +2, Vitesse +1
+- Sort Regard pétrifiant (1/combat sans ressources)
+- Espérance de vie: Immortelle
+
+=== CLASSES ===
+
+GUERRIER (Niveau 1-20):
+Compétence: Toutes armes rapprochées, toutes armures, boucliers
+
+Niveaux clés:
+- 1: Choix arme/armure, Second souffle
+- 2: Action surge
+- 3: Spécialisation (Barbare/Défenseur/Double-maniement)
+- 4: PV +10, Expertise arme
+- 7: Style de combat
+- 13: Troisième attaque
+- 20: Bénédiction Erkanos
+
+Spécialisations (Niv 3):
+- Barbare: Armes 2 mains +2 d, Rage (action bonus, +1d8)
+- Défenseur: AC +1, PV +6, Coup bouclier (action bonus)
+- Double-maniement: 2 armes = attaque rapide
+
+MAGE:
+Sorts gratuits basés sur niveau
+
+PRÊTRE:
+Miracles basés sur Foi + Divinité
+
+ROGUE:
+Compétence armes dextérité, discrétion
+
+DRUIDE:
+Magie de nature, transformation possible
+
+BARDE:
+Chansons inspirantes, compétence générale
+
+SORCIER:
+Magie noire, miracles divinités sombres
+
+MOINE:
+Arts martiaux, Ki, discipline
+
+CHASSEUR:
+Arcs, survie, pistage
+
+NÉCROMANCIEN:
+Contrôle des morts, miracles Laeth
+
+VAMPIRE:
+Pouvoirs vampiriques, éternel
+
+=== EXPÉRIENCE ===
+
+Façons de gagner XP:
+- Check charisme difficile en conversation
+- Exploration dangereuse/secrète
+- Complétion de quête
+- Combat
+
+Progression (XP requis pour niveau suivant):
+Niv 1: 300 | Niv 2: 600 | Niv 3: 1800 | Niv 4: 3800 | Niv 5: 7500
+Niv 6: 9000 | Niv 7: 11000 | Niv 8: 14000 | Niv 9: 16000 | Niv 10: 19000
+Niv 11: 21000 | Niv 12: 24000 | Niv 13: 27000 | Niv 14: 31000 | Niv 15: 35000
+Niv 16: 38000 | Niv 17: 42000 | Niv 18: 46000 | Niv 19: 50000 | Niv 20: 55000
+
+=== DIEUX DE MIDIAN ===
+
+MOIIFHB (Roi des dieux):
+- Domaine: Leadership, justice
+- Couleur: Or
+- Plaques divines: Protection, Justice
+
+MITULIA (Déesse des mers):
+- Domaine: Océan, voyages
+- Couleur: Bleu
+- Miracle bonus pour Dévouement Communion lunaire
+
+ARIVIS (Déesse elfique):
+- Domaine: Magie, nature
+- Couleur: Vert
+- Les elfes en descendent
+
+LAETH (Déesse de la mort):
+- Domaine: Mort, nécromance
+- Les drows la vénèrent
+- Nécromanciens la servent
+
+KADATH (Entité cosmique):
+- Domaine: Chaos, dimensions
+- Couleur: Violet
+- Connu pour cauchemars
+
+SUGRIOK (Dieu sombre):
+- Domaine: Souffrance, gèle
+- Couleur: Gris/Bleu glacé
+- Destiny: Enfers
+
+AKASHA (Déesse):
+- Domaine: Luxe, vampirisme
+- Accorde pouvoirs vampiriques
+
+KATONG (Dieu hibou):
+- Domaine: Sagesse, connaissance
+- Gardien bibliothèque astrale
+- Les Kenku en descendent
+
+ERKANOS (Dieu forgeron):
+- Domaine: Forges, guerriers
+- Les nains en descendent
+- Guerriers reçoivent miracles
+
+TALKUS (Dieu à naître):
+- Domaine: Futur, conquête
+- Vénéré par Kobalos
+- Objectif: dominer le monde
