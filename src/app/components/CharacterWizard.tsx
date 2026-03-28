@@ -441,11 +441,23 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
   const hasMiracles = cls && ['pretre', 'sorcier', 'necromancien', 'druide', 'guerrier'].includes(cls.id);
   const hasVampPowers = cls?.id === 'vampire' || state.selectedFeats.includes('faveur-akasha') || state.selectedFeats.includes('heritier-sanguin');
 
+  // Helper: Check if all prerequisites are met for a feat
+  const canSelectFeat = (featId: string, currentSelected: string[]): boolean => {
+    const feat = FEATS.find(f => f.id === featId);
+    if (!feat || !feat.requires) return true;
+    // Find prerequisite feat by name (requires field is a name string)
+    const prereqFeat = FEATS.find(f => f.name === feat.requires);
+    if (!prereqFeat) return true;
+    return currentSelected.includes(prereqFeat.id);
+  };
+
   const toggleFeat = (id: string) => {
     setState(p => {
       const cur = p.selectedFeats;
       if (cur.includes(id)) return { ...p, selectedFeats: cur.filter(f => f !== id) };
       if (cur.length >= featCount) return p;
+      // Check prerequisites before adding
+      if (!canSelectFeat(id, cur)) return p;
       return { ...p, selectedFeats: [...cur, id] };
     });
   };
@@ -1035,18 +1047,21 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '8px' }}>
                 {FEATS.map(feat => {
                   const isSelected = state.selectedFeats.includes(feat.id);
-                  const canSelect = isSelected || state.selectedFeats.length < featCount;
+                  const hasPrereq = feat.requires ? !canSelectFeat(feat.id, state.selectedFeats) : false;
+                  const slotAvailable = state.selectedFeats.length < featCount;
+                  const canSelect = isSelected || (slotAvailable && !hasPrereq);
                   return (
                     <div key={feat.id} onClick={() => canSelect && toggleFeat(feat.id)} style={{
-                      border: isSelected ? '2px solid #c0392b' : '1px solid #ccc',
-                      borderRadius: '6px', background: isSelected ? '#fff5f5' : canSelect ? '#fff' : '#f9f9f9',
+                      border: isSelected ? '2px solid #c0392b' : hasPrereq ? '1px solid #f97316' : '1px solid #ccc',
+                      borderRadius: '6px', background: isSelected ? '#fff5f5' : hasPrereq ? '#fff7ed' : canSelect ? '#fff' : '#f9f9f9',
                       padding: '10px 12px', cursor: canSelect ? 'pointer' : 'not-allowed', opacity: !canSelect ? 0.6 : 1,
                     }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                        <div style={{ fontWeight: 700, fontSize: '13px', color: isSelected ? '#c0392b' : '#1a1a1a' }}>{feat.name}</div>
-                        <span style={{ fontSize: '9px', background: isSelected ? '#c0392b' : '#888', color: '#fff', borderRadius: '8px', padding: '1px 6px', flexShrink: 0, marginLeft: '4px' }}>{feat.category}</span>
+                        <div style={{ fontWeight: 700, fontSize: '13px', color: isSelected ? '#c0392b' : hasPrereq ? '#f97316' : '#1a1a1a' }}>{feat.name}</div>
+                        <span style={{ fontSize: '9px', background: isSelected ? '#c0392b' : hasPrereq ? '#f97316' : '#888', color: '#fff', borderRadius: '8px', padding: '1px 6px', flexShrink: 0, marginLeft: '4px' }}>{feat.category}</span>
                       </div>
                       {feat.restriction && <div style={{ fontSize: '10px', color: '#888', fontStyle: 'italic' }}>{feat.restriction}</div>}
+                      {hasPrereq && <div style={{ fontSize: '11px', color: '#f97316', fontWeight: 600, marginTop: '4px' }}>🔒 Requires: {feat.requires}</div>}
                       <div style={{ fontSize: '11px', color: '#555', marginTop: '4px', lineHeight: '1.3' }}>{feat.description}</div>
                       <div style={{ marginTop: '4px' }}>
                         {feat.effects.map((e, i) => <div key={i} style={{ fontSize: '11px', color: '#222' }}>▸ {e}</div>)}
