@@ -1,5 +1,4 @@
 import { useState, useCallback } from 'react';
-import type { CharacterData, VisibleSections } from './CharacterWizard';
 
 export interface WizardState {
   currentStep: number;
