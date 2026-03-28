@@ -1458,6 +1458,11 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                 'Longue haleine : Récupère 1d4 PV chaque tour',
                 'Presseur : Rerouler attaque manquée en acceptant riposte',
               ];
+              
+              // For level 16, filter out the style already chosen at level 7
+              const firstStyleChosen = state.classUpgrades['guerrier_fighting_style'];
+              const availableStylesForLevel16 = fightingStyles.filter(style => style !== firstStyleChosen);
+              
               return (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   {state.niveau >= 7 && (
@@ -1490,7 +1495,12 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                   {state.niveau >= 16 && (
                     <div style={{ padding: '14px', background: '#f0f4ff', border: '1px solid #2c5fa5', borderRadius: '6px' }}>
                       <div style={{ fontWeight: 700, marginBottom: '8px', color: '#2c5fa5', fontSize: '14px' }}>Deuxième Style de Combat (Niveau 16+)</div>
-                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#1a3a6e' }}>Tu as maîtrisé un style de combat. Choisis un second style pour renforcer tes capacités.</div>
+                      <div style={{ fontSize: '13px', marginBottom: '12px', color: '#1a3a6e' }}>Tu as maîtrisé un style de combat. Choisis un second style DIFFÉRENT pour renforcer tes capacités.</div>
+                      {firstStyleChosen && (
+                        <div style={{ marginBottom: '10px', padding: '8px', background: '#e0f2fe', border: '1px solid #0284c7', borderRadius: '4px', fontSize: '12px', color: '#0c4a6e' }}>
+                          Premier style : <strong>{firstStyleChosen}</strong>
+                        </div>
+                      )}
                       <select 
                         value={state.classUpgrades['guerrier_second_style'] || ''}
                         onChange={e => setState(p => ({
@@ -1503,13 +1513,17 @@ export function CharacterWizard({ onComplete }: { onComplete: (data: CharacterDa
                         style={{ width: '100%', padding: '8px 10px', border: '1px solid #2c5fa5', borderRadius: '4px', fontSize: '13px', background: '#fff', cursor: 'pointer' }}
                       >
                         <option value="">— Choisir un style —</option>
-                        {fightingStyles.map((style, idx) => (
-                          <option key={idx} value={style}>{style}</option>
-                        ))}
+                        {availableStylesForLevel16.length > 0 ? (
+                          availableStylesForLevel16.map((style, idx) => (
+                            <option key={idx} value={style}>{style}</option>
+                          ))
+                        ) : (
+                          <option disabled>Aucun style disponible (tous déjà choisis)</option>
+                        )}
                       </select>
                       {state.classUpgrades['guerrier_second_style'] && (
                         <div style={{ marginTop: '10px', padding: '8px', background: '#f5f0ff', border: '1px solid #7c3aed', borderRadius: '4px', fontSize: '12px', color: '#5b21b6' }}>
-                          ✓ Style choisi : <strong>{state.classUpgrades['guerrier_second_style']}</strong>
+                          ✓ Second style choisi : <strong>{state.classUpgrades['guerrier_second_style']}</strong>
                         </div>
                       )}
                     </div>
